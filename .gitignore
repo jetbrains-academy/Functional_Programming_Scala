@@ -1,0 +1,8 @@
+# Project exclude paths
+/.coursecreator/
+/Functions as Data/task1/project/target/
+/Functions as Data/task1/target/
+/Functions as Data/task1/target/scala-2.12/classes/
+/Functions as Data/task1/target/scala-2.12/test-classes/
+/project/target/
+/target/

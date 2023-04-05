@@ -1,0 +1,13 @@
+type: marketplace
+title: FP Demo
+language: English
+summary: |-
+  This is an introductory Scala course.
+  - The course will be most beneficial for beginner-level Scala learners.
+  - The course covers core Scala features.
+  - It contains hands-on examples of Scala code implementation and exercises to practice new skills.
+  - The course is based on the author's personal experience in Scala development.
+programming_language: Scala
+environment: sbt
+content:
+- Functions as Data
