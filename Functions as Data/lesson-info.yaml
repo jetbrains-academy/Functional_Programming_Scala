@@ -1,2 +1,14 @@
 content:
 - task1
+- Anonymous functions
+- passing_functions_as_arguments
+- scala_collections_overview
+- filter
+- find
+- foreach
+- map
+- flatMap
+- foldLeft
+- total_and_partial_functions
+- currying_functions
+- partial_fucntion_application

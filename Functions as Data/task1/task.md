@@ -2,6 +2,7 @@
 <iframe width="560" height="315" src="https://www.youtube.com/embed/RX1_EJp9Vxk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 A function is a standalone block of code that takes arguments, performs some calculations, and returns a result. It may or may not have side effects; that is, it may have access to the data in the program, and if that data is modifiable, the function may change it. If it doesn't — meaning, if the function operates only on its arguments — we say that the function is pure. In functional programming, we use pure functions when possible, although this rule has important exceptions. We will talk about them later.
 The main difference between a function and a method is that a method is associated with a class or an object. In contrast, a function is treated as any other value in the program: it can be created in any place in the code, passed as an argument, returned from another function or method, etc.
+
 Consider the following code:
 ```Scala
 
