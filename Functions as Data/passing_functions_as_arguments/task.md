@@ -13,7 +13,7 @@ enum Color:
 class Cat(val color: Color)
 
 // We create our bag (a set) of cats. Each cat has a different color.
-val bagofCats = new Set[Cat](Cat(Color.Black), Cat(Color.White), Cat(Color.Ginger))
+val bagofCats = Set(Cat(Color.Black), Cat(Color.White), Cat(Color.Ginger))
 
 // We use the `filter` method to create a new bag of black cats.  
 val bagOfBlackCats = bagOfCats.filter(cat => cat.color == Color.Black)
@@ -31,3 +31,15 @@ val bagOfBlackCats = bagOfCats.filter(isCatBlack)
 Passing a function as an argument to a method (or another function) can be useful when we want to apply the same logic to all elements in a collection, in a stream, or whatever the method works on. This way we can create more reusable and modular code.
 
 So far you saw examples of how it is done with `map` and `filter` - two methods from Scala collections. In the next chapters, we will discuss other methods which can be called in a similar fashion but which perform different operations.
+
+## Exercise 
+
+Imagine you went into an animal shelter with the intent to adopt a cat from there. 
+There are multiple cats there and you wish to adopt a cat with one of the following characteristics: 
+
+* The cat is calico.
+* The cat is fluffy.
+* The cat's breed is Abyssinian. 
+
+To make it easier to make a decision, you first find all cats which have at least one of the characteristics above.  
+Your task is to implement this filter. 

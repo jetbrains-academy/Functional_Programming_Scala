@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module external.linked.project.id="map [file:/home/ev/prj/Functional_Programming_Scala/Functions%20as%20Data/map/]" external.linked.project.path="$MODULE_DIR$/../../Functions as Data/map" external.root.project.path="$MODULE_DIR$/../.." external.system.id="SBT" type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_17">
+    <output url="file://$MODULE_DIR$/../../Functions as Data/map/target/scala-2.12/classes" />
+    <output-test url="file://$MODULE_DIR$/../../Functions as Data/map/target/scala-2.12/test-classes" />
+    <exclude-output />
+    <content url="file://$MODULE_DIR$/../../Functions as Data/map">
+      <sourceFolder url="file://$MODULE_DIR$/../../Functions as Data/map/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../../Functions as Data/map/test" isTestSource="true" />
+      <excludeFolder url="file://$MODULE_DIR$/../../Functions as Data/map/target" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="sbt: scala-sdk-2.12.17" level="project" />
+    <orderEntry type="library" name="sbt: org.scala-lang.modules:scala-xml_2.12:1.0.6:jar" level="project" />
+    <orderEntry type="library" name="sbt: org.scala-lang:scala-library:2.12.17:jar" level="project" />
+    <orderEntry type="library" name="sbt: org.scala-lang:scala-reflect:2.12.17:jar" level="project" />
+    <orderEntry type="library" name="sbt: org.scalactic:scalactic_2.12:3.0.5:jar" level="project" />
+    <orderEntry type="library" name="sbt: org.scalatest:scalatest_2.12:3.0.5:jar" level="project" />
+  </component>
+</module>

@@ -1,0 +1,22 @@
+type: edu
+custom_name: What is a function? How does it differ from a method?
+files:
+- name: src/FunctionsAndMethods.scala
+  visible: true
+  placeholders:
+  - offset: 226
+    length: 0
+    placeholder_text: /* TODO */
+  - offset: 395
+    length: 50
+    placeholder_text: /* TODO */
+  - offset: 616
+    length: 68
+    placeholder_text: /* TODO */
+  - offset: 947
+    length: 143
+    placeholder_text: /* TODO */
+- name: test/FunctionsAndMethodsSpec.scala
+  visible: false
+- name: build.sbt
+  visible: false

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/FP_Demo.iml" filepath="$PROJECT_DIR$/.idea/modules/FP_Demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/FP_Demo-build.iml" filepath="$PROJECT_DIR$/.idea/modules/FP_Demo-build.iml" group="sbt-build-modules" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/anonymous-functions.iml" filepath="$PROJECT_DIR$/.idea/modules/anonymous-functions.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/anonymous-functions-build.iml" filepath="$PROJECT_DIR$/.idea/modules/anonymous-functions-build.iml" group="sbt-build-modules" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/currying_functions.iml" filepath="$PROJECT_DIR$/.idea/modules/currying_functions.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/currying_functions-build.iml" filepath="$PROJECT_DIR$/.idea/modules/currying_functions-build.iml" group="sbt-build-modules" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/filter.iml" filepath="$PROJECT_DIR$/.idea/modules/filter.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/filter-build.iml" filepath="$PROJECT_DIR$/.idea/modules/filter-build.iml" group="sbt-build-modules" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/find.iml" filepath="$PROJECT_DIR$/.idea/modules/find.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/find-build.iml" filepath="$PROJECT_DIR$/.idea/modules/find-build.iml" group="sbt-build-modules" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/flatmap.iml" filepath="$PROJECT_DIR$/.idea/modules/flatmap.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/flatmap-build.iml" filepath="$PROJECT_DIR$/.idea/modules/flatmap-build.iml" group="sbt-build-modules" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/foldleft.iml" filepath="$PROJECT_DIR$/.idea/modules/foldleft.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/foldleft-build.iml" filepath="$PROJECT_DIR$/.idea/modules/foldleft-build.iml" group="sbt-build-modules" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/foreach.iml" filepath="$PROJECT_DIR$/.idea/modules/foreach.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/foreach-build.iml" filepath="$PROJECT_DIR$/.idea/modules/foreach-build.iml" group="sbt-build-modules" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/map.iml" filepath="$PROJECT_DIR$/.idea/modules/map.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/map-build.iml" filepath="$PROJECT_DIR$/.idea/modules/map-build.iml" group="sbt-build-modules" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/partial_fucntion_application.iml" filepath="$PROJECT_DIR$/.idea/modules/partial_fucntion_application.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/partial_fucntion_application-build.iml" filepath="$PROJECT_DIR$/.idea/modules/partial_fucntion_application-build.iml" group="sbt-build-modules" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/passing_functions_as_arguments.iml" filepath="$PROJECT_DIR$/.idea/modules/passing_functions_as_arguments.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/passing_functions_as_arguments-build.iml" filepath="$PROJECT_DIR$/.idea/modules/passing_functions_as_arguments-build.iml" group="sbt-build-modules" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/scala_collections_overview.iml" filepath="$PROJECT_DIR$/.idea/modules/scala_collections_overview.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/scala_collections_overview-build.iml" filepath="$PROJECT_DIR$/.idea/modules/scala_collections_overview-build.iml" group="sbt-build-modules" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/total_and_partial_functions.iml" filepath="$PROJECT_DIR$/.idea/modules/total_and_partial_functions.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/total_and_partial_functions-build.iml" filepath="$PROJECT_DIR$/.idea/modules/total_and_partial_functions-build.iml" group="sbt-build-modules" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/what_is_a_function.iml" filepath="$PROJECT_DIR$/.idea/modules/what_is_a_function.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/what_is_a_function-build.iml" filepath="$PROJECT_DIR$/.idea/modules/what_is_a_function-build.iml" group="sbt-build-modules" />
+    </modules>
+  </component>
+</project>

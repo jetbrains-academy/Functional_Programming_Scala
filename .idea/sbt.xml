@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ScalaSbtSettings">
+    <option name="linkedExternalProjectsSettings">
+      <SbtProjectSettings>
+        <option name="converterVersion" value="1" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/Functions as Data/Anonymous functions" />
+            <option value="$PROJECT_DIR$/Functions as Data/Anonymous functions/project" />
+            <option value="$PROJECT_DIR$/Functions as Data/currying_functions" />
+            <option value="$PROJECT_DIR$/Functions as Data/currying_functions/project" />
+            <option value="$PROJECT_DIR$/Functions as Data/filter" />
+            <option value="$PROJECT_DIR$/Functions as Data/filter/project" />
+            <option value="$PROJECT_DIR$/Functions as Data/find" />
+            <option value="$PROJECT_DIR$/Functions as Data/find/project" />
+            <option value="$PROJECT_DIR$/Functions as Data/flatMap" />
+            <option value="$PROJECT_DIR$/Functions as Data/flatMap/project" />
+            <option value="$PROJECT_DIR$/Functions as Data/foldLeft" />
+            <option value="$PROJECT_DIR$/Functions as Data/foldLeft/project" />
+            <option value="$PROJECT_DIR$/Functions as Data/foreach" />
+            <option value="$PROJECT_DIR$/Functions as Data/foreach/project" />
+            <option value="$PROJECT_DIR$/Functions as Data/map" />
+            <option value="$PROJECT_DIR$/Functions as Data/map/project" />
+            <option value="$PROJECT_DIR$/Functions as Data/partial_fucntion_application" />
+            <option value="$PROJECT_DIR$/Functions as Data/partial_fucntion_application/project" />
+            <option value="$PROJECT_DIR$/Functions as Data/passing_functions_as_arguments" />
+            <option value="$PROJECT_DIR$/Functions as Data/passing_functions_as_arguments/project" />
+            <option value="$PROJECT_DIR$/Functions as Data/scala_collections_overview" />
+            <option value="$PROJECT_DIR$/Functions as Data/scala_collections_overview/project" />
+            <option value="$PROJECT_DIR$/Functions as Data/total_and_partial_functions" />
+            <option value="$PROJECT_DIR$/Functions as Data/total_and_partial_functions/project" />
+            <option value="$PROJECT_DIR$/Functions as Data/what_is_a_function" />
+            <option value="$PROJECT_DIR$/Functions as Data/what_is_a_function/project" />
+            <option value="$PROJECT_DIR$/project" />
+          </set>
+        </option>
+        <option name="sbtVersion" value="1.8.0" />
+      </SbtProjectSettings>
+    </option>
+  </component>
+</project>

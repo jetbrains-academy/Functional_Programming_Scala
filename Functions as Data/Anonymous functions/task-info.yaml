@@ -1,8 +1,12 @@
 type: edu
 files:
-- name: src/Task.scala
-  visible: true
-- name: test/TestSpec.scala
-  visible: false
 - name: build.sbt
   visible: false
+- name: test/AnonymousFunctionsSpec.scala
+  visible: false
+- name: src/AnonymousFunctions.scala
+  visible: true
+  placeholders:
+  - offset: 125
+    length: 41
+    placeholder_text: /* TODO */

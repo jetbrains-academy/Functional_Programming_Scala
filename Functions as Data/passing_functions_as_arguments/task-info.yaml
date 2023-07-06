@@ -1,9 +1,9 @@
 type: edu
-custom_name: "Passing functions as arguments"
+custom_name: Passing functions as arguments
 files:
-- name: src/Task.scala
+- name: src/PassingFunctionsAsArguments.scala
   visible: true
-- name: test/TestSpec.scala
+- name: test/PassingFunctionsAsArgumentsSpec.scala
   visible: false
 - name: build.sbt
   visible: false
