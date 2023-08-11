@@ -30,5 +30,11 @@ val cats = Set(felix, snowball, garfield, shadow)
 cats.foreach { cat =>
   println(s"This ${cat.color} cat is called ${cat.name}")
 }
-
 ```
+
+## Exercise
+
+Use `foreach` to print short information about each cat. 
+Run the `main` function to see the result. 
+Feel free to experiment. 
+Can you implement a function to print out all characteristics of a cat, including `FurCharacteristics`? 

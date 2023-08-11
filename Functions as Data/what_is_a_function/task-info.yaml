@@ -5,15 +5,15 @@ files:
   visible: true
   placeholders:
   - offset: 226
-    length: 0
+    length: 44
     placeholder_text: /* TODO */
-  - offset: 395
+  - offset: 439
     length: 50
     placeholder_text: /* TODO */
-  - offset: 616
+  - offset: 660
     length: 68
     placeholder_text: /* TODO */
-  - offset: 947
+  - offset: 991
     length: 143
     placeholder_text: /* TODO */
 - name: test/FunctionsAndMethodsSpec.scala

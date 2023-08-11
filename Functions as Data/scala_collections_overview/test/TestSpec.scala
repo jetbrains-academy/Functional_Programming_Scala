@@ -1,8 +1,6 @@
-import org.scalatest.FunSuite
+import org.scalatest.matchers.should.Matchers
+import org.scalatest.refspec.RefSpec
 
-class TestSpec extends FunSuite {
-  //TODO: implement your test here
-  test("First test") {
-    assert(false, "Tests not implemented for the task")
-  }
+class TaskSpec extends RefSpec with Matchers {
+  def `test`(): Unit = { }
 }

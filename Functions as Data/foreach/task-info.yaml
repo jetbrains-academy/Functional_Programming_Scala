@@ -1,8 +1,22 @@
 type: edu
 files:
-- name: src/Task.scala
+- name: src/ForeachTask.scala
   visible: true
-- name: test/TestSpec.scala
+  placeholders:
+  - offset: 196
+    length: 49
+    placeholder_text: /* Use foreach to print short info about each cat */
+- name: test/ForeachTaskSpec.scala
   visible: false
 - name: build.sbt
   visible: false
+- name: src/Pattern.scala
+  visible: true
+- name: src/Breed.scala
+  visible: true
+- name: src/Cat.scala
+  visible: true
+- name: src/FurCharacteristic.scala
+  visible: true
+- name: src/Color.scala
+  visible: true

@@ -1,8 +1,31 @@
 type: edu
 files:
-- name: src/Task.scala
+- name: src/FindTask.scala
   visible: true
-- name: test/TestSpec.scala
+  placeholders:
+  - offset: 66
+    length: 98
+    placeholder_text: /* Check if the cat is white and fluffy */
+  - offset: 314
+    length: 32
+    placeholder_text: /* Find a cat which is white and fluffy */
+  - offset: 401
+    length: 94
+    placeholder_text: /* Find a cat which is abyssinian and calico */
+  - offset: 567
+    length: 37
+    placeholder_text: /* Find a cat which is abyssinian and calico */
+- name: test/FindTaskTest.scala
   visible: false
 - name: build.sbt
   visible: false
+- name: src/Pattern.scala
+  visible: true
+- name: src/Cat.scala
+  visible: true
+- name: src/Breed.scala
+  visible: true
+- name: src/FurCharacteristic.scala
+  visible: true
+- name: src/Color.scala
+  visible: true

@@ -1,7 +1,7 @@
 type: edu
-custom_name: "Currying functions"
+custom_name: Currying functions
 files:
-- name: src/Task.scala
+- name: src/CurryingTask.scala
   visible: true
 - name: test/TestSpec.scala
   visible: false

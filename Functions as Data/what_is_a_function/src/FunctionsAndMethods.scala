@@ -3,7 +3,7 @@ object FunctionsAndMethods {
   // Exercise: Define a function named `multiply1` that takes two integers and returns their product.def multiply1(x: Int, y: Int): Int = x * y
   // Use the `def` keyword.
   // [start: multiply1]
-
+  def multiply1(x: Int, y: Int): Int = x * y
   // [end]
 
   // Exercise: Define a function named `multiply2` that takes two integers and returns their product.

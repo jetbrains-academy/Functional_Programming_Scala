@@ -13,7 +13,7 @@ enum Color:
 class Cat(val color: Color)
 
 // We create our bag (a set) of cats. Each cat has a different color.
-val bagofCats = Set(Cat(Color.Black), Cat(Color.White), Cat(Color.Ginger))
+val bagOfCats = Set(Cat(Color.Black), Cat(Color.White), Cat(Color.Ginger))
 
 // We use the `filter` method to create a new bag of black cats.  
 val bagOfBlackCats = bagOfCats.filter(cat => cat.color == Color.Black)
@@ -34,12 +34,4 @@ So far you saw examples of how it is done with `map` and `filter` - two methods 
 
 ## Exercise 
 
-Imagine you went into an animal shelter with the intent to adopt a cat from there. 
-There are multiple cats there and you wish to adopt a cat with one of the following characteristics: 
-
-* The cat is calico.
-* The cat is fluffy.
-* The cat's breed is Abyssinian. 
-
-To make it easier to make a decision, you first find all cats which have at least one of the characteristics above.  
-Your task is to implement this filter. 
+Implement a function to check if the cat is white and pass it as an argument into `filter` to create a bag of white cats. 

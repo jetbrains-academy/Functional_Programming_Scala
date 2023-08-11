@@ -1,8 +1,18 @@
 type: edu
 files:
-- name: src/Task.scala
+- name: src/FlatMapTask.scala
   visible: true
 - name: test/TestSpec.scala
   visible: false
 - name: build.sbt
   visible: false
+- name: src/Color.scala
+  visible: true
+- name: src/Breed.scala
+  visible: true
+- name: src/Cat.scala
+  visible: true
+- name: src/FurCharacteristic.scala
+  visible: true
+- name: src/Pattern.scala
+  visible: true

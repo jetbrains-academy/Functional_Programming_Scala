@@ -1,7 +1,7 @@
 type: edu
-custom_name: "Partial function application"
+custom_name: Partial function application
 files:
-- name: src/Task.scala
+- name: src/PartialApplicationTask.scala
   visible: true
 - name: test/TestSpec.scala
   visible: false
