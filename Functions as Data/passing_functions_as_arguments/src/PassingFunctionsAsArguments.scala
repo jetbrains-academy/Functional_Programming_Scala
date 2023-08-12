@@ -7,16 +7,13 @@ object PassingFunctionsAsArguments {
 
   // We model a cat as a class. In this example we are interested only in color of the cat.
   class Cat(val color: Color)
-  
+
   // We create our bag (a set) of cats. Each cat has a different color.
   val bagOfCats = Set(Cat(Color.Black), Cat(Color.White), Cat(Color.Ginger))
 
-  def isCatBlack(cat: Cat): Boolean = cat.color == Color.Black
+  // Implement a function which checks if a cat is white go ginger
+  def isCatWhiteOrGinger(cat: Cat): Boolean = cat.color == Color.White || cat.color == Color.Ginger
 
-  // We use the `filter` method to create a new bag of black cats.
-  val bagOfBlackCats = bagOfCats.filter(isCatBlack)
-
-  def isCatWhite(cat: Cat): Boolean = cat.color == Color.White
-
-  val bagOfWhiteCats = bagOfCats.filter(isCatWhite)
+  // Pass the appropriate function into `filter` to create a bag of white cats.
+  val bagOfWhiteOrGingerCats = bagOfCats.filter(isCatWhiteOrGinger)
 }

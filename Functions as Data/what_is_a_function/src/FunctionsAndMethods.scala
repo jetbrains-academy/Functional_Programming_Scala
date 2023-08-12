@@ -1,15 +1,15 @@
 object FunctionsAndMethods {
 
-  // Exercise: Define a function named `multiply1` that takes two integers and returns their product.def multiply1(x: Int, y: Int): Int = x * y
+  // Exercise: Define a function named `multiplyAsFunction` that takes two integers and returns their product.
   // Use the `def` keyword.
-  // [start: multiply1]
-  def multiply1(x: Int, y: Int): Int = x * y
+  // [start: multiplyAsFunction]
+  def multiplyAsFunction(x: Int, y: Int): Int = x * y
   // [end]
 
-  // Exercise: Define a function named `multiply2` that takes two integers and returns their product.
+  // Exercise: Define a function named `multiplyAsValue` that takes two integers and returns their product.
   // Use the `val` keyword.
-  // [start: multiply2]
-  val multiply2: (Int, Int) => Int = (x, y) => x * y
+  // [start: multiplyAsValue]
+  val multiplyAsValue: (Int, Int) => Int = (x, y) => x * y
   // [end]
 
   // Exercise: Define a class named `Multiplier` with a method named `multiply` that takes two integers and returns their product.

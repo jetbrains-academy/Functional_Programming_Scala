@@ -1,8 +1,13 @@
-### `foreach`
+# `foreach`
 (`def foreach[U](f: A => U): Unit`)
-The `foreach` method works on any Scala collection that implements `Iterable`. It takes a function `f` and applies it to each collection element. We assume that `f` will perform side effects (we can ignore the `U` result type of the `f` function), and those side effects are what we are after. You can think of the `foreach` method as a simple for-loop that iterates over a collection of elements without changing them.
 
-Note that in functional programming, we try to avoid side effects. In this course, you will learn how to achieve the same results in a functional way, but at the beginning, `foreach` can be helpful to you for displaying the results of computations, debugging, and experimenting.
+The `foreach` method works on any Scala collection that implements `Iterable`. 
+It takes a function `f` and applies it to each collection element. 
+We assume that `f` performs side effects (we can ignore the `U` result type of the `f` function), and those side effects are what we are after. 
+You can think of the `foreach` method as a simple for-loop that iterates over a collection of elements without changing them.
+
+Note that in functional programming, we try to avoid side effects. 
+In this course, you will learn how to achieve the same results in a functional way, but at the beginning, `foreach` can be helpful to you for displaying the results of computations, debugging, and experimenting.
 
 In the following example, we will use `foreach` to print out the name and the color of each of our four cats.
 

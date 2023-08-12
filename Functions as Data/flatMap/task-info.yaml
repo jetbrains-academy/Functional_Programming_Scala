@@ -2,7 +2,12 @@ type: edu
 files:
 - name: src/FlatMapTask.scala
   visible: true
-- name: test/TestSpec.scala
+  placeholders:
+  - offset: 104
+    length: 39
+    placeholder_text: /* Use flatMap to aggregate all fur characteristics of all cats
+      */
+- name: test/FlatMapTaskSpec.scala
   visible: false
 - name: build.sbt
   visible: false

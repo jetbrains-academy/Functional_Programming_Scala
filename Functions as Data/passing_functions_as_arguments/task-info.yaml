@@ -4,11 +4,11 @@ files:
 - name: src/PassingFunctionsAsArguments.scala
   visible: true
   placeholders:
-  - offset: 626
-    length: 24
+  - offset: 515
+    length: 53
     placeholder_text: /* Check if the cat is white */
-  - offset: 692
-    length: 10
+  - offset: 698
+    length: 18
     placeholder_text: /* Pass a function as an argument */
 - name: test/PassingFunctionsAsArgumentsSpec.scala
   visible: false

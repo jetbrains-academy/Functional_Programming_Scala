@@ -1,6 +1,6 @@
 object FlatMapTask {
   def collectFurCharacteristics(bagOfCats: Set[Cat]): Set[FurCharacteristic] =
-    bagOfCats.flatMap(c => c.furCharacteristics)
+    bagOfCats.flatMap(_.furCharacteristics)
 
   val cat1 = Cat("Pumpkin", Breed.Abyssinian, Color.Orange, Pattern.SolidColor, Set(FurCharacteristic.SleekHaired))
   val cat2 = Cat("Cheetah", Breed.Bengal, Color.Cream, Pattern.Spots, Set(FurCharacteristic.ShortHaired))
@@ -17,6 +17,6 @@ object FlatMapTask {
 
   @main
   def main() =
-    collectFurCharacteristics(cats).foreach(c => println(c))
+    collectFurCharacteristics(cats).foreach(println)
 }
 

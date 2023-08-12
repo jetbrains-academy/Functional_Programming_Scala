@@ -4,16 +4,16 @@ files:
 - name: src/FunctionsAndMethods.scala
   visible: true
   placeholders:
-  - offset: 226
+  - offset: 211
     length: 44
     placeholder_text: /* TODO */
-  - offset: 439
+  - offset: 442
     length: 50
     placeholder_text: /* TODO */
-  - offset: 660
+  - offset: 663
     length: 68
     placeholder_text: /* TODO */
-  - offset: 991
+  - offset: 994
     length: 143
     placeholder_text: /* TODO */
 - name: test/FunctionsAndMethodsSpec.scala

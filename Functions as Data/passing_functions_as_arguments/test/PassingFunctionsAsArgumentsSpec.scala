@@ -1,15 +1,8 @@
-import org.scalatest.matchers.should.Matchers
-import org.scalatest.refspec.RefSpec
+import org.scalatest.funsuite.AnyFunSuite
+import PassingFunctionsAsArguments._
 
-class PassingFunctionsAsArgumentsSpec extends RefSpec with Matchers {
-  // Import the functions and classes from the exercise file
-  import PassingFunctionsAsArguments._
-
-  def `"bagOfBlackCats" should "only contain black cats"`(): Unit = {
-    assert(bagOfBlackCats.forall(x => x.color == Color.Black))
-  }
-
-  def `"bagOfWhiteCats" should "only contain white cats"`(): Unit = {
-    assert(bagOfWhiteCats.forall(x => x.color == Color.White))
+class PassingFunctionsAsArgumentsSpec extends AnyFunSuite {
+  test("bagOfWhiteOrGingerCats should only contain white cats") {
+    assert(bagOfWhiteOrGingerCats.forall(x => x.color == Color.White || x.color == Color.Ginger))
   }
 }

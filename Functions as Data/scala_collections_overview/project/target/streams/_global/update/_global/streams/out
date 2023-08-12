@@ -1,3 +1,3 @@
-[debug] not up to date. inChanged = true, force = false
+[debug] not up to date. inChanged = false, force = false
 [debug] Updating ProjectRef(uri("file:/home/ev/prj/Functional_Programming_Scala/Functions%20as%20Data/scala_collections_overview/project/"), "scala_collections_overview-build")...
 [debug] Done updating ProjectRef(uri("file:/home/ev/prj/Functional_Programming_Scala/Functions%20as%20Data/scala_collections_overview/project/"), "scala_collections_overview-build")

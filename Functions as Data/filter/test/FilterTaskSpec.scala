@@ -1,10 +1,7 @@
-import org.scalatest.matchers.should.Matchers
-import org.scalatest.refspec.RefSpec
+import org.scalatest.funsuite.AnyFunSuite
+import FilterTask._
 
-class FilterTaskSpec extends RefSpec with Matchers {
-  // Import the functions and classes from the exercise file
-  import FilterTask._
-
+class FilterTaskSpec extends AnyFunSuite {
   val cat1 = Cat("Pumpkin", Breed.Abyssinian, Color.Orange, Pattern.SolidColor, Set(FurCharacteristic.SleekHaired))
   val cat2 = Cat("Cheetah", Breed.Bengal, Color.Cream, Pattern.Spots, Set(FurCharacteristic.ShortHaired))
   val cat3 = Cat("Pepper", Breed.Metis, Color.Black, Pattern.Bicolor(BicolorSubtype.Tuxedo), Set(FurCharacteristic.Fluffy, FurCharacteristic.Plush))
@@ -18,19 +15,19 @@ class FilterTaskSpec extends RefSpec with Matchers {
 
   val cats = Set(cat1, cat2, cat3, cat4, cat5, cat6, cat7, cat8, cat9, cat10)
 
-  def `"isCatCalico" should "return true on calico cats"`(): Unit = {
-    cats.filter(isCatCalico) shouldEqual Set(cat5, cat9)
+  test("isCatCalico should return true on calico cats") {
+    assert(cats.filter(isCatCalico) == Set(cat5, cat9))
   }
 
-  def `"isCatAbyssinian" should "return true on Abyssinian cats"`(): Unit = {
-    cats.filter(isCatAbyssinian) shouldEqual Set(cat1, cat7)
+  test("isCatAbyssinian should return true on Abyssinian cats") {
+    assert(cats.filter(isCatAbyssinian) == Set(cat1, cat7))
   }
 
-  def `"isCatFluffy" should "return true on Fluffy cats"`(): Unit = {
-    cats.filter(isCatFluffy) shouldEqual Set(cat3, cat4, cat5, cat8)
+  test("isCatFluffy should return true on Fluffy cats") {
+    assert(cats.filter(isCatFluffy) == Set(cat3, cat4, cat5, cat8))
   }
 
-  def `"filterCats" should "return cats which are calico, fluffy or Abyssinian"`(): Unit = {
-    filterCats(cats) shouldEqual Set(cat1, cat3, cat4, cat5, cat7, cat8, cat9)
+  test("filterCats should return cats which are calico, fluffy or Abyssinian") {
+    assert(filterCats(cats) == Set(cat1, cat3, cat4, cat5, cat7, cat8, cat9))
   }
 }

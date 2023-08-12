@@ -1,13 +1,13 @@
 object FoldLeftTask {
   def computeAverage(numbers: List[Int]): Double =
     val sum = numbers.foldLeft(0){ (acc, n) => acc + n }
-    sum.toDouble / numbers.length
+    if (numbers.length <= 0) 0 else sum.toDouble/numbers.length
 
   def maximum(numbers: List[Int]) =
-    numbers.foldLeft(Int.MinValue)((acc, elem) => if (elem > acc) elem else acc)
+    numbers.foldLeft(Int.MinValue){ (acc, elem) => if (elem > acc) elem else acc }
 
-  def reverse[A](xs: List[A]) =
-    xs.foldLeft(List.empty[A]){ (acc, elem) => elem :: acc }
+  def reverse[A](numbers: List[A]) =
+    numbers.foldLeft(List.empty[A]){ (acc, elem) => elem :: acc }
 
   @main
   def main() = {

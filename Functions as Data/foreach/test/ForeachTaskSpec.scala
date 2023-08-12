@@ -1,6 +1,6 @@
-import org.scalatest.matchers.should.Matchers
-import org.scalatest.refspec.RefSpec
+import org.scalatest.funsuite.AnyFunSuite
+import ForeachTask._
 
-class ForeachTaskSpec extends RefSpec with Matchers {
-  def `test`(): Unit = { }
+class ForeachTaskSpec extends AnyFunSuite {
+
 }

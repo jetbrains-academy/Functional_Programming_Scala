@@ -3,11 +3,11 @@ files:
 - name: src/MapTask.scala
   visible: true
   placeholders:
-  - offset: 69
+  - offset: 138
     length: 43
     placeholder_text: /* Use `map` to convert each fur characteristic into a string
       */
-- name: test/TestSpec.scala
+- name: test/MapTaskSpec.scala
   visible: false
 - name: build.sbt
   visible: false

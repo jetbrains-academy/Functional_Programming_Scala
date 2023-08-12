@@ -1,9 +1,11 @@
 object MapTask {
+  // Transform fur characteristics of the cat into a list of strings
   def furCharacteristicsDescription(cat: Cat) =
     cat.furCharacteristics.map(x => x.toString)
 
+  // Here we output the strings created by `furCharacteristicsDescription` function.
   def outputFurCharacteristics(cat: Cat) =
-    furCharacteristicsDescription(cat).foreach(d => println(d))
+    furCharacteristicsDescription(cat).foreach(println)
 
   val cat1 = Cat("Pumpkin", Breed.Abyssinian, Color.Orange, Pattern.SolidColor, Set(FurCharacteristic.SleekHaired))
   val cat2 = Cat("Cheetah", Breed.Bengal, Color.Cream, Pattern.Spots, Set(FurCharacteristic.ShortHaired))

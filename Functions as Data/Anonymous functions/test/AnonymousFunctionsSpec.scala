@@ -1,14 +1,12 @@
-import org.scalatest.matchers.should.Matchers
-import org.scalatest.refspec.RefSpec
+import org.scalatest.funsuite.AnyFunSuite
+import AnonymousFunctions._
 
-class AnonymousFunctionsSpec extends RefSpec with Matchers {
-  // Import the functions and classes from the exercise file
-  import AnonymousFunctions._
-
-  def `"multiplyAndOffsetList" should "multiply and offset every element of the list when calling the multiplyAndOffsetList function"`(): Unit = {
-    multiplyAndOffsetList(3, 4, List(1, 2, 3, 4)) shouldEqual List(7, 10, 13, 16)
+class AnonymousFunctionsSpec extends AnyFunSuite {
+  test("multiplyAndOffsetList should multiply and offset every element of the list when calling the multiplyAndOffsetList function") {
+    assert(multiplyAndOffsetList(3, 4, List(1, 2, 3, 4)) == List(7, 10, 13, 16))
   }
-  def `"multiplyAndOffsetList" should "return empty list when applied to the empty list"`(): Unit = {
-    multiplyAndOffsetList(13, 42, List()) shouldEqual List()
+
+  test("multiplyAndOffsetList should return empty list when applied to the empty list") {
+    assert(multiplyAndOffsetList(3, 4, List()) == List())
   }
 }

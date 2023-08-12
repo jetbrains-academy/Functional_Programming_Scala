@@ -1,10 +1,7 @@
-import org.scalatest.matchers.should.Matchers
-import org.scalatest.refspec.RefSpec
+import org.scalatest.funsuite.AnyFunSuite
+import FindTask._
 
-class FindTaskSpec extends RefSpec with Matchers {
-  // Import the functions and classes from the exercise file
-  import FindTask._
-
+class FindTaskSpec extends AnyFunSuite {
   val cat1 = Cat("Pumpkin", Breed.Abyssinian, Color.Orange, Pattern.SolidColor, Set(FurCharacteristic.SleekHaired))
   val cat2 = Cat("Cheetah", Breed.Bengal, Color.Cream, Pattern.Spots, Set(FurCharacteristic.ShortHaired))
   val cat3 = Cat("Pepper", Breed.Metis, Color.Black, Pattern.Bicolor(BicolorSubtype.Tuxedo), Set(FurCharacteristic.Fluffy, FurCharacteristic.Plush))
@@ -18,7 +15,7 @@ class FindTaskSpec extends RefSpec with Matchers {
 
   val cats = Set(cat1, cat2, cat3, cat4, cat5, cat6, cat7, cat8, cat9, cat10)
 
-  def `"findWhiteAndFluffyCat" should "return a cat which is white and fluffy"`(): Unit = {
+  test("findWhiteAndFluffyCat should return a cat which is white and fluffy") {
     val whiteAndFluffyCat = findWhiteAndFluffyCat(cats)
     whiteAndFluffyCat match {
       case Some(cat) => assert(Set(cat4, cat8).contains(cat))
@@ -26,7 +23,7 @@ class FindTaskSpec extends RefSpec with Matchers {
     }
   }
 
-  def `"findCalicoAndAbyssinian" should "return None"`(): Unit = {
-    findCalicoAndAbyssinian(cats) shouldEqual None
+  test("findCalicoAndPersian should return None") {
+    assert(findCalicoAndPersian(cats) == None)
   }
 }

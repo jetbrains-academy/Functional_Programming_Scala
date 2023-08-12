@@ -48,3 +48,7 @@ def catToCars(cat: Cat): List[Car] =
 // And we use the flatMap method and the catToCars function to create a new list of all cars of all colors
 val cars: List[Car] = cats.flatMap(catToCars)
 ```
+
+## Exercise 
+
+Use `flatMap` to implement `collectFurCharacteristics` which aggregates all fur characteristics of the cats in a single set. 

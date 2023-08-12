@@ -8,5 +8,5 @@ files:
   visible: true
   placeholders:
   - offset: 125
-    length: 41
+    length: 36
     placeholder_text: /* TODO */

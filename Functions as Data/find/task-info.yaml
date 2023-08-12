@@ -6,14 +6,14 @@ files:
   - offset: 66
     length: 98
     placeholder_text: /* Check if the cat is white and fluffy */
-  - offset: 314
+  - offset: 234
     length: 32
     placeholder_text: /* Find a cat which is white and fluffy */
-  - offset: 401
-    length: 94
+  - offset: 318
+    length: 91
     placeholder_text: /* Find a cat which is abyssinian and calico */
-  - offset: 567
-    length: 37
+  - offset: 478
+    length: 34
     placeholder_text: /* Find a cat which is abyssinian and calico */
 - name: test/FindTaskTest.scala
   visible: false
