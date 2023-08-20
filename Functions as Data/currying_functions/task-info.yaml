@@ -3,7 +3,14 @@ custom_name: Currying functions
 files:
 - name: src/CurryingTask.scala
   visible: true
-- name: test/TestSpec.scala
+  placeholders:
+  - offset: 158
+    length: 30
+    placeholder_text: /* Put the arguments of the function here */
+  - offset: 195
+    length: 12
+    placeholder_text: /* Put implementation here */
+- name: test/CurryingTaskSpec.scala
   visible: false
 - name: build.sbt
   visible: false

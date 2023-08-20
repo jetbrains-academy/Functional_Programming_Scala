@@ -1,4 +1,6 @@
 object CurryingTask {
+  // Implement a function `filterList` which can be carried.
+  // You can use `filter` method in the implementation.
   def filterList[A](f: A => Boolean)(xs: List[A]) =
     xs.filter(f)
 
@@ -17,3 +19,4 @@ object CurryingTask {
       .foreach(println)
   }
 }
+

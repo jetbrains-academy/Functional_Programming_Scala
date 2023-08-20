@@ -1,5 +1,4 @@
 object PartialFunctionExample extends App {
-  // Define a partial function to handle division by zero
   val division: PartialFunction[(Int, Int), Double] = {
     case (x, y) if y != 0 => x.toDouble / y
   }

@@ -1,4 +1,6 @@
 object PartialApplicationTask {
+  // Implement a function `filterList` which then can be partially applied.
+  // You can use `filter` method in the implementation.
   def filterList[A](f: A => Boolean, xs: List[A]) =
     xs.filter(f)
 

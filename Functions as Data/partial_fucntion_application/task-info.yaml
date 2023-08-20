@@ -3,7 +3,14 @@ custom_name: Partial function application
 files:
 - name: src/PartialApplicationTask.scala
   visible: true
-- name: test/TestSpec.scala
+  placeholders:
+  - offset: 184
+    length: 28
+    placeholder_text: /* Put the arguments of the function here */
+  - offset: 220
+    length: 12
+    placeholder_text: /* Put the implementation here */
+- name: test/PartialApplicationTaskSpec.scala
   visible: false
 - name: build.sbt
   visible: false
