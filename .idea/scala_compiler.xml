@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ScalaCompilerConfiguration">
-    <profile name="sbt 1" modules="FP_Demo,anonymous-functions,anonymous_functions,currying_functions,filter,find,flatmap,foldleft,foreach,functional_programming_scala_2168,functions_returning_functions,map,partial_fucntion_application,passing_functions_as_arguments,scala_collections_overview,task1,task8,total_and_partial_functions,what_is_a_function" />
+    <profile name="sbt 1" modules="FP_Demo,a-custom-unapply-method,anonymous-functions,anonymous_functions,case-objects,case_class,currying_functions,destructuring,enums,filter,find,flatmap,foldleft,foreach,functional_programming_scala_2168,functions_returning_functions,map,partial_fucntion_application,passing_functions_as_arguments,pattern-matching,scala_collections_overview,sealed-traits-hierarchies,smart-constructors-and-the-apply-method,task1,task8,the-newtype-pattern,total_and_partial_functions,what_is_a_function" />
   </component>
 </project>

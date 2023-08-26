@@ -10,4 +10,5 @@ summary: |-
 programming_language: Scala
 environment: sbt
 content:
-- Functions as Data
+  - Functions as Data
+  - Pattern Matching

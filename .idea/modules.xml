@@ -4,8 +4,18 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/FP_Demo.iml" filepath="$PROJECT_DIR$/.idea/modules/FP_Demo.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/FP_Demo-build.iml" filepath="$PROJECT_DIR$/.idea/modules/FP_Demo-build.iml" group="sbt-build-modules" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/a-custom-unapply-method.iml" filepath="$PROJECT_DIR$/.idea/modules/a-custom-unapply-method.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/a-custom-unapply-method-build.iml" filepath="$PROJECT_DIR$/.idea/modules/a-custom-unapply-method-build.iml" group="sbt-build-modules" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/anonymous_functions.iml" filepath="$PROJECT_DIR$/.idea/modules/anonymous_functions.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/anonymous_functions-build.iml" filepath="$PROJECT_DIR$/.idea/modules/anonymous_functions-build.iml" group="sbt-build-modules" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/case-objects.iml" filepath="$PROJECT_DIR$/.idea/modules/case-objects.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/case-objects-build.iml" filepath="$PROJECT_DIR$/.idea/modules/case-objects-build.iml" group="sbt-build-modules" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/case_class.iml" filepath="$PROJECT_DIR$/.idea/modules/case_class.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/case_class-build.iml" filepath="$PROJECT_DIR$/.idea/modules/case_class-build.iml" group="sbt-build-modules" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/destructuring.iml" filepath="$PROJECT_DIR$/.idea/modules/destructuring.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/destructuring-build.iml" filepath="$PROJECT_DIR$/.idea/modules/destructuring-build.iml" group="sbt-build-modules" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/enums.iml" filepath="$PROJECT_DIR$/.idea/modules/enums.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/enums-build.iml" filepath="$PROJECT_DIR$/.idea/modules/enums-build.iml" group="sbt-build-modules" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/filter.iml" filepath="$PROJECT_DIR$/.idea/modules/filter.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/filter-build.iml" filepath="$PROJECT_DIR$/.idea/modules/filter-build.iml" group="sbt-build-modules" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/find.iml" filepath="$PROJECT_DIR$/.idea/modules/find.iml" />
@@ -26,7 +36,13 @@
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/passing_functions_as_arguments-build.iml" filepath="$PROJECT_DIR$/.idea/modules/passing_functions_as_arguments-build.iml" group="sbt-build-modules" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/scala_collections_overview.iml" filepath="$PROJECT_DIR$/.idea/modules/scala_collections_overview.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/scala_collections_overview-build.iml" filepath="$PROJECT_DIR$/.idea/modules/scala_collections_overview-build.iml" group="sbt-build-modules" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/sealed-traits-hierarchies.iml" filepath="$PROJECT_DIR$/.idea/modules/sealed-traits-hierarchies.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/sealed-traits-hierarchies-build.iml" filepath="$PROJECT_DIR$/.idea/modules/sealed-traits-hierarchies-build.iml" group="sbt-build-modules" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/smart-constructors-and-the-apply-method.iml" filepath="$PROJECT_DIR$/.idea/modules/smart-constructors-and-the-apply-method.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/smart-constructors-and-the-apply-method-build.iml" filepath="$PROJECT_DIR$/.idea/modules/smart-constructors-and-the-apply-method-build.iml" group="sbt-build-modules" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/task8-build.iml" filepath="$PROJECT_DIR$/.idea/modules/task8-build.iml" group="sbt-build-modules" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/the-newtype-pattern.iml" filepath="$PROJECT_DIR$/.idea/modules/the-newtype-pattern.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/the-newtype-pattern-build.iml" filepath="$PROJECT_DIR$/.idea/modules/the-newtype-pattern-build.iml" group="sbt-build-modules" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/total_and_partial_functions.iml" filepath="$PROJECT_DIR$/.idea/modules/total_and_partial_functions.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/total_and_partial_functions-build.iml" filepath="$PROJECT_DIR$/.idea/modules/total_and_partial_functions-build.iml" group="sbt-build-modules" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/what_is_a_function.iml" filepath="$PROJECT_DIR$/.idea/modules/what_is_a_function.iml" />

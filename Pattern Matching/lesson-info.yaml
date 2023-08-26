@@ -1,0 +1,10 @@
+content:
+  - Pattern Matching
+  - case_class
+  - Smart Constructors and the apply Method
+  - Enums
+  - Sealed Traits Hierarchies
+  - Case Objects
+  - Destructuring
+  - A Custom unapply Method
+  - The Newtype Pattern
