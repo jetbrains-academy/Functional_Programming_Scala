@@ -1,7 +1,7 @@
-# Total and partial functions
+# Total and Partial Functions
 We already discussed how a function could be pure or impure. 
 A pure function does not produce side effects but works only on its arguments and produces a result. 
-An impure function, in contrast, may have side effects and take input from the context other than its arguments.
+An impure function, by contrast, may have side effects and take input from the context other than its arguments.
 
 This chapter introduces another important distinction: a function can be total or partial. 
 A total function is a function that is defined for every input value of its domain. 
@@ -11,14 +11,14 @@ A partial function is a function that is defined only for a subset of its domain
 In other words, it might not provide a valid output value for some input values. 
 When a partial function is applied to an undefined input value, it may throw an exception, produce a runtime error, or remain unevaluated.
 
-For example consider these two functions:
+For example, consider these two functions:
 ```scala
 def multiply(x: Int, y: Int): Int = x * y
 def divide(x: Int, y: Int): Int = x / y
 ```
 The first one, `multiply`, is a total function: we can provide it with any two integers, which will return a valid output. 
-In contrast, the `divide` function is partial: if we provide 0 as the second argument, the function will throw `java.lang.ArithmeticException` because we have just tried to divide by zero. 
-(Not to mention, if the result of the division is not an integer, `divide` will round it down).
+In contrast, the `divide` function is partial: if we provide 0 as the second argument, the function throws `java.lang.ArithmeticException` because we have just tried to divide by zero. 
+Not to mention, if the result of the division is not an integer, `divide` will round it down.
 
 Now you may wonder, why use partial functions at all? 
 Shouldn't we always try to write total functions? 

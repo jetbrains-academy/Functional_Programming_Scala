@@ -1,0 +1,16 @@
+type: edu
+custom_name: Functions Returning Functions
+files:
+  - name: src/FunctionsReturningFunctionsTask.scala
+    visible: true
+    placeholders:
+      - offset: 187
+        length: 30
+        placeholder_text: /* Put the arguments of the function here */
+      - offset: 224
+        length: 12
+        placeholder_text: /* Put implementation here */
+  - name: test/FunctionsReturningFunctionsTaskSpec.scala
+    visible: false
+  - name: build.sbt
+    visible: false

@@ -8,10 +8,8 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
-            <option value="$PROJECT_DIR$/Functions as Data/Anonymous functions" />
-            <option value="$PROJECT_DIR$/Functions as Data/Anonymous functions/project" />
-            <option value="$PROJECT_DIR$/Functions as Data/currying_functions" />
-            <option value="$PROJECT_DIR$/Functions as Data/currying_functions/project" />
+            <option value="$PROJECT_DIR$/Functions as Data/anonymous_functions" />
+            <option value="$PROJECT_DIR$/Functions as Data/anonymous_functions/project" />
             <option value="$PROJECT_DIR$/Functions as Data/filter" />
             <option value="$PROJECT_DIR$/Functions as Data/filter/project" />
             <option value="$PROJECT_DIR$/Functions as Data/find" />
@@ -22,6 +20,8 @@
             <option value="$PROJECT_DIR$/Functions as Data/foldLeft/project" />
             <option value="$PROJECT_DIR$/Functions as Data/foreach" />
             <option value="$PROJECT_DIR$/Functions as Data/foreach/project" />
+            <option value="$PROJECT_DIR$/Functions as Data/functions_returning_functions" />
+            <option value="$PROJECT_DIR$/Functions as Data/functions_returning_functions/project" />
             <option value="$PROJECT_DIR$/Functions as Data/map" />
             <option value="$PROJECT_DIR$/Functions as Data/map/project" />
             <option value="$PROJECT_DIR$/Functions as Data/partial_fucntion_application" />

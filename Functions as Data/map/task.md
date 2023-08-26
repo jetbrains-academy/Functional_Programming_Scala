@@ -1,5 +1,6 @@
 # `map`
-(`def map[B](f: A => B): Iterable[B]`)
+
+`def map[B](f: A => B): Iterable[B]`
 
 The `map` method works on any Scala collection that implements `Iterable`. 
 It takes a function `f` and applies it to each collection element, just as `foreach` - but in the case of `map`, we are interested in the results of `f`, not its side effects. 

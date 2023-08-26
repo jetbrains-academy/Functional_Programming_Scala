@@ -1,5 +1,6 @@
 # `find`
-(`def find(pred: A => Boolean): Option[A]`)
+
+`def find(pred: A => Boolean): Option[A]`
 
 But imagine that instead of filtering for all black cats, we are happy with only one, no matter which. 
 We still can use `filter` for that and then take the first cat from the resulting collection, but `filter` will iterate through the whole original collection of cats, no matter how big.

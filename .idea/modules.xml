@@ -4,10 +4,8 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/FP_Demo.iml" filepath="$PROJECT_DIR$/.idea/modules/FP_Demo.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/FP_Demo-build.iml" filepath="$PROJECT_DIR$/.idea/modules/FP_Demo-build.iml" group="sbt-build-modules" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/anonymous-functions.iml" filepath="$PROJECT_DIR$/.idea/modules/anonymous-functions.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/anonymous-functions-build.iml" filepath="$PROJECT_DIR$/.idea/modules/anonymous-functions-build.iml" group="sbt-build-modules" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/currying_functions.iml" filepath="$PROJECT_DIR$/.idea/modules/currying_functions.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/currying_functions-build.iml" filepath="$PROJECT_DIR$/.idea/modules/currying_functions-build.iml" group="sbt-build-modules" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/anonymous_functions.iml" filepath="$PROJECT_DIR$/.idea/modules/anonymous_functions.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/anonymous_functions-build.iml" filepath="$PROJECT_DIR$/.idea/modules/anonymous_functions-build.iml" group="sbt-build-modules" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/filter.iml" filepath="$PROJECT_DIR$/.idea/modules/filter.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/filter-build.iml" filepath="$PROJECT_DIR$/.idea/modules/filter-build.iml" group="sbt-build-modules" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/find.iml" filepath="$PROJECT_DIR$/.idea/modules/find.iml" />
@@ -18,6 +16,8 @@
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/foldleft-build.iml" filepath="$PROJECT_DIR$/.idea/modules/foldleft-build.iml" group="sbt-build-modules" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/foreach.iml" filepath="$PROJECT_DIR$/.idea/modules/foreach.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/foreach-build.iml" filepath="$PROJECT_DIR$/.idea/modules/foreach-build.iml" group="sbt-build-modules" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/functions_returning_functions.iml" filepath="$PROJECT_DIR$/.idea/modules/functions_returning_functions.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/functions_returning_functions-build.iml" filepath="$PROJECT_DIR$/.idea/modules/functions_returning_functions-build.iml" group="sbt-build-modules" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/map.iml" filepath="$PROJECT_DIR$/.idea/modules/map.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/map-build.iml" filepath="$PROJECT_DIR$/.idea/modules/map-build.iml" group="sbt-build-modules" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/partial_fucntion_application.iml" filepath="$PROJECT_DIR$/.idea/modules/partial_fucntion_application.iml" />

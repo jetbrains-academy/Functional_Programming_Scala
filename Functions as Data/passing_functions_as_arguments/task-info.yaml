@@ -1,5 +1,5 @@
 type: edu
-custom_name: Passing functions as arguments
+custom_name: Passing Functions as Arguments
 files:
 - name: src/PassingFunctionsAsArguments.scala
   visible: true

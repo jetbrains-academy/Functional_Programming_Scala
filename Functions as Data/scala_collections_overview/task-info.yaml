@@ -1,5 +1,5 @@
 type: edu
-custom_name: Scala collections overview
+custom_name: Scala Collections Overview
 files:
 - name: test/TestSpec.scala
   visible: false

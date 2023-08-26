@@ -1,5 +1,5 @@
 type: edu
-custom_name: Partial function application
+custom_name: Partial Function Application
 files:
 - name: src/PartialApplicationTask.scala
   visible: true

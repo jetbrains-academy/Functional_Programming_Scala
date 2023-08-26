@@ -1,5 +1,5 @@
-### `flatMap`
-(`def flatMap[B](f: A => IterableOnce[B]): Iterable[B]`)
+# `flatMap`
+`def flatMap[B](f: A => IterableOnce[B]): Iterable[B]`
 
 You can think of `flatMap` as a generalized version of the `map` method. The function `f` used by `flatMap` takes every element of the original collection, but instead of returning just one new element of a different (or the same) type, it produces a whole new collection of new elements. Those collections are then "flattened" by the `flatMap` method, which results in just one big collection being returned.
 

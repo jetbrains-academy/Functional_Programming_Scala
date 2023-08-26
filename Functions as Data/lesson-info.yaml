@@ -1,14 +1,14 @@
 content:
-- what_is_a_function
-- Anonymous functions
-- passing_functions_as_arguments
-- scala_collections_overview
-- filter
-- find
-- foreach
-- map
-- flatMap
-- foldLeft
-- total_and_partial_functions
-- currying_functions
-- partial_fucntion_application
+  - what_is_a_function
+  - anonymous_functions
+  - passing_functions_as_arguments
+  - scala_collections_overview
+  - filter
+  - find
+  - foreach
+  - map
+  - flatMap
+  - foldLeft
+  - total_and_partial_functions
+  - functions_returning_functions
+  - partial_fucntion_application

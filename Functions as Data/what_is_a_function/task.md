@@ -29,7 +29,7 @@ In the first case, we define a function with the `def` keyword.
 After def comes the function's name, then the list of arguments with their types, then the result type of the function, and then the function's calculations, that is, `x + y`.
 
 Compare it with the second way to define a function, with the `val` keyword, which we use as well for all other kinds of data. 
-Here, after val comes the function's name, then the type of the function, `(Int, Int) => Int`, 
+Here, after `val` comes the function's name, then the type of the function, `(Int, Int) => Int`, 
 which consists of both the argument types and the result type, then come the arguments, this time without the types, and then the implementation. 
 You will probably find the first way to define functions as more readable, and you will use it more often. 
 But it is important to remember that in Scala, a function is data, just like integers, strings, and instances of case classes — and that it can be defined as data if needed.

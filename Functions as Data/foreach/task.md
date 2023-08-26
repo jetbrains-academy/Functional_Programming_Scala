@@ -1,5 +1,6 @@
 # `foreach`
-(`def foreach[U](f: A => U): Unit`)
+
+`def foreach[U](f: A => U): Unit`
 
 The `foreach` method works on any Scala collection that implements `Iterable`. 
 It takes a function `f` and applies it to each collection element. 
