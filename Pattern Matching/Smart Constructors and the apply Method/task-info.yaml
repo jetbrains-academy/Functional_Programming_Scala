@@ -1,8 +1,21 @@
 type: edu
 files:
-  - name: src/Task.scala
-    visible: true
-  - name: test/TestSpec.scala
+  - name: test/SmartConstructorsTaskSpec.scala
     visible: false
   - name: build.sbt
     visible: false
+  - name: src/SmartConstructorsTask.scala
+    visible: true
+    placeholders:
+      - offset: 42
+        length: 7
+        placeholder_text: /* prevent the user from by-passing the smart constructor */
+      - offset: 212
+        length: 10
+        placeholder_text: /* pick a string to use as a default value for a breed */
+      - offset: 246
+        length: 28
+        placeholder_text: /* pick a string to use as a devalue value for an owner */
+      - offset: 481
+        length: 75
+        placeholder_text: /* implement the method */

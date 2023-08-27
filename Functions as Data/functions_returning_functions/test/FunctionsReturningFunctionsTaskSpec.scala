@@ -2,7 +2,7 @@ import org.scalatest.funsuite.AnyFunSuite
 import FunctionsReturningFunctionsTask._
 
 class FunctionsReturningFunctionsTaskSpec extends AnyFunSuite {
-  test("It should be possible to curry `filterList`") {
+  test("It should be possible to pass one argument to `filterList`") {
     val numbers = List(1,2,3,4,5,6)
     def isEven(x: Int) = x % 2 == 0
     val evenElements = filterList[Int](isEven)
