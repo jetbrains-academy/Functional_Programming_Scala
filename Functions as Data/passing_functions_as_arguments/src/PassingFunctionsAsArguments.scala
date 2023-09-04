@@ -1,4 +1,4 @@
-object PassingFunctionsAsArguments {
+object PassingFunctionsAsArguments:
   // We model colors as enums.
   enum Color:
     case Black
@@ -16,4 +16,3 @@ object PassingFunctionsAsArguments {
 
   // Pass the appropriate function into `filter` to create a bag of white cats.
   val bagOfWhiteOrGingerCats = bagOfCats.filter(isCatWhiteOrGinger)
-}

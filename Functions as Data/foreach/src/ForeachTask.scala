@@ -1,10 +1,10 @@
-object ForeachTask {
+object ForeachTask:
   def shortInfo(cat: Cat): String =
     s"The cat named ${cat.name} is ${cat.breed} and has ${cat.primaryColor} fur"
 
-  def outputShortInfo(bagOfCats: Set[Cat]): Unit = {
+  // Use foreach to print short info about each cat
+  def outputShortInfo(bagOfCats: Iterable[Cat]): Unit =
     bagOfCats.foreach(cat => println(shortInfo(cat)))
-  }
 
   val cat1 = Cat("Pumpkin", Breed.Abyssinian, Color.Orange, Pattern.SolidColor, Set(FurCharacteristic.SleekHaired))
   val cat2 = Cat("Cheetah", Breed.Bengal, Color.Cream, Pattern.Spots, Set(FurCharacteristic.ShortHaired))
@@ -22,5 +22,4 @@ object ForeachTask {
   @main
   def main() =
     ForeachTask.outputShortInfo(cats)
-}
 

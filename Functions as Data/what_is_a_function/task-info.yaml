@@ -1,22 +1,22 @@
 type: edu
 custom_name: What is a Function?
 files:
-- name: src/FunctionsAndMethods.scala
-  visible: true
-  placeholders:
-  - offset: 204
-    length: 51
-    placeholder_text: /* TODO */
-  - offset: 436
-    length: 56
-    placeholder_text: /* TODO */
-  - offset: 663
-    length: 68
-    placeholder_text: /* TODO */
-  - offset: 994
-    length: 143
-    placeholder_text: /* TODO */
-- name: test/FunctionsAndMethodsSpec.scala
-  visible: false
-- name: build.sbt
-  visible: false
+  - name: src/FunctionsAndMethods.scala
+    visible: true
+    placeholders:
+      - offset: 203
+        length: 51
+        placeholder_text: /* TODO */
+      - offset: 435
+        length: 56
+        placeholder_text: /* TODO */
+      - offset: 662
+        length: 63
+        placeholder_text: /* TODO */
+      - offset: 988
+        length: 138
+        placeholder_text: /* TODO */
+  - name: test/FunctionsAndMethodsSpec.scala
+    visible: false
+  - name: build.sbt
+    visible: false

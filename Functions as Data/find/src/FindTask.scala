@@ -1,4 +1,4 @@
-object FindTask {
+object FindTask:
   def isWhiteAndFluffy(cat: Cat): Boolean =
     cat.primaryColor == Color.White &&
       cat.furCharacteristics.contains(FurCharacteristic.Fluffy)
@@ -12,4 +12,3 @@ object FindTask {
 
   def findCalicoAndPersian(bagOfCats: Set[Cat]): Option[Cat] =
     bagOfCats.find(isCalicoAndPersian)
-}

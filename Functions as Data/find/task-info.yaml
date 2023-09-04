@@ -1,31 +1,31 @@
 type: edu
 files:
-- name: src/FindTask.scala
-  visible: true
-  placeholders:
-  - offset: 66
-    length: 98
-    placeholder_text: /* Check if the cat is white and fluffy */
-  - offset: 234
-    length: 32
-    placeholder_text: /* Find a cat which is white and fluffy */
-  - offset: 318
-    length: 91
-    placeholder_text: /* Find a cat which is abyssinian and calico */
-  - offset: 478
-    length: 34
-    placeholder_text: /* Find a cat which is abyssinian and calico */
-- name: test/FindTaskTest.scala
-  visible: false
-- name: build.sbt
-  visible: false
-- name: src/Pattern.scala
-  visible: true
-- name: src/Cat.scala
-  visible: true
-- name: src/Breed.scala
-  visible: true
-- name: src/FurCharacteristic.scala
-  visible: true
-- name: src/Color.scala
-  visible: true
+  - name: src/FindTask.scala
+    visible: true
+    placeholders:
+      - offset: 65
+        length: 98
+        placeholder_text: /* Check if the cat is white and fluffy */
+      - offset: 233
+        length: 32
+        placeholder_text: /* Find a cat which is white and fluffy */
+      - offset: 317
+        length: 91
+        placeholder_text: /* Find a cat which is abyssinian and calico */
+      - offset: 477
+        length: 34
+        placeholder_text: /* Find a cat which is abyssinian and calico */
+  - name: test/FindTaskTest.scala
+    visible: false
+  - name: build.sbt
+    visible: false
+  - name: src/Pattern.scala
+    visible: true
+  - name: src/Cat.scala
+    visible: true
+  - name: src/Breed.scala
+    visible: true
+  - name: src/FurCharacteristic.scala
+    visible: true
+  - name: src/Color.scala
+    visible: true

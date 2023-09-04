@@ -1,23 +1,23 @@
 type: edu
 files:
-- name: src/MapTask.scala
-  visible: true
-  placeholders:
-  - offset: 138
-    length: 43
-    placeholder_text: /* Use `map` to convert each fur characteristic into a string
-      */
-- name: test/MapTaskSpec.scala
-  visible: false
-- name: build.sbt
-  visible: false
-- name: src/FurCharacteristic.scala
-  visible: true
-- name: src/Color.scala
-  visible: true
-- name: src/Pattern.scala
-  visible: true
-- name: src/Cat.scala
-  visible: true
-- name: src/Breed.scala
-  visible: true
+  - name: src/MapTask.scala
+    visible: true
+    placeholders:
+      - offset: 137
+        length: 38
+        placeholder_text: /* Use `map` to convert each fur characteristic into a string
+          */
+  - name: test/MapTaskSpec.scala
+    visible: false
+  - name: build.sbt
+    visible: false
+  - name: src/FurCharacteristic.scala
+    visible: true
+  - name: src/Color.scala
+    visible: true
+  - name: src/Pattern.scala
+    visible: true
+  - name: src/Cat.scala
+    visible: true
+  - name: src/Breed.scala
+    visible: true

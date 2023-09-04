@@ -26,10 +26,10 @@ Consider `multiplyList` function which multiplies every number in a list by `mul
 The parameter `multiplier` can be used inside `map` with no issues.  
 
 ```scala
-def multiplyList(multiplier: Int, numbers: List[Int]): List[Int] = {
+def multiplyList(multiplier: Int, numbers: List[Int]): List[Int] =
   // We can use multiplier inside map 
   numbers.map(x => multiplier * x)
-}
+
 ```
 
 When a parameter is only used once in the anonymous function, Scala allows omitting the argument's name by using `_` instead.

@@ -1,16 +1,28 @@
 type: edu
 custom_name: Passing Functions as Arguments
 files:
-- name: src/PassingFunctionsAsArguments.scala
-  visible: true
-  placeholders:
-  - offset: 515
-    length: 53
-    placeholder_text: /* Check if the cat is white */
-  - offset: 698
-    length: 18
-    placeholder_text: /* Pass a function as an argument */
-- name: test/PassingFunctionsAsArgumentsSpec.scala
-  visible: false
-- name: build.sbt
-  visible: false
+  - name: src/PassingFunctionsAsArguments.scala
+    visible: true
+    placeholders:
+      - offset: 514
+        length: 53
+        placeholder_text: /* Check if the cat is white */
+      - offset: 697
+        length: 18
+        placeholder_text: /* Pass a function as an argument */
+  - name: test/PassingFunctionsAsArgumentsSpec.scala
+    visible: false
+  - name: build.sbt
+    visible: false
+  - name: PassingFunctionsAsArguments.class
+    visible: true
+  - name: PassingFunctionsAsArguments$Color$.class
+    visible: true
+  - name: PassingFunctionsAsArguments$Color$$anon$1.class
+    visible: true
+  - name: PassingFunctionsAsArguments$Color.class
+    visible: true
+  - name: PassingFunctionsAsArguments$.class
+    visible: true
+  - name: PassingFunctionsAsArguments$Cat.class
+    visible: true

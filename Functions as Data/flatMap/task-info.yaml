@@ -1,23 +1,23 @@
 type: edu
 files:
-- name: src/FlatMapTask.scala
-  visible: true
-  placeholders:
-  - offset: 104
-    length: 39
-    placeholder_text: /* Use flatMap to aggregate all fur characteristics of all cats
-      */
-- name: test/FlatMapTaskSpec.scala
-  visible: false
-- name: build.sbt
-  visible: false
-- name: src/Color.scala
-  visible: true
-- name: src/Breed.scala
-  visible: true
-- name: src/Cat.scala
-  visible: true
-- name: src/FurCharacteristic.scala
-  visible: true
-- name: src/Pattern.scala
-  visible: true
+  - name: src/FlatMapTask.scala
+    visible: true
+    placeholders:
+      - offset: 103
+        length: 39
+        placeholder_text: /* Use flatMap to aggregate all fur characteristics of all cats
+          */
+  - name: test/FlatMapTaskSpec.scala
+    visible: false
+  - name: build.sbt
+    visible: false
+  - name: src/Color.scala
+    visible: true
+  - name: src/Breed.scala
+    visible: true
+  - name: src/Cat.scala
+    visible: true
+  - name: src/FurCharacteristic.scala
+    visible: true
+  - name: src/Pattern.scala
+    visible: true

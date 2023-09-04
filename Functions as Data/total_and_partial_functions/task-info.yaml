@@ -1,17 +1,17 @@
 type: edu
 custom_name: Total and Partial functions
 files:
-- name: src/TotalAndPartialFunctionsTask.scala
-  visible: true
-  placeholders:
-  - offset: 104
-    length: 39
-    placeholder_text: /* Define a partial function to handle division by zero */
-  - offset: 268
-    length: 28
-    placeholder_text: /* Write a condition to check if division is defined for the
-      arguments */
-- name: test/TotalAndPartialFunctionsTaskSpec.scala
-  visible: false
-- name: build.sbt
-  visible: false
+  - name: src/TotalAndPartialFunctionsTask.scala
+    visible: true
+    placeholders:
+      - offset: 91
+        length: 39
+        placeholder_text: /* Define a partial function to handle division by zero */
+      - offset: 255
+        length: 28
+        placeholder_text: /* Write a condition to check if division is defined for the
+          arguments */
+  - name: test/TotalAndPartialFunctionsTaskSpec.scala
+    visible: false
+  - name: build.sbt
+    visible: false

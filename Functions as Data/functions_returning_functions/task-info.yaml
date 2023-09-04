@@ -4,10 +4,10 @@ files:
   - name: src/FunctionsReturningFunctionsTask.scala
     visible: true
     placeholders:
-      - offset: 187
+      - offset: 186
         length: 30
         placeholder_text: /* Put the arguments of the function here */
-      - offset: 224
+      - offset: 223
         length: 12
         placeholder_text: /* Put implementation here */
   - name: test/FunctionsReturningFunctionsTaskSpec.scala

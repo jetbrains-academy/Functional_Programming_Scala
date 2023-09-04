@@ -1,4 +1,4 @@
-object PartialFunctionExample extends App {
+object PartialFunctionExample:
   val division: PartialFunction[(Int, Int), Double] = {
     case (x, y) if y != 0 => x.toDouble / y
   }
@@ -13,4 +13,3 @@ object PartialFunctionExample extends App {
       println(s"Cannot divide $x by $y")
     }
   }
-}

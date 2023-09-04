@@ -1,7 +1,7 @@
-object MapTask {
+object MapTask:
   // Transform fur characteristics of the cat into a list of strings
   def furCharacteristicsDescription(cat: Cat) =
-    cat.furCharacteristics.map(x => x.toString)
+    cat.furCharacteristics.map(_.toString)
 
   // Here we output the strings created by `furCharacteristicsDescription` function.
   def outputFurCharacteristics(cat: Cat) =
@@ -23,5 +23,4 @@ object MapTask {
   @main
   def main() =
     outputFurCharacteristics(cat3)
-}
 

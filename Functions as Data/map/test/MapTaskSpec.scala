@@ -2,10 +2,15 @@ import org.scalatest.funsuite.AnyFunSuite
 import MapTask._
 
 class MapTaskSpec extends AnyFunSuite {
+  def checkOneCat(cat: Cat): Unit = {
+    val stream = new java.io.ByteArrayOutputStream()
+    Console.withOut(stream) {
+      outputFurCharacteristics(cat)
 
-  test("furCharacteristicsDescription should return a list of string representations of fur characteristics of a cat") {
-    assert(furCharacteristicsDescription(cat1) == Set("SleekHaired"))
-    assert(furCharacteristicsDescription(cat3) == Set("Fluffy", "Plush"))
-    assert(furCharacteristicsDescription(cat9) == Set())
+      assert(stream.toString().trim == furCharacteristicsDescription(cat).mkString("\n").trim)
+    }
+  }
+  test("") {
+    cats.foreach(checkOneCat)
   }
 }

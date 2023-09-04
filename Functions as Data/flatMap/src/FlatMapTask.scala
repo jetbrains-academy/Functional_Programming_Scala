@@ -1,4 +1,4 @@
-object FlatMapTask {
+object FlatMapTask:
   def collectFurCharacteristics(bagOfCats: Set[Cat]): Set[FurCharacteristic] =
     bagOfCats.flatMap(_.furCharacteristics)
 
@@ -18,5 +18,4 @@ object FlatMapTask {
   @main
   def main() =
     collectFurCharacteristics(cats).foreach(println)
-}
 

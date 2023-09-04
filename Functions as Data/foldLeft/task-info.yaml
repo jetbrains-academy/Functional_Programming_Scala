@@ -1,27 +1,27 @@
 type: edu
 files:
-- name: src/FoldLeftTask.scala
-  visible: true
-  placeholders:
-  - offset: 104
-    length: 1
-    placeholder_text: /* accumulator */
-  - offset: 108
-    length: 19
-    placeholder_text: /* Folding function */
-  - offset: 252
-    length: 12
-    placeholder_text: /* accumulator */
-  - offset: 267
-    length: 44
-    placeholder_text: /* folding function */
-  - offset: 373
-    length: 13
-    placeholder_text: /* accumulator */
-  - offset: 389
-    length: 26
-    placeholder_text: /* folding function */
-- name: test/FoldLeftTaskSpec.scala
-  visible: false
-- name: build.sbt
-  visible: false
+  - name: src/FoldLeftTask.scala
+    visible: true
+    placeholders:
+      - offset: 103
+        length: 1
+        placeholder_text: /* accumulator */
+      - offset: 107
+        length: 19
+        placeholder_text: /* Folding function */
+      - offset: 251
+        length: 12
+        placeholder_text: /* accumulator */
+      - offset: 266
+        length: 44
+        placeholder_text: /* folding function */
+      - offset: 372
+        length: 13
+        placeholder_text: /* accumulator */
+      - offset: 388
+        length: 26
+        placeholder_text: /* folding function */
+  - name: test/FoldLeftTaskSpec.scala
+    visible: false
+  - name: build.sbt
+    visible: false
