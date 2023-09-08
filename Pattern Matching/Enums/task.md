@@ -25,7 +25,7 @@ You can have an enum with cases that carry different data.
 Here's an example:
 
 ```scala 3
-enum Tree[A]:
+enum Tree[+A]:
   case Branch(left: Tree[A], value: A, right: Tree[A])
   case Leaf(value: A)
   case Stump
@@ -62,3 +62,14 @@ You may notice that ours is a bit redundant:
 a `Leaf` is in all practical sense the same as a `Branch` where both subtrees are stumps. 
 But having `Leaf` as a separate enum case allows us to write the code for building 
 the tree in a more concise way.
+
+## Exercise 
+
+Implement a function which checks if the tree is balanced.
+
+A balanced binary tree meets the following conditions:
+* The absolute difference of heights of left and right subtrees at any node is no more than 1.
+* For each node its left subtree is a balanced binary tree
+* For each node its right subtree is a balanced binary tree
+
+Try to do it in one pass for the extra challenge. 

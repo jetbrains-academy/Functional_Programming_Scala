@@ -45,3 +45,10 @@ myCat match {
   case Cat(name, color) => println(s"I have a $color cat named $name.")
 }
 ```
+
+## Exercise 
+
+Create a case class which represents a dog.
+Each dog should have a name, a breed, and a favorite toy.
+Model these features as Strings for now.
+Use pattern matching to introduce the dog. 

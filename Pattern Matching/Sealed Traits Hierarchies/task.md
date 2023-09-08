@@ -10,7 +10,7 @@ For instance, we can override the default implementation of a given method diffe
 In enums, all enum cases share the same methods and fields.
 
 ```scala 3 
-sealed trait Tree[A]:
+sealed trait Tree[+A]:
   def whoAmI: String
 
 case class Branch[A](left: Tree[A], value: A, right: Tree[A]) extends Tree[A]:
@@ -35,3 +35,12 @@ val tree: Tree[Int] =
     Branch(Leaf(4), 5, Leaf(6))
   )
 ```
+
+## Exercise 
+
+Our trees are immutable, so we can compute their heights and check if they are balanced at the time of creation. 
+To do it, we added the `height` and `isBalanced` members into the `Tree` trait declaration. 
+The only thing that is left is to override these members in all classes which extend the trait in this exercise.  
+This way no extra passes is needed to determine whether a tree is balanced.
+
+Do this as an exercise. 

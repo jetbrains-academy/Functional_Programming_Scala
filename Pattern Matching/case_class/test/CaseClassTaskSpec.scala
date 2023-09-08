@@ -2,7 +2,7 @@ import org.scalatest.funsuite.AnyFunSuite
 import CaseClassTask._
 
 class CaseClassTaskSpec extends AnyFunSuite {
-  test("It should be possible to curry `filterList`") {
+  test("Dog should be a case class") {
     val stream = new java.io.ByteArrayOutputStream()
     Console.withOut(stream) {
       val yuki = Dog("Yuki", "Akita", "ball")

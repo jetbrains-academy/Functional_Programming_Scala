@@ -1,8 +1,12 @@
 type: edu
 files:
-  - name: src/Task.scala
+  - name: src/EnumTask.scala
     visible: true
-  - name: test/TestSpec.scala
+    placeholders:
+      - offset: 565
+        length: 458
+        placeholder_text: /* Put your implementation here */
+  - name: test/EnumTestSpec.scala
     visible: false
   - name: build.sbt
     visible: false
