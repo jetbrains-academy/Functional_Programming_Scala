@@ -57,3 +57,11 @@ Now they need to log in again before they are able to continue.
 This is not the same as simply being `Unauthorized` so we add a third case object to the set of those extending `AuthorizationStatus`: 
 we call it `LoggedOut`. 
 If the original author used sealed trait to define `AuthorizationStatus`, or if they used enum, we wouldn't be able to do that.
+
+### Exercise 
+
+We model bots which move on the 2D plane (see `Coordinates` case class). 
+There are different kinds of bots (see trait `Bot`) which move different number of cells at a time. 
+Each bot moves in one of four directions (see trait `Direction`). 
+Determine whether the traits should be sealed or not and modify them accordingly.
+Implement the `move` function. 

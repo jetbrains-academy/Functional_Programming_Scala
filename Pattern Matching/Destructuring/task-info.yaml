@@ -1,8 +1,12 @@
 type: edu
 files:
-  - name: src/Task.scala
+  - name: src/DestructuringTask.scala
     visible: true
-  - name: test/TestSpec.scala
+    placeholders:
+      - offset: 138
+        length: 368
+        placeholder_text: /* TODO */
+  - name: test/DestructuringTaskSpec.scala
     visible: false
   - name: build.sbt
     visible: false

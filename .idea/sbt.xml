@@ -36,6 +36,8 @@
             <option value="$PROJECT_DIR$/Functions as Data/what_is_a_function/project" />
             <option value="$PROJECT_DIR$/Pattern Matching/A Custom unapply Method" />
             <option value="$PROJECT_DIR$/Pattern Matching/A Custom unapply Method/project" />
+            <option value="$PROJECT_DIR$/Pattern Matching/Case Class" />
+            <option value="$PROJECT_DIR$/Pattern Matching/Case Class/project" />
             <option value="$PROJECT_DIR$/Pattern Matching/Case Objects" />
             <option value="$PROJECT_DIR$/Pattern Matching/Case Objects/project" />
             <option value="$PROJECT_DIR$/Pattern Matching/Destructuring" />
@@ -48,8 +50,6 @@
             <option value="$PROJECT_DIR$/Pattern Matching/Smart Constructors and the apply Method/project" />
             <option value="$PROJECT_DIR$/Pattern Matching/The Newtype Pattern" />
             <option value="$PROJECT_DIR$/Pattern Matching/The Newtype Pattern/project" />
-            <option value="$PROJECT_DIR$/Pattern Matching/case_class" />
-            <option value="$PROJECT_DIR$/Pattern Matching/case_class/project" />
             <option value="$PROJECT_DIR$/project" />
           </set>
         </option>

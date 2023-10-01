@@ -51,14 +51,14 @@ and use guards inside pattern matching, only this time instead of `foreach` we w
 
 ```scala 3
 object Applicant:
-def unapply(applicant: Applicant): (String, Int, VehicleType) =
-  (applicant.name, applicant.age, applicant.vehicleType)
+  def unapply(applicant: Applicant): (String, Int, VehicleType) =
+    (applicant.name, applicant.age, applicant.vehicleType)
 
-val applicants: Seq[Applicant] = ???
-val names = applicants.collect {
-  case Applicant(name, age, VehicleType.Car) if age >= 18 => name
-  case Applicant(name, age, VehicleType.SmallMotorcycle) if age >= 16 => name
-  case Applicant(name, age, VehicleType.Moped) if age >= 15 => name
+  val applicants: Seq[Applicant] = ???
+  val names = applicants.collect {
+    case Applicant(name, age, VehicleType.Car) if age >= 18 => name
+    case Applicant(name, age, VehicleType.SmallMotorcycle) if age >= 16 => name
+    case Applicant(name, age, VehicleType.Moped) if age >= 15 => name
 }
 ```
 
@@ -67,15 +67,15 @@ if the applicant is eligible for a driver's license, and return an `Option` of t
 
 ```scala 3
 object Applicant:
-def unapply(applicant: Applicant): Option[String] = applicant.vehicleType match
-  case VehicleType.Car if age >= 18 => Some(applicant.name)
-  case VehicleType.SmallMotorcycle if age >= 16 => Some(applicant.name)
-  case VehicleType.Moped if age >= 15 => Some(applicant.name)
-  case _ => None
+  def unapply(applicant: Applicant): Option[String] = applicant.vehicleType match
+    case VehicleType.Car if age >= 18 => Some(applicant.name)
+    case VehicleType.SmallMotorcycle if age >= 16 => Some(applicant.name)
+    case VehicleType.Moped if age >= 15 => Some(applicant.name)
+    case _ => None
 
-val applicants: Seq[Applicant] = ???
-val names = applicants.collect {
-  case Applicant(name) => name
+  val applicants: Seq[Applicant] = ???
+  val names = applicants.collect {
+    case Applicant(name) => name
 }
 ``` 
 
@@ -83,3 +83,14 @@ As you can see, we moved the logic from the `collect` method to the `unapply` me
 In this example the code as a whole hasn't become shorter or more readable in any significant way, but depending on a situation, 
 the possibility of moving logic that checks if an entity is valid for something to a separate place in your codebase, 
 might prove valuable.
+
+### Exercise 
+
+Given that each component in the RGB can only be in the range `0 .. 255`, it only takes 8 bits. 
+The 4 components of the RGB representation nicely pack into a 32-bit integer which allows for better memory use.
+Many operations with colors can be done by using bitwise operation over this integer representation directly. 
+However, sometimes it's more convenient to access each of the components as a number, 
+and it is where the custom `unapply` method may come in handy. 
+
+Implement the `unapply` method for the int-based RGB representation. 
+The alpha channel resides in the leading bits, followed by the red, green, and then blue. 

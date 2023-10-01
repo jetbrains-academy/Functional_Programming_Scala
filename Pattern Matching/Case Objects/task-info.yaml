@@ -1,9 +1,27 @@
 type: edu
-custom_name: 'Case Objects '
+custom_name: 'Case Objects'
 files:
-  - name: src/Task.scala
+  - name: src/CaseObjectTask.scala
     visible: true
-  - name: test/TestSpec.scala
+    placeholders:
+      - offset: 341
+        length: 281
+        placeholder_text: /* Compute the new coordinates */
+  - name: test/CaseObjectTaskSpec.scala
     visible: false
   - name: build.sbt
     visible: false
+  - name: src/Direction.scala
+    visible: true
+    placeholders:
+      - offset: 0
+        length: 7
+        placeholder_text: /* Should this trait be sealed? */
+  - name: src/Bot.scala
+    visible: true
+    placeholders:
+      - offset: 0
+        length: 0
+        placeholder_text: /* Should this trait be sealed? */
+  - name: src/Coordinates.scala
+    visible: true

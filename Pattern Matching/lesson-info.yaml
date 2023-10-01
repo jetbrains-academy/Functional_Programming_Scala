@@ -1,6 +1,6 @@
 content:
   - Pattern Matching
-  - case_class
+  - Case Class
   - Smart Constructors and the apply Method
   - Enums
   - Sealed Traits Hierarchies

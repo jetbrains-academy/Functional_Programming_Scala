@@ -9,10 +9,10 @@
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/anonymous_functions.iml" filepath="$PROJECT_DIR$/.idea/modules/anonymous_functions.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/anonymous_functions-build.iml" filepath="$PROJECT_DIR$/.idea/modules/anonymous_functions-build.iml" group="sbt-build-modules" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/case-build.iml" filepath="$PROJECT_DIR$/.idea/modules/case-build.iml" group="sbt-build-modules" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/case-class.iml" filepath="$PROJECT_DIR$/.idea/modules/case-class.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/case-class-build.iml" filepath="$PROJECT_DIR$/.idea/modules/case-class-build.iml" group="sbt-build-modules" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/case-objects.iml" filepath="$PROJECT_DIR$/.idea/modules/case-objects.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/case-objects-build.iml" filepath="$PROJECT_DIR$/.idea/modules/case-objects-build.iml" group="sbt-build-modules" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/case_class.iml" filepath="$PROJECT_DIR$/.idea/modules/case_class.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/case_class-build.iml" filepath="$PROJECT_DIR$/.idea/modules/case_class-build.iml" group="sbt-build-modules" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/destructuring.iml" filepath="$PROJECT_DIR$/.idea/modules/destructuring.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/destructuring-build.iml" filepath="$PROJECT_DIR$/.idea/modules/destructuring-build.iml" group="sbt-build-modules" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/enums.iml" filepath="$PROJECT_DIR$/.idea/modules/enums.iml" />

@@ -1,8 +1,8 @@
 type: edu
 files:
-  - name: src/Task.scala
+  - name: src/NewtypePatternTask.scala
     visible: true
-  - name: test/TestSpec.scala
+  - name: test/NewtypePatternTaskSpec.scala
     visible: false
   - name: build.sbt
     visible: false

@@ -92,3 +92,19 @@ cats.foreach {
     println(s"This is a $color kitten called $name")
 }
 ```
+
+### Exercise 
+
+RGB stands for Red, Green and Blue, and it is a color model used in digital imagining. 
+A color is represented by combining intensities of the three primary colors, allowing for
+creation of a wide spectrum of colors in electronic devices. 
+Sometimes, the fourth component called Alpha is also used to describe the transparency.
+Each component can be any integer number withing the range `0 .. 255` with `0` meaning no color, 
+and `255` -- maximum intensity of the color.
+For example, the red color is when Red is `255`, while Green and Blue are `0`. 
+
+In this exercise, implement the function `colorDescription` which transforms the given RGB color into a string. 
+It should pattern destruct the color, examine the RGB components and return the name of the color in case it is one of
+the following: `"Black", "Red", "Green", "Blue", "Yellow", "Cyan", "Magenta", "White"`. 
+Otherwise, it should just return the result of `toString()` application. 
+Please, ignore the alpha channel when determining the color name. 

@@ -1,9 +1,13 @@
 type: edu
-custom_name: 'A Custom unapply Method '
+custom_name: 'A Custom unapply Method'
 files:
-  - name: src/Task.scala
+  - name: src/CustomUnapplyTask.scala
     visible: true
-  - name: test/TestSpec.scala
+    placeholders:
+      - offset: 242
+        length: 203
+        placeholder_text: /* TODO */
+  - name: test/CustomUnapplyTaskSpec.scala
     visible: false
   - name: build.sbt
     visible: false
