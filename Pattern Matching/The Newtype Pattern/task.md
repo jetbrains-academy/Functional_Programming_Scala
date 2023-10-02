@@ -67,4 +67,10 @@ Also, it's obligatory to define them inside an object or a class – they cannot
 On the other hand, opaque types integrate very well with extension methods, which is another new feature in Scala 3. 
 We will discuss it in the future.
 
+### Exercise 
 
+One application of the opaque types is to express units of measure. 
+For example, in a fitness tracker, the distance can be input by the user in either feet or meters, 
+based on their preferred measurement system.
+Implement the functions for tracking the distance in different units and the function `show` to display 
+the tracked distance in the preferred units. 

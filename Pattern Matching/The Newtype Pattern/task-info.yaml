@@ -2,6 +2,22 @@ type: edu
 files:
   - name: src/NewtypePatternTask.scala
     visible: true
+    placeholders:
+      - offset: 425
+        length: 210
+        placeholder_text: /* TODO */
+      - offset: 748
+        length: 57
+        placeholder_text: /* TODO */
+      - offset: 904
+        length: 42
+        placeholder_text: /* TODO */
+      - offset: 1061
+        length: 14
+        placeholder_text: /* put distanceWalked in meters here */
+      - offset: 1110
+        length: 29
+        placeholder_text: /* put distanceWalked in feet here */
   - name: test/NewtypePatternTaskSpec.scala
     visible: false
   - name: build.sbt
