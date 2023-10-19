@@ -2,3 +2,5 @@ type: theory
 files:
   - name: build.sbt
     visible: false
+  - name: src/Main.scala
+    visible: true

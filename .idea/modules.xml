@@ -35,6 +35,8 @@
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/partial_fucntion_application-build.iml" filepath="$PROJECT_DIR$/.idea/modules/partial_fucntion_application-build.iml" group="sbt-build-modules" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/passing_functions_as_arguments.iml" filepath="$PROJECT_DIR$/.idea/modules/passing_functions_as_arguments.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/passing_functions_as_arguments-build.iml" filepath="$PROJECT_DIR$/.idea/modules/passing_functions_as_arguments-build.iml" group="sbt-build-modules" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/pattern-matching.iml" filepath="$PROJECT_DIR$/.idea/modules/pattern-matching.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/pattern-matching-build.iml" filepath="$PROJECT_DIR$/.idea/modules/pattern-matching-build.iml" group="sbt-build-modules" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/scala_collections_overview.iml" filepath="$PROJECT_DIR$/.idea/modules/scala_collections_overview.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/scala_collections_overview-build.iml" filepath="$PROJECT_DIR$/.idea/modules/scala_collections_overview-build.iml" group="sbt-build-modules" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/sealed-traits-hierarchies.iml" filepath="$PROJECT_DIR$/.idea/modules/sealed-traits-hierarchies.iml" />
