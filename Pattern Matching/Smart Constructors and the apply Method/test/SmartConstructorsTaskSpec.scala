@@ -11,7 +11,7 @@ class SmartConstructorsTaskSpec extends AnyFunSuite {
 
       List(jack, yuki, hoops).foreach(x => println(x.toString()))
 
-      assert(stream.toString() == s"Dog(Yuki,${Dog.defaultBreed},${Dog.defaultOwner})\nDog(Yuki,Akita,${Dog.defaultOwner})\nDog(Hoops,Australian Shepherd,Alex)\n")
+      assert(stream.toString().trim == s"Dog(Yuki,${Dog.defaultBreed},${Dog.defaultOwner})\nDog(Yuki,Akita,${Dog.defaultOwner})\nDog(Hoops,Australian Shepherd,Alex)")
     }
   }
 }
