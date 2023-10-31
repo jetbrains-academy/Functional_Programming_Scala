@@ -11,16 +11,16 @@ Here's why the Builder Pattern is used:
 * To allow an object to be constructed step by step, often through method chaining.
 * To avoid having constructors with many parameters, which can be confusing and error-prone (often referred to as the telescoping constructor anti-pattern).
 
-Below is a Scala example using the Builder Pattern to create instances of a User case class, with mandatory firstName 
-and lastName fields and optional email, twitterHandle, and instagramHandle fields.
+Below is a Scala example using the Builder Pattern to create instances of a `User` case class, with mandatory `firstName` 
+and `lastName` fields and optional `email`, `twitterHandle`, and `instagramHandle` fields.
 
 Note that:
-* The User case class defines a user with mandatory firstName and lastName, optional email, twitterHandle, and instagramHandle.
-* UserBuilder facilitates the creation of a User object. 
-  The mandatory parameters are specified in the builder's constructor, while methods like setEmail, setTwitterHandle, 
-  and setInstagramHandle are available to set optional parameters. 
+* The `User` case class defines a user with mandatory `firstName` and `lastName`, optional `email`, `twitterHandle`, and `instagramHandle`.
+* `UserBuilder` facilitates the creation of a `User` object. 
+  The mandatory parameters are specified in the builder's constructor, while methods like `setEmail`, `setTwitterHandle`, 
+  and `setInstagramHandle` are available to set optional parameters. 
   Each of these methods returns the builder itself, enabling method chaining.
-* Finally, calling the build method will use all specified parameters (default or set) to construct a User object.
+* Finally, calling the build method will use all specified parameters (default or set) to construct a `User` object.
 
 This pattern keeps object creation understandable and clean, mainly when dealing with objects that can have multiple optional parameters.
 
@@ -33,10 +33,12 @@ case class User( firstName: String,
                  twitterHandle: Option[String] = None,
                  instagramHandle: Option[String] = None
                )
-class UserBuilder(private var firstName: String, private var lastName: String):
+               
+class UserBuilder(private val firstName: String, private val lastName: String):
   private var email: Option[String] = None
   private var twitterHandle: Option[String] = None
   private var instagramHandle: Option[String] = None
+  
   def setEmail(e: String): UserBuilder =
     email = Some(e)
     this
@@ -62,3 +64,7 @@ class UserBuilder(private var firstName: String, private var lastName: String):
   println(user)
   // prints out User("John", "Doe", Some("john.doe@example.com"), Some("@johndoe"), Some("@johnDoe_insta"))
 ```
+
+### Exercise
+
+Implement the builder pattern for a message which has optional sender, receiver and content fields. 

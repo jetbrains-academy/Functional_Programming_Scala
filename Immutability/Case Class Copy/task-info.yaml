@@ -1,8 +1,15 @@
 type: edu
 files:
-  - name: src/Task.scala
+  - name: src/CaseClassCopyTask.scala
     visible: true
-  - name: test/TestSpec.scala
+    placeholders:
+      - offset: 388
+        length: 247
+        placeholder_text: /* put parameters here */
+      - offset: 651
+        length: 64
+        placeholder_text: /* put implementation here */
+  - name: test/CaseClassCopyTaskSpec.scala
     visible: false
   - name: build.sbt
     visible: false

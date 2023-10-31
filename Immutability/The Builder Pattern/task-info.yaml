@@ -1,9 +1,25 @@
 type: edu
 custom_name: The Builder Pattern
 files:
-  - name: test/TestSpec.scala
+  - name: test/BuilderPatternTaskSpec.scala
     visible: false
   - name: build.sbt
     visible: false
-  - name: src/Task.scala
+  - name: src/BuilderPatternTask.scala
     visible: true
+    placeholders:
+      - offset: 220
+        length: 136
+        placeholder_text: /* put private fields here */
+      - offset: 411
+        length: 27
+        placeholder_text: /* TODO */
+      - offset: 495
+        length: 29
+        placeholder_text: /* TODO */
+      - offset: 580
+        length: 28
+        placeholder_text: /* TODO */
+      - offset: 643
+        length: 34
+        placeholder_text: /* TODO */

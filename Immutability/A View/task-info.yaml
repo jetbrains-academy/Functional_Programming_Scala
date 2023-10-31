@@ -1,8 +1,12 @@
 type: edu
 files:
-  - name: src/Task.scala
+  - name: src/ViewTask.scala
     visible: true
-  - name: test/TestSpec.scala
+    placeholders:
+      - offset: 114
+        length: 290
+        placeholder_text: /* TODO */
+  - name: test/ViewTaskSpec.scala
     visible: false
   - name: build.sbt
     visible: false

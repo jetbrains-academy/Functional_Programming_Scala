@@ -47,3 +47,10 @@ println(s"Original user: $originalUser")
 println(s"Updated user: $updatedUser")
 // prints out User("Jane", "Doe", Some("new.jane.doe@example.com"), Some("@newJaneDoe"), None)
 ```
+
+### Exercise 
+
+Let's demystify the function `copy`. 
+Implement your own function `myCopy` which functions in the exact same way `copy` does. 
+You should be able to pass values only for those fields you wish to modify. 
+As a result, a new copy of the instance should be created. 

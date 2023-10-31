@@ -1,8 +1,12 @@
 type: edu
 files:
-  - name: src/Task.scala
+  - name: src/LazyListTask.scala
     visible: true
-  - name: test/TestSpec.scala
+    placeholders:
+      - offset: 73
+        length: 122
+        placeholder_text: /* TODO */
+  - name: test/LazyListTaskSpec.scala
     visible: false
   - name: build.sbt
     visible: false

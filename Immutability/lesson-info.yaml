@@ -2,7 +2,7 @@ content:
   - Scala Collections instead of Imperative Loops
   - Case Class Copy
   - The Builder Pattern
-  - Lazy val
+  - Lazy Val
   - Lazy List
   - A View
-  - Comparison of View and Lazy List
+  - Comparison of View and Lazy Collection

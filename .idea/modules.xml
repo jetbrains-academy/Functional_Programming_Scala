@@ -17,7 +17,8 @@
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/case-class-copy-build.iml" filepath="$PROJECT_DIR$/.idea/modules/case-class-copy-build.iml" group="sbt-build-modules" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/case-objects.iml" filepath="$PROJECT_DIR$/.idea/modules/case-objects.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/case-objects-build.iml" filepath="$PROJECT_DIR$/.idea/modules/case-objects-build.iml" group="sbt-build-modules" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/comparison-of-view-and-lazy-list.iml" filepath="$PROJECT_DIR$/.idea/modules/comparison-of-view-and-lazy-list.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/comparison-of-view-and-lazy-collection.iml" filepath="$PROJECT_DIR$/.idea/modules/comparison-of-view-and-lazy-collection.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/comparison-of-view-and-lazy-collection-build.iml" filepath="$PROJECT_DIR$/.idea/modules/comparison-of-view-and-lazy-collection-build.iml" group="sbt-build-modules" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/comparison-of-view-and-lazy-list-build.iml" filepath="$PROJECT_DIR$/.idea/modules/comparison-of-view-and-lazy-list-build.iml" group="sbt-build-modules" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/destructuring.iml" filepath="$PROJECT_DIR$/.idea/modules/destructuring.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/destructuring-build.iml" filepath="$PROJECT_DIR$/.idea/modules/destructuring-build.iml" group="sbt-build-modules" />
@@ -38,7 +39,6 @@
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/lazy-list.iml" filepath="$PROJECT_DIR$/.idea/modules/lazy-list.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/lazy-list-build.iml" filepath="$PROJECT_DIR$/.idea/modules/lazy-list-build.iml" group="sbt-build-modules" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/lazy-val.iml" filepath="$PROJECT_DIR$/.idea/modules/lazy-val.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/lazy-val-build.iml" filepath="$PROJECT_DIR$/.idea/modules/lazy-val-build.iml" group="sbt-build-modules" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/map.iml" filepath="$PROJECT_DIR$/.idea/modules/map.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/map-build.iml" filepath="$PROJECT_DIR$/.idea/modules/map-build.iml" group="sbt-build-modules" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/partial_fucntion_application.iml" filepath="$PROJECT_DIR$/.idea/modules/partial_fucntion_application.iml" />
@@ -47,6 +47,7 @@
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/passing_functions_as_arguments-build.iml" filepath="$PROJECT_DIR$/.idea/modules/passing_functions_as_arguments-build.iml" group="sbt-build-modules" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/pattern-matching.iml" filepath="$PROJECT_DIR$/.idea/modules/pattern-matching.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/pattern-matching-build.iml" filepath="$PROJECT_DIR$/.idea/modules/pattern-matching-build.iml" group="sbt-build-modules" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/project.lazy-val-build.iml" filepath="$PROJECT_DIR$/.idea/modules/project.lazy-val-build.iml" group="sbt-build-modules" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/scala-collections-instead-of-imperative-loops.iml" filepath="$PROJECT_DIR$/.idea/modules/scala-collections-instead-of-imperative-loops.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/scala-collections-instead-of-imperative-loops-build.iml" filepath="$PROJECT_DIR$/.idea/modules/scala-collections-instead-of-imperative-loops-build.iml" group="sbt-build-modules" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/scala_collections_overview.iml" filepath="$PROJECT_DIR$/.idea/modules/scala_collections_overview.iml" />

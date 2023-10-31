@@ -45,3 +45,8 @@ In the above code:
   For example, `fib.drop(5).take(5)` will compute the first 10 elements of the Fibonacci sequence but will ignore the first 5 of them.
 
 To learn more about methods of Scala `LazyList`, read its [documentation](https://www.scala-lang.org/api/current/scala/collection/immutable/LazyList.html).
+
+### Exercise 
+
+Implement the function which generates an infinite lazy list of prime numbers in ascending order. 
+Use the Sieve of Eratosthenes algorithm.

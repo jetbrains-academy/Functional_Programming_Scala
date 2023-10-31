@@ -5,7 +5,7 @@ While a lazy list needs to be constructed as such, you can create a view from an
 A view computes its transformations (like map, filter, etc.) in a lazy manner. 
 It means that these operations are not immediately executed; instead, they are computed on the fly each time a new element is requested, 
 which can improve performance and memory usage. 
-On top of that, with a view you can chain together multiple operations without creating intermediary collections - 
+On top of that, with a view you can chain together multiple operations without creating intermediary collections — 
 the operations will be applied to the elements of the original "eager" collection only when requested. 
 It can be especially useful in scenarios where operations like map and filter are chained, so a significant number of 
 elements can be filtered out, and there is no need for subsequent operations on them.
@@ -42,3 +42,10 @@ Therefore, squares are calculated, and conditions are checked for each element s
 It avoids unnecessary calculations and is thus more efficient in this scenario.
 
 To learn more about methods of Scala View, read its [documentation](https://www.scala-lang.org/api/current/scala/collection/View.html).
+
+### Exercise 
+
+Consider a simplified log message: it is a comma-separated string, where the first substring before `,` specifies its severity, 
+the second substring is the numerical error code, and the last is the message itself.  
+Implement the function `findLogMessage` which searches for the first log message with the given `severity` and `errorCode` in a list.
+The list is assumed to be large, thus use `view` to avoid constructing intermediate data structures. 
