@@ -2,11 +2,31 @@ type: edu
 files:
   - name: src/BerlinerPatternTask.scala
     visible: true
+    placeholders:
+      - offset: 1100
+        length: 377
+        placeholder_text: /* TODO */
+      - offset: 2339
+        length: 150
+        placeholder_text: /* TODO */
+      - offset: 3494
+        length: 363
+        placeholder_text: /* TODO */
+      - offset: 4510
+        length: 193
+        placeholder_text: /* TODO */
   - name: test/BerlinerPatternTaskSpec.scala
     visible: false
   - name: build.sbt
     visible: false
   - name: src/Database.scala
     visible: true
+    placeholders:
+      - offset: 2154
+        length: 205
+        placeholder_text: /* TODO */
+      - offset: 2634
+        length: 122
+        placeholder_text: /* TODO */
   - name: src/HttpClient.scala
     visible: true
