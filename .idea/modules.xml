@@ -10,6 +10,8 @@
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/a-view-build.iml" filepath="$PROJECT_DIR$/.idea/modules/a-view-build.iml" group="sbt-build-modules" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/anonymous_functions.iml" filepath="$PROJECT_DIR$/.idea/modules/anonymous_functions.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/anonymous_functions-build.iml" filepath="$PROJECT_DIR$/.idea/modules/anonymous_functions-build.iml" group="sbt-build-modules" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/berliner-pattern.iml" filepath="$PROJECT_DIR$/.idea/modules/berliner-pattern.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/berliner-pattern-build.iml" filepath="$PROJECT_DIR$/.idea/modules/berliner-pattern-build.iml" group="sbt-build-modules" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/case-build.iml" filepath="$PROJECT_DIR$/.idea/modules/case-build.iml" group="sbt-build-modules" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/case-class.iml" filepath="$PROJECT_DIR$/.idea/modules/case-class.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/case-class-build.iml" filepath="$PROJECT_DIR$/.idea/modules/case-class-build.iml" group="sbt-build-modules" />

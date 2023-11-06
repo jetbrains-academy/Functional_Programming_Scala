@@ -1,0 +1,12 @@
+type: edu
+files:
+  - name: src/BerlinerPatternTask.scala
+    visible: true
+  - name: test/BerlinerPatternTaskSpec.scala
+    visible: false
+  - name: build.sbt
+    visible: false
+  - name: src/Database.scala
+    visible: true
+  - name: src/HttpClient.scala
+    visible: true
