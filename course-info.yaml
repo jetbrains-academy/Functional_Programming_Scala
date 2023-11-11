@@ -13,3 +13,4 @@ content:
   - Functions as Data
   - Pattern Matching
   - Immutability
+  - Expressions over Statements

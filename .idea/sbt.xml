@@ -8,6 +8,8 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/Expressions over Statements/What is an Expression" />
+            <option value="$PROJECT_DIR$/Expressions over Statements/What is an Expression/project" />
             <option value="$PROJECT_DIR$/Functions as Data/anonymous_functions" />
             <option value="$PROJECT_DIR$/Functions as Data/anonymous_functions/project" />
             <option value="$PROJECT_DIR$/Functions as Data/filter" />

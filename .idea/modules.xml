@@ -65,6 +65,8 @@
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/the-newtype-pattern-build.iml" filepath="$PROJECT_DIR$/.idea/modules/the-newtype-pattern-build.iml" group="sbt-build-modules" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/total_and_partial_functions.iml" filepath="$PROJECT_DIR$/.idea/modules/total_and_partial_functions.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/total_and_partial_functions-build.iml" filepath="$PROJECT_DIR$/.idea/modules/total_and_partial_functions-build.iml" group="sbt-build-modules" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/what-is-an-expression.iml" filepath="$PROJECT_DIR$/.idea/modules/what-is-an-expression.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/what-is-an-expression-build.iml" filepath="$PROJECT_DIR$/.idea/modules/what-is-an-expression-build.iml" group="sbt-build-modules" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/what_is_a_function.iml" filepath="$PROJECT_DIR$/.idea/modules/what_is_a_function.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/what_is_a_function-build.iml" filepath="$PROJECT_DIR$/.idea/modules/what_is_a_function-build.iml" group="sbt-build-modules" />
     </modules>

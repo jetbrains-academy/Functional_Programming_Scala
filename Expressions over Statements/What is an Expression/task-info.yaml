@@ -1,0 +1,9 @@
+type: edu
+custom_name: What is an Expression?
+files:
+  - name: src/Task.scala
+    visible: true
+  - name: test/TestSpec.scala
+    visible: false
+  - name: build.sbt
+    visible: false
