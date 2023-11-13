@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/FP_Demo.iml" filepath="$PROJECT_DIR$/.idea/modules/FP_Demo.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/FP_Demo-build.iml" filepath="$PROJECT_DIR$/.idea/modules/FP_Demo-build.iml" group="sbt-build-modules" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Nested Methods.nested-methods.iml" filepath="$PROJECT_DIR$/.idea/modules/Nested Methods.nested-methods.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/a-custom-unapply-method.iml" filepath="$PROJECT_DIR$/.idea/modules/a-custom-unapply-method.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/a-custom-unapply-method-build.iml" filepath="$PROJECT_DIR$/.idea/modules/a-custom-unapply-method-build.iml" group="sbt-build-modules" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/a-view.iml" filepath="$PROJECT_DIR$/.idea/modules/a-view.iml" />
@@ -50,6 +51,11 @@
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/pattern-matching.iml" filepath="$PROJECT_DIR$/.idea/modules/pattern-matching.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/pattern-matching-build.iml" filepath="$PROJECT_DIR$/.idea/modules/pattern-matching-build.iml" group="sbt-build-modules" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/project.lazy-val-build.iml" filepath="$PROJECT_DIR$/.idea/modules/project.lazy-val-build.iml" group="sbt-build-modules" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/project.nested-methods-build.iml" filepath="$PROJECT_DIR$/.idea/modules/project.nested-methods-build.iml" group="sbt-build-modules" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/pure-vs-impure-functions.iml" filepath="$PROJECT_DIR$/.idea/modules/pure-vs-impure-functions.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/pure-vs-impure-functions-build.iml" filepath="$PROJECT_DIR$/.idea/modules/pure-vs-impure-functions-build.iml" group="sbt-build-modules" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/recursion.iml" filepath="$PROJECT_DIR$/.idea/modules/recursion.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/recursion-build.iml" filepath="$PROJECT_DIR$/.idea/modules/recursion-build.iml" group="sbt-build-modules" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/scala-collections-instead-of-imperative-loops.iml" filepath="$PROJECT_DIR$/.idea/modules/scala-collections-instead-of-imperative-loops.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/scala-collections-instead-of-imperative-loops-build.iml" filepath="$PROJECT_DIR$/.idea/modules/scala-collections-instead-of-imperative-loops-build.iml" group="sbt-build-modules" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/scala_collections_overview.iml" filepath="$PROJECT_DIR$/.idea/modules/scala_collections_overview.iml" />

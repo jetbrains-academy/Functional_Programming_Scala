@@ -73,6 +73,7 @@ def main(): Unit = {
 ```
 
 This way you separate the logic of computing the values from outputting them. 
+It also makes your code more readable. 
 
 
 
