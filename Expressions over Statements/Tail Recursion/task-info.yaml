@@ -1,0 +1,15 @@
+type: edu
+files:
+  - name: src/TailRecursionTask.scala
+    visible: true
+    placeholders:
+      - offset: 128
+        length: 141
+        placeholder_text: /* TODO */
+      - offset: 327
+        length: 112
+        placeholder_text: /* TODO */
+  - name: test/TailRecursionTaskSpec.scala
+    visible: false
+  - name: build.sbt
+    visible: false

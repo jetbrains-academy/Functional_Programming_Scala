@@ -64,6 +64,8 @@
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/sealed-traits-hierarchies-build.iml" filepath="$PROJECT_DIR$/.idea/modules/sealed-traits-hierarchies-build.iml" group="sbt-build-modules" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/smart-constructors-and-the-apply-method.iml" filepath="$PROJECT_DIR$/.idea/modules/smart-constructors-and-the-apply-method.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/smart-constructors-and-the-apply-method-build.iml" filepath="$PROJECT_DIR$/.idea/modules/smart-constructors-and-the-apply-method-build.iml" group="sbt-build-modules" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/tail-recursion.iml" filepath="$PROJECT_DIR$/.idea/modules/tail-recursion.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/tail-recursion-build.iml" filepath="$PROJECT_DIR$/.idea/modules/tail-recursion-build.iml" group="sbt-build-modules" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/task8-build.iml" filepath="$PROJECT_DIR$/.idea/modules/task8-build.iml" group="sbt-build-modules" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/the-builder-pattern.iml" filepath="$PROJECT_DIR$/.idea/modules/the-builder-pattern.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/the-builder-pattern-build.iml" filepath="$PROJECT_DIR$/.idea/modules/the-builder-pattern-build.iml" group="sbt-build-modules" />
@@ -71,6 +73,8 @@
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/the-newtype-pattern-build.iml" filepath="$PROJECT_DIR$/.idea/modules/the-newtype-pattern-build.iml" group="sbt-build-modules" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/total_and_partial_functions.iml" filepath="$PROJECT_DIR$/.idea/modules/total_and_partial_functions.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/total_and_partial_functions-build.iml" filepath="$PROJECT_DIR$/.idea/modules/total_and_partial_functions-build.iml" group="sbt-build-modules" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/using-clause-for-carrying-an-immutable-context.iml" filepath="$PROJECT_DIR$/.idea/modules/using-clause-for-carrying-an-immutable-context.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/using-clause-for-carrying-an-immutable-context-build.iml" filepath="$PROJECT_DIR$/.idea/modules/using-clause-for-carrying-an-immutable-context-build.iml" group="sbt-build-modules" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/what-is-an-expression.iml" filepath="$PROJECT_DIR$/.idea/modules/what-is-an-expression.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/what-is-an-expression-build.iml" filepath="$PROJECT_DIR$/.idea/modules/what-is-an-expression-build.iml" group="sbt-build-modules" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/what_is_a_function.iml" filepath="$PROJECT_DIR$/.idea/modules/what_is_a_function.iml" />

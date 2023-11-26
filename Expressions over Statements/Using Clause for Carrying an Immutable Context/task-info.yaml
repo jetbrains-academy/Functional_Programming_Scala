@@ -1,0 +1,15 @@
+type: edu
+files:
+  - name: src/UsingTask.scala
+    visible: true
+    placeholders:
+      - offset: 518
+        length: 33
+        placeholder_text: /* put comparator parameter here */
+      - offset: 568
+        length: 296
+        placeholder_text: /* implement the function */
+  - name: test/UsingTaskSpec.scala
+    visible: false
+  - name: build.sbt
+    visible: false

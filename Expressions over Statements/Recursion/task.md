@@ -11,10 +11,10 @@ so forth, and the key is in one of the boxes, but you have no idea which one.
 When trying to solve the problem without recursion, you would generally use some kind of loop: 
 
 ```scala 3
-// We model the content of a box as a set of things of any type: it can contain other boxes or keys 
-class Box(val content: Set[Any])
-
-class Key()
+// We model the content of a box as a set of Items: it can contain other boxes or keys 
+sealed trait Item
+case class Box(content: Set[Item]) extends Item
+case class Key(id: String) extends Item
 
 def lookForKey(box: Box): Option[Key] =
   // create a mutable variable for a pile of items to look through
@@ -66,6 +66,11 @@ Here we just go through evey item in the box, apply the recursive function `go` 
 in the resulting collection. 
 Notice, we no longer have any mutable variables, our program is much more readable and there are fewer ways it can go
 wrong. 
+One may protest that this code is not optimal, because `flatMap` will go through the whole box even if we find the key
+early, and it is a valid concern. 
+There are many ways to deal with this kind of inefficiency. 
+One would be to use lazy collections or views, and we'll see another one in the one of the following modules, when we'll
+speak about early returns. 
 
 If you struggle to think recursively, consider the following two-step approach. 
 1. If the given instance of the problem can be solved directly, solve it directly. 
@@ -114,5 +119,12 @@ The recursion in the data type points us to a *smaller* instance of a problem to
 We then sum the values returned from the recursive calls, which produces the final result. 
 There are no `Tree`s in a `Leaf`, thus, we know it is the base case, and we can solve the problem right away.
  
+### Exercise 
 
-
+Implement a tiny calculator `eval` and a printer `prefixPrinter` for arithmetic expressions. 
+An expression is presented as its abstract syntax tree, where leaves contain numbers, while nodes correspond to the 
+binary operators applied to subexpressions. 
+For example, the tree `Node(Mult, Node(Plus, Leaf(1), Leaf(3)), Leaf(5))` corresponds to the expression `(1+3)*5`. 
+The printer should convert an expression into the prefix form, in which the operator comes first, then the left 
+operand followed by the right operand. 
+Our tree should be printed as `* + 1 3 5`. 

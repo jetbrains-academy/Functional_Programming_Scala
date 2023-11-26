@@ -1,8 +1,15 @@
 type: edu
 files:
-  - name: src/Task.scala
+  - name: src/RecursionTask.scala
     visible: true
-  - name: test/TestSpec.scala
+    placeholders:
+      - offset: 288
+        length: 200
+        placeholder_text: /* TODO */
+      - offset: 535
+        length: 259
+        placeholder_text: /* TODO */
+  - name: test/RecursionTaskSpec.scala
     visible: false
   - name: build.sbt
     visible: false
