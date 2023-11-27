@@ -1,8 +1,12 @@
 type: edu
 files:
-  - name: test/TestSpec.scala
+  - name: test/PureVsImpureTaskSpec.scala
     visible: false
   - name: build.sbt
     visible: false
-  - name: src/Task.scala
+  - name: src/PureVsImpureTask.scala
     visible: true
+    placeholders:
+      - offset: 416
+        length: 164
+        placeholder_text: /* TODO */

@@ -1,9 +1,27 @@
 type: edu
 custom_name: What is an Expression?
 files:
-  - name: src/Task.scala
+  - name: src/WhatIsExpressionTask.scala
     visible: true
-  - name: test/TestSpec.scala
+    placeholders:
+      - offset: 58
+        length: 23
+        placeholder_text: "/* Rewrite this code into an expression\n    var result = 0\
+      \ \n    if (n < 0) {\n      result = -n\n    }\n    else {\n      result = n\
+      \ \n    }\n    result \n */"
+      - offset: 140
+        length: 45
+        placeholder_text: "/* Rewrite this code into an expression\n    var result = \"\
+      \"\n    for (str <- strings) {\n      result += str\n    }\n    result \n*/"
+      - offset: 261
+        length: 48
+        placeholder_text: /* Implement a function which finds the absolute difference
+          of the corresponding elements of the two arrays */
+      - offset: 375
+        length: 179
+        placeholder_text: /* Implement a function which finds the longest common prefix
+          of the strings */
+  - name: test/WhatIsExpressionTaskSpec.scala
     visible: false
   - name: build.sbt
     visible: false

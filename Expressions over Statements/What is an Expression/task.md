@@ -3,7 +3,7 @@
 When programming in an imperative style we tend to build functions out of statements. 
 We instruct the compiler on the exact steps and the order in which they should be performed in order to get to the 
 desired result.
-A typical function goes like this: get the date from here, modify it, save it there. 
+A typical function goes like this: get the data from here, modify it, save it there. 
 It manipulates the data which lives somewhere outside the function itself.
 This notion contradicts the meaning of a function which we acquired while learning maths at school. 
 There, functions didn't modify anything. 
@@ -13,10 +13,10 @@ They were expressions.
 An expression can be viewed as a combination of values, variables, functions, and operators which are evaluated by the
 programming language's interpreter or compiler to produce another values. 
 For example, `1+2`, `x*3` and `f(42)` are all expressions. 
-Typically, an expression evaluates to a *value* which can further be used in further computations. 
+Typically, an expression evaluates to a *value* which can be used in further computations. 
 Expressions are also *composable*, which means that an expression can be nested in other expressions enabling complex 
 computations. 
-You can often recognize an expression by where it is used: they most often appear in if-conditions, as arguments to 
+You can often recognize an expression by the context it is used in: they most often appear in if-conditions, as arguments to 
 functions and in the right-hand side of assignments. 
 
 A statement's main purpose is to perform some specific *action*: declare a variable, run a loop, execute a conditional
@@ -74,6 +74,23 @@ def main(): Unit = {
 
 This way you separate the logic of computing the values from outputting them. 
 It also makes your code more readable. 
+
+### Exercise 
+
+Rewrite functions `abs` and `concatStrings` to be expressions which do the same things as their original implementations. 
+Implement functions `sumOfAbsoluteDifferences` and `longestCommonPrefix` in the expression style.
+
+`abs` computes the absolute value of the given integer number. 
+
+`concatStrings` concatenates the list of strings together. 
+
+`longestCommonPrefix` computes the longest common prefix of strings in the input list.
+
+`sumOfAbsoluteDifferences` first computes the absolute differences of numbers on the same positions in two arrays and 
+then sums them up. 
+For example, having arrays `[1, 2]` and `[3, 4]`, it results in `abs(1 - 3) + abs(2 - 4) == 4`. 
+You can assume the arrays always have the same length. 
+
 
 
 

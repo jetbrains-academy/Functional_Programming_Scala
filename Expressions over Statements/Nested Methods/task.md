@@ -2,8 +2,8 @@
 
 In Scala, it's possible to define methods within other methods. 
 This is useful when you have a function which is only supposed to be used once. 
-For example, you may want to implement the factorial function in a tail recursive style, but do not want to allow 
-the user to call the function with an arbitrary accumulator parameter. 
+For example, you may want to implement the factorial function using an accumulator to make the program more efficient.
+At the same time do not want to allow the user to call the function with an arbitrary accumulator parameter. 
 In this case you expose a normal one-parameter function `factorial` which calls the nested tail-recursive implementation 
 `fact` with the appropriate accumulator: 
 
@@ -43,7 +43,19 @@ def foo() = {
 }
 ```
 
-P.S. we used curly braces to show the scopes more clearly, but you do not need them in Scala 3. 
+Note that we used curly braces to show the scopes more clearly, but you do not need them in Scala 3. 
+
+Nested functions see the parameters of their parents, so you can avoid passing those of them that do not change: 
+
+```scala 3
+def f(x: Int, y: Int): Int =
+  def g(z: Int): Int =
+    def h(): Int =
+      x + y + z
+    h()
+  //  def i(): Int = z // z is not visible outside g
+  g(42)
+```
 
 Another example of where nested methods are especially useful is when you create a chain of calls to higher order 
 functions and use nested methods to give their arguments meaningful names. 
@@ -75,3 +87,7 @@ val numberOfWhiteOrGingerKittens =
     .filter(cat => cat.color == Color.White || cat.color == Color.Ginger)
     .count(cat => cat.age <= 1)
 ```
+
+### Exercise 
+
+Explore the scopes of the nested methods. Make code in the file `NestedTask.scala` compile.

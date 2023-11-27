@@ -47,4 +47,7 @@ def g(x: Int): Int =
   gPure(x, y)
 ```
 
+### Exercise
 
+Implement the pure function `calculateAndLogPure` which does the same thing as `calculateAndLogImpure`, but without 
+using global variable.

@@ -41,7 +41,7 @@ def main() =
 This solution is valid, but it feels icky. 
 We need to create a mutable variable to hold the pile of items inside the box. 
 Then we need to remember to remove the box under inspection before adding its content.
-We also have to remember to return `None` in the end, after the `while` loop: good thing, that the compiler would 
+We also have to remember to return `None` in the end, after the `while` loop: good thing, that the compiler will 
 complain, if we forget it. 
 But in general, it is just too easy to make a mistake when writing this function.
 

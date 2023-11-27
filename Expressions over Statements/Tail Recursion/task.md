@@ -7,8 +7,7 @@ Every time a function is called, some information about the call is put on the c
 allocated. 
 This information is kept there until all the computations within the function have finished, after which the stack is 
 deallocated (the information about the function call is removed from the stack) and the computed value is returned. 
-If a function calls another function, then the stack is allocated again, before deallocating the previous function's call.
-What is worse, we wait until the inner call is done, its stack frame is deallocated and its value returned to compute 
+If a function calls another function, then the stack is allocated again, before deallocating the previous function's call. What is worse, we wait until the inner call is done, its stack frame is deallocated and its value returned to compute 
 the result of the caller function.
 It is especially significant for recursive functions, because the depth of call stack can be astronomical. 
 
@@ -66,10 +65,11 @@ By the way, do you remember the key searching function we implemented in the pre
 Have you wondered how we got away not keeping track of a collection of boxes to look through?
 The trick is that the stack replaces that collection. 
 All the boxes to be considered are somewhere on the stack patiently waiting for their turn. 
+
 Is there a way we can make that function tail recursive? 
 Yes, of course, there is! 
-Similarly to the `factorial` function, we can create a helper function `go` with an extra parameter `boxToLookIn`
-to keep track of the boxes to search in.
+Similarly to the `factorial` function, we can create a helper function `go` with an extra parameter `boxesToLookIn`
+to keep track of the boxes to search the key in.
 This way we can ensure that `go` is tail recursive, i.e. either returns a value or calls itself as its final step. 
 
 ```scala 3
