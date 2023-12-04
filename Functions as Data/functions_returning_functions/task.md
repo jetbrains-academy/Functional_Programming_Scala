@@ -4,7 +4,7 @@ In Scala, it is possible to construct functions dynamically, inside functions an
 This technique allows us to create new functions based on the arguments given to the original function and return them as the result of that function.
 
 It’s particularly useful when we need to create specialized functions based on a common pattern or behavior.
-For example, consider the class `CalculatorPlusN` we wrote in the chapter "What is a function?".
+For example, consider the class `CalculatorPlusN` we wrote in the chapter "What is a function?"
 In that example, we created a class that took a number `n` in its constructor and then used that number in the method `add(x: Int, y: Int)` by adding it to the sum of `x` and `y`.
 
 ```scala
@@ -17,7 +17,7 @@ val calc = new CalculatorPlusN(3)
 calc.add(1 , 2)
 ```
 
-Now, instead of having a class that holds this additional number `n`, we can create and return the adder function to achieve the same result:
+Now, instead of having a class that stores this additional number `n`, we can create and return the adder function to achieve the same result:
 
 ```scala
 // Define a function that takes a fixed number and returns a new function that adds it to its input
@@ -31,14 +31,14 @@ add(1, 2)
 ```
 
 In the above example, we define a function `addFixedNumber` that takes an integer `n` and returns a new function that takes two integers, `x` and `y`, and returns the sum of `n` and `x` and `y`.
-Note how the return type of `addFixedNumber` looks like - it's a function type `(Int, Int) => Int`.
+Note the return type of `addFixedNumber` — it's a function type `(Int, Int) => Int`.
 Then, we define the new function adder inside `addFixedNumber`, which captures the value of `n` and adds it to its own two arguments, `x` and `y`.
 The `adder` function is then returned as the result of `addFixedNumber`.
 
 We then construct a specialized function add by calling `addFixedNumber(n: Int)` with `n` equal to `3`.
 Now, we can call `add` on any two integers; as a result, we will get the sum of these integers plus `3`.
 
-Scala provides special syntax for functions returning functions shown below:  
+Scala provides special syntax for functions returning functions, as shown below:  
 
 ``` 
 def addFixedNumber(n: Int)(x: Int, y:Int) =
@@ -47,15 +47,15 @@ def addFixedNumber(n: Int)(x: Int, y:Int) =
 val add = addFixedNumber(3)
 ```
 
-The first argument of the function `addFixedNumber` is put in its own parentheses while the second and the third are put into another pair of parentheses.
-The function `addFixedNumber` can then be supplied with only the first argument which creates a function expecting the next two arguments: `x` and `y`.  
-You can also call the function with all three arguments, but they should be put in separate parentheses: `addFixedNumber1(3)(4, 5)` instead of `addFixedNumber(3,4,5)`. 
-Notice that you cannot pass two arguments into the function written in this syntax: `addFixedNumber1(3)(4)` is not allowed. 
+The first argument of the function `addFixedNumber` is enclosed within its own set of parentheses, while the second and third arguments are enclosed within another pair of parentheses.
+The function `addFixedNumber` can then be supplied with only the first argument, which creates a function expecting the next two arguments: `x` and `y`.  
+You can also call the function with all three arguments, but they should be enclosed in separate parentheses: `addFixedNumber1(3)(4, 5)` instead of `addFixedNumber(3,4,5)`. 
+Notice that you cannot pass only two arguments into the function written in this syntax: `addFixedNumber1(3)(4)` is not allowed. 
 
 
 
 ## Exercise 
 
-Implement a function `filterList` which returns another function.
-You can use `filter` method in the implementation.
+Implement a function `filterList`, which returns another function.
+You can use the `filter` method in the implementation.
 
