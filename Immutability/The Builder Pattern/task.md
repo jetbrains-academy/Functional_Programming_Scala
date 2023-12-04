@@ -20,7 +20,7 @@ Note that:
   The mandatory parameters are specified in the builder's constructor, while methods like `setEmail`, `setTwitterHandle`, 
   and `setInstagramHandle` are available to set optional parameters. 
   Each of these methods returns the builder itself, enabling method chaining.
-* Finally, calling the build method will use all specified parameters (default or set) to construct a `User` object.
+* Finally, the execution of the `build` method employs all specified parameters (whether default or set) to construct a `User` object.
 
 This pattern keeps object creation understandable and clean, mainly when dealing with objects that can have multiple optional parameters.
 
@@ -67,4 +67,4 @@ class UserBuilder(private val firstName: String, private val lastName: String):
 
 ### Exercise
 
-Implement the builder pattern for a message which has optional sender, receiver and content fields. 
+Implement the builder pattern for constructing a message that has optional sender, receiver, and content fields. 
