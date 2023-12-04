@@ -12,12 +12,12 @@ Here's a short list of key differences of both approaches to lazy computation:
   * Lazy List: Once an element is computed, it is cached for future access, preventing recomputation.
 
 * Commonly used for:
-  * View: Chain transformations on collections when we want to avoid intermediate collections' creation.
+  * View: Chain transformations on collections when we want to avoid the creation of intermediate collections.
   * Lazy List: Ideal when working with potentially infinite sequences and when previously computed results might be
     accessed multiple times.
 
 
-Below, you will find an example comparing both.
+Below, you will find an example comparing both approaches.
 Run it, see the results, and experiment with the code.
 Use the debugger and breakpoints between chained operations to see how intermediate results differ between
 an eager collection, a view, and a lazy list.
