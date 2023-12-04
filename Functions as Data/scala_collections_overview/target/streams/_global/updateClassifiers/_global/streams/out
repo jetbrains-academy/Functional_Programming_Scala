@@ -1,3 +1,4 @@
-[debug] not up to date. inChanged = true, force = false
-[debug] Updating ProjectRef(uri("file:/home/ev/prj/Functional_Programming_Scala/Functions%20as%20Data/scala_collections_overview/"), "scala_collections_overview")...
-[debug] Done updating ProjectRef(uri("file:/home/ev/prj/Functional_Programming_Scala/Functions%20as%20Data/scala_collections_overview/"), "scala_collections_overview")
+[warn] scala3-library_3-3.2.0-sources.jar no longer exists at /home/ev/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala3-library_3/3.2.0/scala3-library_3-3.2.0-sources.jar
+[debug] not up to date. inChanged = false, force = false
+[debug] Updating ProjectRef(uri("file:/Users/Ekaterina.Verbitskaya/prj/Functional_Programming_Scala/Functions%20as%20Data/scala_collections_overview/"), "scala_collections_overview")...
+[debug] Done updating ProjectRef(uri("file:/Users/Ekaterina.Verbitskaya/prj/Functional_Programming_Scala/Functions%20as%20Data/scala_collections_overview/"), "scala_collections_overview")

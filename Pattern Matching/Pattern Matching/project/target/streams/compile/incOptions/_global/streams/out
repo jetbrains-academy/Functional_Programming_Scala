@@ -1,2 +1,2 @@
-[debug] Created transactional ClassFileManager with tempDir = /home/ev/prj/Functional_Programming_Scala/Pattern Matching/Pattern Matching/project/target/scala-2.12/sbt-1.0/classes.bak
-[debug] Removing the temporary directory used for backing up class files: /home/ev/prj/Functional_Programming_Scala/Pattern Matching/Pattern Matching/project/target/scala-2.12/sbt-1.0/classes.bak
+[debug] Created transactional ClassFileManager with tempDir = /Users/Ekaterina.Verbitskaya/prj/Functional_Programming_Scala/Pattern Matching/Pattern Matching/project/target/scala-2.12/sbt-1.0/classes.bak
+[debug] Removing the temporary directory used for backing up class files: /Users/Ekaterina.Verbitskaya/prj/Functional_Programming_Scala/Pattern Matching/Pattern Matching/project/target/scala-2.12/sbt-1.0/classes.bak
