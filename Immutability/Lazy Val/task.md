@@ -4,10 +4,10 @@
 This strategy can enhance performance and allow programmers to work with infinite data structures, among other benefits.
 In a lazy evaluation strategy, expressions are not evaluated when bound to a variable but when used for the first time.
 If they are never used, they are never evaluated.
-In some contexts, lazy evaluation can also avoid throwing exceptions since it may prevent the evaluation of erroneous computations.
+In some contexts, lazy evaluation can also avert exceptions, since it can prevent the evaluation of erroneous computations.
 
 In Scala, the keyword `lazy` is used to implement laziness.
-When `lazy` is used in the declaration of a `val`, the initialization of the `val` is deferred until it is accessed for the first time.
+When `lazy` is used in a `val` declaration, the initialization of that `val` is deferred until its first access.
 Here’s a breakdown of how `lazy val` works internally:
 
 * **Declaration**: When a `lazy val` is declared, no memory space is allocated for the value, and no initialization code is executed.
@@ -36,7 +36,7 @@ println(s"lazyComputedValue declared at $now.")
 // The value is computed and printed only when it's accessed for the first time.
 println(s"Accessing: $lazyComputedValue")
 println(s"time now is $now") // takes more than 1000 milliseconds
-// This time it's not computed but fetched from memory.
+// This time, it's not computed but fetched from memory.
 println(s"Accessing again: $lazyComputedValue")
 println(s"time now is $now") // should take only a few milliseconds at most
 ```
