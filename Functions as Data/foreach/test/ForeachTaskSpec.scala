@@ -8,7 +8,10 @@ class ForeachTaskSpec extends AnyFunSuite {
       val catsInList = cats.toList
       outputShortInfo(catsInList)
 
-      assert(stream.toString().trim == catsInList.map(shortInfo).mkString("\n").trim)
+      val expected = catsInList.map(shortInfo).mkString("\n").trim
+      val actual = stream.toString().replaceAll("\r\n", "\n").trim
+
+      assert(actual == expected)
     }
   }
 }

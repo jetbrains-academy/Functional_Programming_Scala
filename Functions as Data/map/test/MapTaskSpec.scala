@@ -7,7 +7,10 @@ class MapTaskSpec extends AnyFunSuite {
     Console.withOut(stream) {
       outputFurCharacteristics(cat)
 
-      assert(stream.toString().trim == furCharacteristicsDescription(cat).mkString("\n").trim)
+      val expected = furCharacteristicsDescription(cat).mkString("\n").trim
+      val actual = stream.toString().replaceAll("\r\n", "\n").trim
+
+      assert(actual == expected)
     }
   }
   test("") {
