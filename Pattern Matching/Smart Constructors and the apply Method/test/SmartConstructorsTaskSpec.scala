@@ -11,7 +11,9 @@ class SmartConstructorsTaskSpec extends AnyFunSuite {
 
       List(jack, yuki, hoops).foreach(x => println(x.toString()))
 
-      assert(stream.toString().trim == s"Dog(Yuki,${Dog.defaultBreed},${Dog.defaultOwner})\nDog(Yuki,Akita,${Dog.defaultOwner})\nDog(Hoops,Australian Shepherd,Alex)")
+      val expected = s"Dog(Yuki,${Dog.defaultBreed},${Dog.defaultOwner})\nDog(Yuki,Akita,${Dog.defaultOwner})\nDog(Hoops,Australian Shepherd,Alex)"
+      val actual = stream.toString().replaceAll("\r\n", "\n").trim
+      assert(actual == expected)
     }
   }
 }

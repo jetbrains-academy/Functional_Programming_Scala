@@ -20,7 +20,9 @@ class NewtypePatternTaskSpec extends AnyFunSuite {
       println(metricTracker.show())
       println(imperialTracker.show())
 
-      assert(stream.toString().trim == "Total distance walked: 2457.2m\nTotal distance walked: 4000.0ft")
+      val expected = "Total distance walked: 2457.2m\nTotal distance walked: 4000.0ft".trim
+      val actual = stream.toString().replaceAll("\r\n", "\n").trim
+      assert(actual == expected)
     }
   }
 }

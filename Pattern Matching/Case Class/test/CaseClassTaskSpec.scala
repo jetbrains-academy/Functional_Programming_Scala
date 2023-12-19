@@ -11,7 +11,9 @@ class CaseClassTaskSpec extends AnyFunSuite {
 
       List(yuki, hoops, bowser).foreach(introduceDog)
 
-      assert(stream.toString().trim == "This dog's name is Yuki, it's a(n) Akita, and its favorite toy is a(n) ball.\nThis dog's name is Hoops, it's a(n) Australian Shepherd, and its favorite toy is a(n) squicky pig.\nThis dog's name is Bowser, it's a(n) Chow Chow, and its favorite toy is a(n) dinosaur bone.")
+      val expected = "This dog's name is Yuki, it's a(n) Akita, and its favorite toy is a(n) ball.\nThis dog's name is Hoops, it's a(n) Australian Shepherd, and its favorite toy is a(n) squicky pig.\nThis dog's name is Bowser, it's a(n) Chow Chow, and its favorite toy is a(n) dinosaur bone.".trim
+      val actual = stream.toString().replaceAll("\r\n", "\n").trim
+      assert(actual == expected)
     }
   }
 }
