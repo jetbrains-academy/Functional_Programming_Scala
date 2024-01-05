@@ -1,5 +1,5 @@
 type: edu
-custom_name: 'A Custom unapply Method'
+custom_name: A Custom unapply Method
 files:
   - name: src/CustomUnapplyTask.scala
     visible: true

@@ -1,5 +1,5 @@
 type: edu
-custom_name: 'Case Class'
+custom_name: Case Class
 files:
   - name: src/CaseClassTask.scala
     visible: true
