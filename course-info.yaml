@@ -17,5 +17,6 @@ content:
   - Pattern Matching
   - Immutability
   - Expressions over Statements
+  - Conclusion
 environment_settings:
   jvm_language_level: JDK_17
