@@ -1,2 +1,1 @@
-object Main:
-  
+object Main
