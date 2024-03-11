@@ -18,7 +18,7 @@ object FunctionsAndMethods:
     def multiply(x: Int, y: Int): Int = x * y
   // [end]
 
-  // Exercise: Create a subclass of `Multiplier` named `MultiplierWithOffset` that has an internal state `offset`.
+  // Exercise: Create a subclass of `Multiplier` named `MultiplierWithOffset` whose constructor requires an `offset` parameter.
   // Override the `multiply` method to add the `offset` to the product of the two input integers.
   // [start: MultiplierWithOffset]
   class MultiplierWithOffset(offset: Int) extends Multiplier:
