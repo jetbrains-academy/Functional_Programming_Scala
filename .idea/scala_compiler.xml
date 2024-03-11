@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<project version="4">
-  <component name="ScalaCompilerConfiguration">
-    <profile name="sbt 1" modules="FP_Demo,a-custom-unapply-method,a-view,anonymous_functions,berliner-pattern,case-class,case-class-copy,case-objects,comparison-of-view-and-lazy-collection,destructuring,enums,filter,find,flatmap,foldleft,foreach,functional_programming_scala_7114,functions_returning_functions,lazy-collection-to-the-rescue,lazy-list,lazy-val,map,nested-methods,partial_fucntion_application,passing_functions_as_arguments,pattern-matching,pure-vs-impure-functions,recursion,scala-collections-instead-of-imperative-loops,scala_collections_overview,sealed-traits-hierarchies,smart-constructors-and-the-apply-method,tail-recursion,the-builder-pattern,the-newtype-pattern,the-problem,total_and_partial_functions,using-clause-for-carrying-an-immutable-context,what-is-an-expression,what_is_a_function" />
-  </component>
-</project>
