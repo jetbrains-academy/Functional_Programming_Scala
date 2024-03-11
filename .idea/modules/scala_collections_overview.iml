@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<module external.linked.project.id="scala_collections_overview [file:/Users/Ekaterina.Verbitskaya/prj/Functional_Programming_Scala/Functions%20as%20Data/scala_collections_overview/]" external.linked.project.path="$MODULE_DIR$/../../Functions as Data/scala_collections_overview" external.root.project.path="$MODULE_DIR$/../.." external.system.id="SBT" type="JAVA_MODULE" version="4">
-  <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_17">
+<module external.linked.project.id="scala_collections_overview [file:/home/berg/GitHub/jetbrains-academy/Functional_Programming_Scala/Functions%20as%20Data/scala_collections_overview/]" external.linked.project.path="$MODULE_DIR$/../../Functions as Data/scala_collections_overview" external.root.project.path="$MODULE_DIR$/../.." external.system.id="SBT" type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_11">
     <output url="file://$MODULE_DIR$/../../Functions as Data/scala_collections_overview/target/scala-3.2.0/classes" />
     <output-test url="file://$MODULE_DIR$/../../Functions as Data/scala_collections_overview/target/scala-3.2.0/test-classes" />
     <exclude-output />

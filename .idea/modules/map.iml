@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<module external.linked.project.id="map [file:/Users/Ekaterina.Verbitskaya/prj/Functional_Programming_Scala/Functions%20as%20Data/map/]" external.linked.project.path="$MODULE_DIR$/../../Functions as Data/map" external.root.project.path="$MODULE_DIR$/../.." external.system.id="SBT" type="JAVA_MODULE" version="4">
-  <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_17">
+<module external.linked.project.id="map [file:/home/berg/GitHub/jetbrains-academy/Functional_Programming_Scala/Functions%20as%20Data/map/]" external.linked.project.path="$MODULE_DIR$/../../Functions as Data/map" external.root.project.path="$MODULE_DIR$/../.." external.system.id="SBT" type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_11">
     <output url="file://$MODULE_DIR$/../../Functions as Data/map/target/scala-3.2.0/classes" />
     <output-test url="file://$MODULE_DIR$/../../Functions as Data/map/target/scala-3.2.0/test-classes" />
     <exclude-output />
