@@ -1,7 +1,7 @@
 # Project exclude paths
 /.coursecreator/
 .bsp/
-.idea
+.idea/
 target
 *.class
 *.iml
