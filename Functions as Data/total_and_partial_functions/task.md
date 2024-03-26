@@ -3,7 +3,7 @@ We have already discussed how a function can be categorized as pure or impure.
 A pure function does not produce side effects; instead, it operates solely on its arguments and produces a result. 
 Conversely, an impure function may induce side effects and draw input from contexts other than its arguments.
 
-This chapter introduces another important distinction: a function can be ушерук total or partial. 
+This chapter introduces another important distinction: a function can be either total or partial. 
 A total function is one that is defined for all input values within its domain. 
 In other words, it yields an output value for every possible input value. 
 A total function never throws an exception or results in a runtime error arising from undefined input values. 
