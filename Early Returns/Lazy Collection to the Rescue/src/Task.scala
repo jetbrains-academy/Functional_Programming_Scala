@@ -1,3 +1,1 @@
-class Task {
-  //put your task here
-}
+object Task

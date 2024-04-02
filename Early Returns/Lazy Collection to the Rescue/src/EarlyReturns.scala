@@ -1,6 +1,3 @@
-import scala.util.boundary
-import scala.util.boundary.break
-
 object EarlyReturns:
   private type UserId = Int
   private type Email = String
@@ -47,14 +44,14 @@ object EarlyReturns:
     !user.email.contains(' ') && user.email.count(_ == '@') == 1
 
   /**
-   * Using `boundary` we create a computation context to which `break` returns the value.
+   * Using `iterator` creates a lazy collection that won't be evaluated
+   * after the first suitable user is found.
    * @param userIds the sequence of all user identifiers
    * @return `Some` of the first valid user data or `None` if no valid user data is found
    */
-  def findFirstValidUser10(userIds: Seq[UserId]): Option[UserData] =
-    boundary:
-      for userId <- userIds do
-        safeComplexConversion(userId).foreach { userData =>
-          if (complexValidation(userData)) break(Some(userData))
-        }
-      None
+  def findFirstValidUser9(userIds: Seq[UserId]): Option[UserData] =
+    userIds
+      .iterator
+      .map(safeComplexConversion)
+      .find(_.exists(complexValidation))
+      .flatten

@@ -18,8 +18,6 @@ As a result, we get this short definition of our search function.
 ```scala 3
   /**
    * The custom `unapply` method runs conversion and validation and only returns valid user data.
-   * @param userIds the sequence of all user identifiers
-   * @return `Some` of the first valid user data or `None` if no valid user data is found
    */
   def findFirstValidUser4(userIds: Seq[UserId]): Option[UserData] =
     userIds.collectFirst {
@@ -48,8 +46,6 @@ the `for` loop.
 ```scala 3
   /**
    * Partiality of `safeComplexConversion` trickles into the search function. 
-   * @param userIds the sequence of all user identifiers
-   * @return `Some` of the first valid user data or `None` if no valid user data is found
    */
   def findFirstValidUser5(userIds: Seq[UserId]): Option[UserData] =
     for userId <- userIds do

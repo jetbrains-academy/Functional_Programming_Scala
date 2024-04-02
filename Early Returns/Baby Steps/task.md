@@ -46,19 +46,14 @@ object EarlyReturns:
    * We assume that it is costly to retrieve user data, so we want to avoid
    * calling it unless it's absolutely necessary.
    *
-   * This version of the method assumes that the user data always exists for a given user id. 
-   * @param userId the identifier of a user for whom we want to retrieve the data
-   * @return the user data
+   * This version of the method assumes that the user data always exists for a given user id.
    */
   def complexConversion(userId: UserId): UserData = 
     database.find(_.id == userId).get
 
   /**
    * Similar to `complexConversion`, the validation of user data is costly 
-   * and we shouldn't do it too often. 
-   *
-   * @param user user data
-   * @return true if the user data is valid, false otherwise
+   * and we shouldn't do it too often.
    */
   def complexValidation(user: UserData): Boolean = 
     !user.email.contains(' ') && user.email.count(_ == '@') == 1
@@ -70,9 +65,7 @@ If no valid user data has been found, then we return None after going through th
 
 ```scala 3
  /**
-  * Imperative approach that uses un-idiomatic `return`. 
-  * @param userIds the sequence of all user identifiers
-  * @return `Some` of the first valid user data or `None` if no valid user data is found
+  * Imperative approach that uses un-idiomatic `return`.
   */
   def findFirstValidUser1(userIds: Seq[UserId]): Option[UserData] =
     for userId <- userIds do
@@ -90,9 +83,7 @@ of the `userData`.
 
 ```scala 3
  /**
-  * Naive functional approach: calls `complexConversion`` twice on the selected ID.  
-  * @param userIds the sequence of all user identifiers
-  * @return `Some` of the first valid user data or `None` if no valid user data is found
+  * Naive functional approach: calls `complexConversion` twice on the selected ID.
   */
   def findFirstValidUser2(userIds: Seq[UserId]): Option[UserData] =
     userIds
@@ -106,9 +97,7 @@ In the next lesson, we'll use a custom `unapply` method to get rid of the repeat
 
 ```scala 3
   /** 
-   * A more concise implementation which uses `collectFirst`. 
-   * @param userIds the sequence of all user identifiers
-   * @return `Some` of the first valid user data or `None` if no valid user data is found
+   * A more concise implementation which uses `collectFirst`.
    */
   def findFirstValidUser3(userIds: Seq[UserId]): Option[UserData] =
     userIds.collectFirst {

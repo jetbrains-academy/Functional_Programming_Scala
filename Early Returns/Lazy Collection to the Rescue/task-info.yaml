@@ -6,3 +6,5 @@ files:
     visible: false
   - name: build.sbt
     visible: false
+  - name: src/EarlyReturns.scala
+    visible: true
