@@ -86,7 +86,7 @@ We do run the conversion twice in this case, but it is less important because of
 
 ```scala 3
   object ValidUserInADifferentWay:
-    def otherValidation(userData: UserData): Boolean = /* check that it's a child user */
+    def otherValidation(userData: UserData): Boolean = false /* check that it's a child user */
     def unapply(userId: UserId): Option[UserData] = safeComplexConversion(userId).find(otherValidation)
   
   def findFirstValidUser7(userIds: Seq[UserId]): Option[UserData] =
@@ -135,12 +135,18 @@ the `Deconstruct` trait while pattern matching:
     }
 ```
 
+### Exercise
 
+You have noticed that the first cat with a valid fur pattern you found had already been adopted. 
+Now you need to include the check whether a cat is still in the shelter in the validation. 
 
+* Implement `nonAdoptedCatConversion` to only select the cats that are still up for adoption
+* Copy your implementation of the `furCharacteristicValidation` function from the previous task. 
+* Implement your custom `unapply` method for the `ValidCat` object, and use it to write the `unapplyFindFirstValidCat` function. Validation of the fur characteristics should not be run on cats who have been adopted. 
 
+Next, you notice that there are some inaccuracies in coat patterns: no bengal cat can be of solid color! 
 
-
-
-
-
+* Implement the validation of the coat pattern using a custom `unapply` method. 
+* Use `ValidPattern` object that extends the `Deconstruct` trait.
+* Use the custom `unapply` method in the `findFirstCatWithValidPattern` function. 
 

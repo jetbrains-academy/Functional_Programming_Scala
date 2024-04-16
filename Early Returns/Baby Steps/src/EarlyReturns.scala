@@ -8,17 +8,17 @@ object EarlyReturns:
    * Pretend database of user data.
    */
   private val database = Seq(
-    UserData(1, "John Doe", "john@@gmail.com"),
-    UserData(2, "Jane Smith", "jane smith@yahoo.com"),
-    UserData(3, "Michael Brown", "michaeloutlook.com"),
-    UserData(4, "Emily Johnson", "emily at icloud.com"),
-    UserData(5, "Daniel Wilson", "daniel@hotmail.com"),
-    UserData(6, "Sophia Martinez", "sophia@aol.com"),
-    UserData(7, "Christopher Taylor", "christopher@mail.com"),
-    UserData(8, "Olivia Anderson", "olivia@live.com"),
-    UserData(9, "James Thomas", "james@protonmail.com"),
-    UserData(10, "Isabella Jackson", "isabella@gmail.com"),
-    UserData(11, "Alexander White", "alexander@yahoo.com")
+    UserData(1, "Ayaan Sharma", "ayaan@gmail.com"),
+    UserData(2, "Lei Zhang", "lei_zhang@yahoo.cn"),
+    UserData(3, "Fatima Al-Fassi", "fatima.alfassi@outlook.sa"),
+    UserData(4, "Ana Sofia Ruiz", "ana_sofia@icloud.es"),
+    UserData(5, "Oluwaseun Adeyemi", "oluwaseun@hotmail.ng"),
+    UserData(6, "Maria Ivanova", "maria.ivanova@aol.ru"),
+    UserData(7, "Yuto Nakamura", "yuto.nakamura@mail.jp"),
+    UserData(8, "Chiara Rossi", "chiara@live.it"),
+    UserData(9, "Lucas Müller", "lucas@protonmail.de"),
+    UserData(10, "Sara Al-Bahrani", "sara.albahrani@gmail.com"),
+    UserData(11, "Min-Jun Kim", "minjun.kim@yahoo.kr")
   )
 
   private val identifiers = 1 to 11

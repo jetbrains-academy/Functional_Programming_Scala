@@ -105,3 +105,26 @@ In the next lesson, we'll use a custom `unapply` method to get rid of the repeat
     }
     
 ```
+
+### Exercise
+
+Let's come back to one of our examples from an earlier module. 
+You are managing a cat shelter and keeping track of cats, their breeds and coats in a database.
+
+You notice that there are a lot of mistakes in the database introduced by a previous employee: there are short-haired mainecoons, long-haired sphynxes, and other inconsistensies. 
+You don't have time to fix the database right now, because you see a potential adopter coming into the shelter. 
+Your task is to find the first valid entry in the database to present the potential adopter with a cat. 
+
+Implement `catConversion` method that fetches a cat from the `catDatabase` in the `Database.scala` file by its identifier. 
+To do so, you will first need to consult another database "table" `adoptionStatusDatabase` to find out the name of a cat. 
+
+Then implement `furCharacteristicValidation` that checks that the fur characteristics in the database entry makes sense for the cat's particular breed. 
+Consult the map `breedCharacteristics` for the appropriate fur characteristics for each bread. 
+
+Finally, implement the search using the conversion and validation methods:  
+* `imperativeFindFirstValidCat` that works in the imperative fashion.
+* `functionalFindFirstValidCat`, in the functional style. 
+* `collectFirstFindFirstValidCat` using the `collectFirst` method. 
+
+Ensure that your search does not traverse the whole database. 
+We put some simple logging in the conversion and validation methods so that you could make sure of that. 

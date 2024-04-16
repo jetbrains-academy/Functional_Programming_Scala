@@ -22,4 +22,7 @@ Try comparing the two approaches on your own.
 
 ### Exercise
 
-Implement the early return by using a lazy collection.
+Let's try using lazy collection to achieve the same goal as in the previous tasks. 
+
+* Use a lazy collection to implement `findFirstValidCat`.
+* Copy the implementations of `furCharacteristicValidation` and `nonAdoptedCatConversion` from the previous task. 

@@ -27,3 +27,12 @@ Since it's the end of the method, it immediately returns `Some(userData)`.
 Sometimes there are multiple boundaries, in this case one can add labels to `break` calls. 
 This is especially important when there are embedded loops.
 One example of using labels can be found [here](https://gist.github.com/bishabosha/95880882ee9ba6c53681d21c93d24a97).
+
+### Exercise 
+
+Finally, let's use boundaries to achieve the same result. 
+
+Let's try using lazy collection to achieve the same goal as in the previous tasks.
+
+* Use a boundary to implement `findFirstValidCat`.
+* Copy the implementations of `furCharacteristicValidation` and `nonAdoptedCatConversion` from the previous task. 

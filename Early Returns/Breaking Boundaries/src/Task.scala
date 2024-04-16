@@ -1,60 +1,61 @@
+import Database.*
+import Breed.*
+import FurCharacteristic.*
+import Pattern.*
+import TabbySubtype.*
+import ShadingSubtype.*
+import BicolorSubtype.*
+import EarlyReturns.{UserData, UserId, complexValidation, safeComplexConversion}
+import TricolorSubtype.*
+
 import scala.util.boundary
 import scala.util.boundary.break
 
-object EarlyReturns:
-  private type UserId = Int
-  private type Email = String
-
-  case class UserData(id: UserId, name: String, email: Email)
-
-  /**
-   * Pretend database of user data.
-   */
-  private val database = Seq(
-    UserData(1, "John Doe", "john@@gmail.com"),
-    UserData(2, "Jane Smith", "jane smith@yahoo.com"),
-    UserData(3, "Michael Brown", "michaeloutlook.com"),
-    UserData(4, "Emily Johnson", "emily at icloud.com"),
-    UserData(5, "Daniel Wilson", "daniel@hotmail.com"),
-    UserData(6, "Sophia Martinez", "sophia@aol.com"),
-    UserData(7, "Christopher Taylor", "christopher@mail.com"),
-    UserData(8, "Olivia Anderson", "olivia@live.com"),
-    UserData(9, "James Thomas", "james@protonmail.com"),
-    UserData(10, "Isabella Jackson", "isabella@gmail.com"),
-    UserData(11, "Alexander White", "alexander@yahoo.com")
+object Task:
+  private val breedCharacteristics: Map[Breed, Set[FurCharacteristic]] = Map(
+    Siamese -> Set(ShortHaired, SleekHaired),
+    Persian -> Set(LongHaired, Fluffy, DoubleCoated),
+    MaineCoon -> Set(LongHaired, Fluffy, DoubleCoated),
+    Ragdoll -> Set(LongHaired, Fluffy, DoubleCoated),
+    Bengal -> Set(ShortHaired),
+    Abyssinian -> Set(ShortHaired, SleekHaired),
+    Birman -> Set(LongHaired, Fluffy, DoubleCoated),
+    OrientalShorthair -> Set(ShortHaired, SleekHaired),
+    Sphynx -> Set(WireHaired, Plush),
+    DevonRex -> Set(ShortHaired, Plush, WireHaired),
+    ScottishFold -> Set(ShortHaired, LongHaired, DoubleCoated),
+    Metis -> Set(LongHaired, ShortHaired, Fluffy, Plush, SleekHaired, WireHaired, DoubleCoated) // Assuming Metis can have any characteristics
   )
 
-  private val identifiers = 1 to 11
-
   /**
-   * This is our "complex conversion" method.
-   * We assume that it is costly to retrieve user data, so we want to avoid
-   * calling it unless it's absolutely necessary.
+   * Implement the validation: the characteristics of the cat's fur should feed their breed.
    *
-   * This function takes into account that some IDs can be left out from the database
-   */
-  def safeComplexConversion(userId: UserId): Option[UserData] = database.find(_.id == userId)
-
-
-  /**
-   * Similar to `safeComplexConversion`, the validation of user data is costly
-   * and we shouldn't do it too often.
-   *
-   * @param user user data
+   * @param cat cat data
    * @return true if the user data is valid, false otherwise
    */
-  def complexValidation(user: UserData): Boolean =
-    !user.email.contains(' ') && user.email.count(_ == '@') == 1
+  def furCharacteristicValidation(cat: Cat): Boolean =
+    print(s"Validation of fur characteristics: ${cat.name}\n")
+    val validCharacteristics = breedCharacteristics(cat.breed)
+    cat.furCharacteristics.forall(validCharacteristics.contains)
 
   /**
-   * Using `boundary` we create a computation context to which `break` returns the value.
-   * @param userIds the sequence of all user identifiers
-   * @return `Some` of the first valid user data or `None` if no valid user data is found
+   * This function takes into account that some IDs can be left out from the database
+   * and only selects a cat who has not been adopted.
    */
-  def findFirstValidUser10(userIds: Seq[UserId]): Option[UserData] =
+  def nonAdoptedCatConversion(catId: CatId): Option[Cat] =
+    print(s"Non-adopted cat conversion: $catId\n")
+    val status = adoptionStatusDatabase.find(cat => cat.id == catId && !cat.adopted)
+    status.flatMap(status => catDatabase.find(_.name == status.name))
+
+  /**
+   * Use `boundary` to find the first cat with valid fur characteristics.
+   * @param catIds the sequence of all cat identifiers
+   * @return `Some` of the first valid cat data or `None` if no valid cat data is found
+   */
+  def findFirstValidCat(catIds: Seq[CatId]): Option[Cat] =
     boundary:
-      for userId <- userIds do
-        safeComplexConversion(userId).foreach { userData =>
-          if (complexValidation(userData)) break(Some(userData))
+      for catId <- catIds do
+        nonAdoptedCatConversion(catId).foreach { cat =>
+          if (furCharacteristicValidation(cat)) break(Some(cat))
         }
       None
