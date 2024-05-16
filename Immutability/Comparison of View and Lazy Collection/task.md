@@ -1,19 +1,19 @@
 ## Comparison of View and Lazy List
 
-Now you may wonder why Scala has both lazy lists and views, and when to use which one.
-Here's a short list of key differences of both approaches to lazy computation:
+Now you may be wondering why Scala has both lazy lists and views, and when to use which one.
+Here's a short list highlighting the key differences between these two approaches to lazy computation:
 
 * Construction:
-  * View: You can create a view of any Scala collection by calling `.view` on it.
-  * Lazy List: You must create it from scratch with the `#::` operator or other methods.
+  * View: You can create a view from any Scala collection by calling `.view` on it.
+  * Lazy List: You must create it from scratch with the `#::` operator or other specific methods.
 * Caching:
-  * View: Does not cache results. Each access recomputes values through the transformation pipeline unless forced into
+  * View: It does not cache results. Each access recomputes values through the transformation pipeline unless forced into
     a concrete collection.
-  * Lazy List: Once an element is computed, it is cached for future access, preventing recomputation.
+  * Lazy List: Once an element is computed, it is cached for future access to prevent unnecessary recomputation.
 
 * Commonly used for:
-  * View: Chain transformations on collections when we want to avoid the creation of intermediate collections.
-  * Lazy List: Ideal when working with potentially infinite sequences and when previously computed results might be
+  * View: Perfect for chaining transformations on collections when we want to avoid creating intermediate collections.
+  * Lazy List: Ideal for working with potentially infinite sequences and when previously computed results might be
     accessed multiple times.
 
 
