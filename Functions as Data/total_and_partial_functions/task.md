@@ -58,15 +58,15 @@ val blackCats: Seq[Cat] = animals.collect {
 }
 ```
 In this example, we first create an enum `Color` with three values: `Black`, `White`, and `Ginger`. 
-We define a trait, `Animal`, with two abstract methods: `name` and `color`. 
-We create case classes, `Cat` and `Dog`, that extend the `Animal` trait, and override the name and color methods with respective values. 
+We define a trait `Animal` with two abstract methods: `name` and `color`. 
+We create case classes `Cat` and `Dog` that extend the `Animal` trait, and override the `name` and `color` methods with respective values. 
 Then, we create three instances of `Cat` (two black and one ginger) and two instances of `Dog` (one black and one white). 
-We consolidate them all into a sequence of type `Seq[Animal]`.
+We consolidate all these instances into a sequence of type `Seq[Animal]`.
 
 Ultimately, we use the `collect` method on the sequence to create a new sequence containing only black cats. 
-The collect method applies a partial function to the original collection and constructs a new collection with only the elements for which the partial function is defined. 
-You can perceive it as combibibg the filter and map methods. 
-In the above example, we provide collect with the following partial function:
+The `collect` method applies a partial function to the original collection and constructs a new collection containing only the elements for which the partial function is defined. 
+You can perceive it as the combination of the `filter` and `map` methods. 
+In the above example, we provide `collect` with the following partial function:
 
 ```scala
 case cat: Cat if cat.color == Black => cat
@@ -74,8 +74,8 @@ case cat: Cat if cat.color == Black => cat
 The `case` keyword at the beginning tells us that the function will provide a valid result only in the following case: 
 the input value needs to be of the type `Cat` (not just any `Animal` from our original sequence), 
 and the color of that cat needs to be `Black`. 
-If these conditions are met, the function will return the cat, however, as an instance of the type `Cat`, not just `Animal`. 
-Thanks to this, we can specify that the new collection created by the collect method is a sequence of the type `Seq[Cat]`.
+If these conditions are met, the function will return the cat, but as an instance of the type `Cat`, not just `Animal`. 
+As a result, we can specify that the new collection created by the `collect` method is a sequence of the type `Seq[Cat]`.
 
 ## Exercise 
 

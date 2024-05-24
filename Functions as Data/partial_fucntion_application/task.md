@@ -1,11 +1,11 @@
 # Partial function application
 Returning functions from functions is related to, but not the same as, [partial application](https://en.wikipedia.org/wiki/Partial_application).
-The former allows you create functions that behave as though they have a "hidden" list of arguments that you provide at the moment of creation, rather than at the moment of usage.
-Each function returns a new function that accepts the next argument until all arguments are accounted for, and the final function returns the result.
+The former allows you to create functions that behave as though they have a "hidden" list of arguments provided at the moment of creation, rather than at the moment of use.
+Each function returns a new function that accepts the next argument until all arguments have been processed. The final function then returns the result.
 
-On the other hand, partial function application refers the process of assigning fixed values to some of the arguments of a function and returning a new function that only takes the remaining arguments.
+On the other hand, partial function application refers to the process of assigning fixed values to some of a function's arguments and returning a new function that only takes the remaining arguments.
 The new function is a specialized version of the original function with some arguments already provided.
-This technique enables code reuse — we can write a more generic function and then construct its specialized versions to use in various contexts.
+This technique enables code reuse — we can write a more generic function and then construct its specialized versions for use in various contexts.
 Here's an example:
 
 ```scala
@@ -24,6 +24,6 @@ Finally, we call `add3` with only two arguments, obtaining the same result as wi
 
 ## Exercise 
 
-Implement a function `filterList` that can then be partially applied.
+Implement a function `filterList`, which can then be partially applied.
 You can use the `filter` method in the implementation.
 

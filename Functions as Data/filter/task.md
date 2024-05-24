@@ -20,7 +20,7 @@ case class Cat(name: String, color: Color)
 // Let’s import the Color enum values for better readability
 import Color._
 
-// We create four cats, two black, one white, and one ginger
+// We create four cats: two black, one white, and one ginger
 val felix    = Cat("Felix", Black)
 val snowball = Cat("Snowball", White)
 val garfield = Cat("Garfield", Ginger)
@@ -48,6 +48,6 @@ There are multiple cats available, and you wish to adopt a cat with one of the f
 
 * The cat is calico.
 * The cat is fluffy.
-* The cat's breed is Abyssinian.
+* The cat is of the Abyssinian breed.
 
-To simplify decision making, you first identify all cats which possess at least one of the characteristics above. Your task is to implement the necessary functions and then apply the filter. 
+To simplify decision making, you first identify all the cats which possess at least one of the characteristics above. Your task is to implement the necessary functions and then apply the filter. 
