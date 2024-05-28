@@ -18,6 +18,7 @@ content:
   - Immutability
   - Expressions over Statements
   - Early Returns
+  - Monads
   - Conclusion
 environment_settings:
   jvm_language_level: JDK_17

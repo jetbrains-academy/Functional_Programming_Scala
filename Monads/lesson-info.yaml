@@ -1,0 +1,6 @@
+content:
+  - Option as an Alternative to null
+  - Either as an Alternative to Exceptions
+  - Use Try Instead of try-catch
+  - Syntactic Sugar and For-Comprehensions
+  - Monadic Laws
