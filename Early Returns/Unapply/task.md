@@ -1,8 +1,8 @@
 ## Unapply
 
-Unapply methods form a basis of pattern matching.
-Its goal is to extract data compacted in objects.
-We can create a custom extractor object for user data validation with the suitable unapply method, for example:
+Unapply methods form the basis of pattern matching.
+Their goal is to extract data encapsulated in objects.
+We can create a custom extractor object for user data validation with a suitable unapply method, for example:
 
 ```scala 3
   object ValidUser:
@@ -25,11 +25,11 @@ As a result, we get this short definition of our search function.
     }
 ```
 
-It's at this point that an observant reader is likely to protest.
+At this point, an observant reader is likely to protest.
 This solution is twice as long as the imperative one we started with, and it doesn't seem to do anything extra!  
 One thing to notice here is that the imperative implementation is only concerned with the "happy" path.
-What if there are no records in the database for some of the user identifiers?
-The conversion function becomes partial, and, being true to the functional method, we need to return optional value:
+But what if there are no records in the database for some of the user identifiers?
+The conversion function becomes partial, and, adhering to the functional method, we need to return an optional value:
 
 ```scala 3
   /** 
@@ -39,8 +39,8 @@ The conversion function becomes partial, and, being true to the functional metho
 ```
 
 The partiality of the conversion will unavoidably complicate the imperative search function.
-The code still has the same shape, but it has to go through additional hoops to accommodate partiality.
-Note that every time a new complication arises in the business logic, it has to be reflected inside
+The code still has the same shape, but it has to go through additional loops to accommodate partiality.
+Note that every time a new complication arises in the business logic, it has to be reflected within
 the `for` loop.
 
 ```scala 3
@@ -74,15 +74,15 @@ search function stays the same.
     }
 ```
 
-In general, there might be several ways in which user data might be valid.
+In general, there might be several ways in which user data could be valid.
 Imagine that there is a user who doesn't have an email.
-In this case `complexValidation` returns `false`, but the user may still be valid.
+In this case, `complexValidation` returns `false`, but the user might still be valid.
 For example, it may be an account that belongs to a child of another user.
-We don't need to message the child, instead it's enough to reach out to their parent.
+We don't need to message the child; instead, it's enough to reach out to their parent.
 Even though this case is less common than the one we started with, we still need to keep it mind.
-To do it, we can create a different extractor object with its own `unapply` and pattern match against it
-if the first validation failed.
-We do run the conversion twice in this case, but it is less important because of how rare this case is.
+To account for it, we can create a different extractor object with its own `unapply` and pattern match against it
+if the first validation fails.
+We do run the conversion twice in this case, but its impact is less significant due to the rarity of this scenario.
 
 ```scala 3
   object ValidUserInADifferentWay:
@@ -98,10 +98,10 @@ We do run the conversion twice in this case, but it is less important because of
 
 Both extractor objects work in the same way.
 They run a conversion method, which may or may not succeed.
-If conversion succeeds, its result is validated and returned when valid.
-All this is done with the `unapply` method whose implementation stays the same regardless of the other methods.
+If the conversion succeeds, its result is validated and returned when it is valid.
+All of this is done with the `unapply` method, whose implementation stays the same regardless of the other methods.
 This forms a nice framework which can be abstracted as a trait we call `Deconstruct`.
-It has the `unapply` method which calls two abstract methods `convert` and `validate` that operate on generic
+It has the `unapply` method that calls two abstract methods, `convert` and `validate`, which operate on generic
 types `From` and `To`.
 
 ```scala 3
@@ -126,7 +126,7 @@ It uses `safeComplexConversion` and `complexValidation` respectively.
 ```
 
 Finally, the search function stays the same, but now it uses the `unapply` method defined in
-the `Deconstruct` trait while pattern matching:
+the `Deconstruct` trait during pattern matching:
 
 ```scala 3
   def findFirstValidUser8(userIds: Seq[UserId]): Option[UserData] =
@@ -137,16 +137,16 @@ the `Deconstruct` trait while pattern matching:
 
 ### Exercise
 
-You have noticed that the first cat with a valid fur pattern you found had already been adopted. 
-Now you need to include the check whether a cat is still in the shelter in the validation. 
+You have noticed that the first cat found with a valid fur pattern has already been adopted. 
+Now you need to include a check in the validation to ensure that the cat is still in the shelter. 
 
-* Implement `nonAdoptedCatConversion` to only select the cats that are still up for adoption
+* Implement `nonAdoptedCatConversion` to only select cats that are still up for adoption.
 * Copy your implementation of the `furCharacteristicValidation` function from the previous task. 
-* Implement your custom `unapply` method for the `ValidCat` object, and use it to write the `unapplyFindFirstValidCat` function. Validation of the fur characteristics should not be run on cats who have been adopted. 
+* Implement your custom `unapply` method for the `ValidCat` object, and use it to write the `unapplyFindFirstValidCat` function. The validation of fur characteristics should not be run on cats who have been adopted. 
 
-Next, you notice that there are some inaccuracies in coat patterns: no bengal cat can be of solid color! 
+Next, you notice that there are some inaccuracies in the coat patterns: no Bengal cat can be of a solid color! 
 
 * Implement the validation of the coat pattern using a custom `unapply` method. 
-* Use `ValidPattern` object that extends the `Deconstruct` trait.
+* Use the `ValidPattern` object that extends the `Deconstruct` trait.
 * Use the custom `unapply` method in the `findFirstCatWithValidPattern` function. 
 

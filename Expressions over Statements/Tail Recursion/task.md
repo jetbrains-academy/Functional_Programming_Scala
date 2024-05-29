@@ -7,7 +7,7 @@ Each time a function is called, some information regarding the call is placed on
 allocated. 
 This information is kept there until all computations within the function are completed, after which the stack is 
 deallocated (the information about the function call is removed from the stack), and the computed value is returned. 
-If a function calls another function, the stack is allocated again before deallocating the previous function's call. What is worse, we wait until the inner call is complete, its stack frame is deallocated, and its value returned to compute 
+If a function calls another function, the stack is allocated again before deallocating the previous function's call. What is worse, we wait until the inner call is complete, its stack frame is deallocated, and its value returned before we can compute 
 the result of the caller function.
 This is especially significant for recursive functions because the depth of the call stack can be astronomical. 
 
@@ -37,7 +37,7 @@ Calling `factorial` with a large enough argument (like `10000` on my computer) r
 computation doesn't produce any result. 
 
 Don't get discouraged! 
-There is a well-known optimisation technique capable of mitigating this issue. 
+There is a well-known optimization technique capable of mitigating this issue. 
 It involves rewriting your recursive function into a tail-recursive form. 
 In this form, the recursive call should be the last operation the function performs. 
 For example, `factorial` can be rewritten as follows: 
@@ -50,13 +50,13 @@ def factorial(n: BigInt): BigInt =
   go(n, 1)
 ```
 
-We add a new parameter `accumulator` to the recursive function where we keep track of the partially computed 
+We add a new parameter `accumulator` to the recursive function to keep track of the partially computed 
 multiplication.
-Notice that the recursive call to `go` is the last operation that happens in the `else` branch of the `if` condition. 
+Notice that the recursive call to `go` is the last operation in the `else` branch of the `if` condition. 
 Whatever value the recursive call returns is simply returned by the caller. 
 There is no reason to allocate any stack frames because nothing is awaiting the result of the recursive call to enable
 further computation. 
-Smart enough compilers (and the Scala compiler is one of them) is capable to optimize away the unnecessary stack 
+Smart enough compilers (and the Scala compiler is one of them) can optimize away the unnecessary stack 
 allocations in this case. 
 Go ahead and try to find an `n` such that the tail-recursive `factorial` results in a stack overflow. 
 Unless something goes horribly wrong, you should not be able to find such an `n`. 
@@ -64,12 +64,12 @@ Unless something goes horribly wrong, you should not be able to find such an `n`
 By the way, do you remember the key searching function we implemented in the previous task?
 Have you wondered how we got away not keeping track of a collection of boxes to look through?
 The trick is that the stack replaces that collection. 
-All the boxes to be considered are somewhere on the stack, patiently waiting their turn. 
+All the boxes to be considered are somewhere on the stack, patiently awaiting their turn. 
 
 Is there a way we can make that function tail-recursive? 
 Yes, of course, there is! 
 Similar to the `factorial` function, we can create a helper function `go` with an extra parameter `boxesToLookIn`
-to keep track of the boxes to search the key in.
+to keep track of the boxes to search for the key in.
 This way, we can ensure that `go` is tail-recursive, i.e., either returns a value or calls itself as its final step. 
 
 ```scala 3
@@ -90,10 +90,10 @@ def lookForKey(box: Box): Option[Key] =
 
 In Scala, there is a way to ensure that your function is tail-recursive: the `@tailrec` annotation from `scala.annotation.tailrec`. 
 It checks if your implementation is tail-recursive and triggers a compiler error if it is not. 
-We recommend using this annotation to ensure that the compiler is capable of optimizing your code, even through its
+We recommend using this annotation to ensure that the compiler is capable of optimizing your code, even through
 future changes.
 
 ### Exercise 
 
 Implement tail-recursive functions for reversing a list and finding the sum of digits in a non-negative number. 
-We annotated the helper functions with `@tailrec` so that the compiler can verify this property for us.  
+We've annotated the helper functions with `@tailrec` so that the compiler can verify this property for us.  

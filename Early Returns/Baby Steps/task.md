@@ -2,21 +2,21 @@
 
 First, let's consider a concrete example of a program in need of early returns.
 Let's assume we have a database of user entries.
-The access to the database is resource-heavy, and the user data is large.
-Because of this, we only operate on user identifiers and retrieve the user data from the database only if needed.
+Accessing this database is resource-intensive, and the user data is extensive.
+As a result, we only operate on user identifiers and retrieve the user data from the database only when necessary.
 
-Now, imagine that many of those user entries are invalid in one way or the other.
+Now, imagine that many of those user entries are invalid in some way.
 For the brevity of the example code, we'll confine our attention to incorrect emails: those that either
-contain a space character or have the number of `@` symbols which is different from `1`.
-In the latter tasks, we'll also discuss the case when the user with the given ID does not exist in the database.
+contain a space character or have a count of `@` symbols different from `1`.
+In subsequent tasks, we'll also discuss the case when the user with the given ID does not exist in the database.
 
 We'll start with a sequence of user identifiers.
 Given an identifier, we first retrieve the user data from the database.
 This operation corresponds to the *conversion* in the previous lesson: we convert an integer number into an
-instance of class `UserData`.
+instance of the `UserData` class.
 Following this step, we run *validation* to check if the email is correct.
-Once we found the first valid instance of `UserData`, we should return it immediately without processing
-of the rest of the sequence.
+Upon locating the first valid instance of `UserData`, we should return it immediately, ceasing any further processing
+of the remaining sequence.
 
 ```scala 3
 object EarlyReturns:
@@ -60,8 +60,8 @@ object EarlyReturns:
 ```
 
 The typical imperative approach is to use an early return from a `for` loop.
-We perform the conversion followed by validation and, if the data is valid, we return the data, wrapped in `Some`.
-If no valid user data has been found, then we return None after going through the whole sequence of identifiers.
+We perform the conversion, followed by validation, and if the data is found valid, we return it, wrapped in `Some`.
+If no valid user data has been found, we return `None` after traversing the entire sequence of identifiers.
 
 ```scala 3
  /**
@@ -74,12 +74,12 @@ If no valid user data has been found, then we return None after going through th
     None
 ```
 
-This solution is underwhelming because it uses `return` which is not idiomatic in Scala.
+This solution is underwhelming because it uses `return`, which is not idiomatic in Scala.
 
 A more functional approach is to use higher-order functions over collections.
-We can `find` a `userId` in the collection, for which `userData` is valid.
-But this necessitates calling `complexConversion` twice, because `find` returns the original identifier instead
-of the `userData`.
+We can `find` a `userId` in the collection for which the `userData` is valid.
+However, this necessitates calling `complexConversion` twice, as `find` returns the original identifier rather
+than the `userData`.
 
 ```scala 3
  /**
@@ -92,12 +92,12 @@ of the `userData`.
 ```
 
 Or course, we can run `collectFirst` instead of `find` and `map`.
-This implementation is more concise than the previous, but we still cannot avoid running the conversion twice.
-In the next lesson, we'll use a custom `unapply` method to get rid of the repeated computations.
+This implementation is more concise than the previous one, but it still doesn't allow us to avoid running the conversion twice.
+In the next lesson, we'll use a custom `unapply` method to eliminate the need for these repeated computations.
 
 ```scala 3
   /** 
-   * A more concise implementation which uses `collectFirst`.
+   * A more concise implementation, which uses `collectFirst`.
    */
   def findFirstValidUser3(userIds: Seq[UserId]): Option[UserData] =
     userIds.collectFirst {
@@ -108,23 +108,23 @@ In the next lesson, we'll use a custom `unapply` method to get rid of the repeat
 
 ### Exercise
 
-Let's come back to one of our examples from an earlier module. 
-You are managing a cat shelter and keeping track of cats, their breeds and coats in a database.
+Let's revisit one of our examples from an earlier module. 
+You are managing a cat shelter and keeping track of cats, their breeds, and coat types in a database.
 
-You notice that there are a lot of mistakes in the database introduced by a previous employee: there are short-haired mainecoons, long-haired sphynxes, and other inconsistensies. 
-You don't have time to fix the database right now, because you see a potential adopter coming into the shelter. 
-Your task is to find the first valid entry in the database to present the potential adopter with a cat. 
+You notice numerous mistakes in the database made by a previous employee: there are short-haired Maine Coons, long-haired Sphynxes, and other inconsistensies. 
+You don't have the time to fix the database right now because you see a potential adopter coming into the shelter. 
+Your task is to find the first valid entry in the database and present the potential adopter with a cat. 
 
-Implement `catConversion` method that fetches a cat from the `catDatabase` in the `Database.scala` file by its identifier. 
-To do so, you will first need to consult another database "table" `adoptionStatusDatabase` to find out the name of a cat. 
+Implement the `catConversion` method, which fetches a cat from the `catDatabase` in the `Database.scala` file by its identifier. 
+To do this, you will first need to consult another database "table", `adoptionStatusDatabase`, to find out the cat's name. 
 
-Then implement `furCharacteristicValidation` that checks that the fur characteristics in the database entry makes sense for the cat's particular breed. 
-Consult the map `breedCharacteristics` for the appropriate fur characteristics for each bread. 
+Then, implement the `furCharacteristicValidation` that checks if the fur characteristics in the database entry make sense for the cat's particular breed. 
+Consult the `breedCharacteristics` map for the appropriate fur characteristics for each breed. 
 
 Finally, implement the search using the conversion and validation methods:  
-* `imperativeFindFirstValidCat` that works in the imperative fashion.
-* `functionalFindFirstValidCat`, in the functional style. 
-* `collectFirstFindFirstValidCat` using the `collectFirst` method. 
+* `imperativeFindFirstValidCat`, which works in an imperative fashion.
+* `functionalFindFirstValidCat`, utilizing an functional style. 
+* `collectFirstFindFirstValidCat`, using the `collectFirst` method. 
 
-Ensure that your search does not traverse the whole database. 
-We put some simple logging in the conversion and validation methods so that you could make sure of that. 
+Ensure that your search does not traverse the entire database. 
+We've put some simple logging within the conversion and validation methods so that you can verify this. 

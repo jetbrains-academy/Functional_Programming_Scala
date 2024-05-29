@@ -3,7 +3,7 @@
 We can pass a named function as an argument to another function just as we would pass any other value. 
 This is useful, for example, when we want to manipulate data in a collection. 
 There are many methods in Scala collections classes that operate by accepting a function as an argument and applying it in some way to each element of the collection. 
-In the previous chapter, we saw how we can use the map method on a sequence of numbers to double them. 
+In the previous chapter, we saw how we can use the `map` method on a sequence of numbers to double them. 
 Now let's try something different. 
 Imagine that you have a bag of cats with different colors, and you want to separate out only the black cats.
 
@@ -25,11 +25,11 @@ val bagOfBlackCats = bagOfCats.filter(cat => cat.color == Color.Black)
 ```
 
 In Scala 3, we can use enums to define colors. 
-Then, we create a class `Cat`, which has a value for the color of the cat. Next, we create a "bag" of cats, which is a set with three cats: one black, one white, and one ginger. 
-Finally, we use the `filter` method and provide it with an anonymous function as an argument. This function takes an argument of the class `Cat` and will return `true` if the color of the cat is black. 
-The `filter` method will apply this function to each cat in the original set and create a new set with only those cats for which the function returns `true`.
+Then, we create a class `Cat`, which includes a value for the color of the cat. Next, we create a "bag" of cats, which is a set containing three cats: one black, one white, and one ginger. 
+Finally, we use the `filter` method and provide it with an anonymous function as an argument. This function takes an argument of the `Cat` class and returns `true` if the cat's color is black. 
+The `filter` method will apply this function to each cat in the original set and create a new set containing only those cats for which the function returns `true`.
 
-However, our function that checks if the cat is black doesn't have to be anonymous. The `filter method will work with a named function just as well.
+However, our function that checks if the cat is black doesn't have to be anonymous. The `filter method will work just as well with a named function.
 
 ```scala
 def isCatBlack(cat: Cat): Boolean = cat.color == Color.Black
@@ -42,4 +42,4 @@ So far, you've seen examples of how this is done with `map` and `filter` — two
 
 ## Exercise 
 
-Implement a function to check whether the cat is white or ginger and pass it as an argument to `filter` to create a bag of white or ginger cats. 
+Implement a function to check whether the cat is white or ginger and pass it as an argument to `filter` to create a bag containing only white or ginger cats. 

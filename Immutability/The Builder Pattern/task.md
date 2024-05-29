@@ -1,28 +1,28 @@
 ## The Builder Pattern
 
-The Builder pattern is a design pattern often used in object-oriented programming to provide 
+The builder pattern is a design pattern often used in object-oriented programming to provide 
 a flexible solution for constructing complex objects. 
 It's especially handy when an object needs to be created with numerous possible configuration options. 
 The pattern involves separating the construction of a complex object from its representation 
-so that the same construction process can make different representations.
+so that the same construction process can yield different representations.
 
-Here's why the Builder Pattern is used:
+Here's why the builder pattern is used:
 * To encapsulate the construction logic of a complex object.
 * To allow an object to be constructed step by step, often through method chaining.
 * To avoid having constructors with many parameters, which can be confusing and error-prone (often referred to as the telescoping constructor anti-pattern).
 
-Below is a Scala example using the Builder Pattern to create instances of a `User` case class, with mandatory `firstName` 
+Below is a Scala example using the builder pattern to create instances of a `User` case class, with mandatory `firstName` 
 and `lastName` fields and optional `email`, `twitterHandle`, and `instagramHandle` fields.
 
 Note that:
-* The `User` case class defines a user with mandatory `firstName` and `lastName`, optional `email`, `twitterHandle`, and `instagramHandle`.
-* `UserBuilder` facilitates the creation of a `User` object. 
-  The mandatory parameters are specified in the builder's constructor, while methods like `setEmail`, `setTwitterHandle`, 
+* The `User` case class defines a user with mandatory `firstName` and `lastName` fields, along with optional `email`, `twitterHandle`, and `instagramHandle` fields.
+* `UserBuilder` facilitates the creation of a `User` object, with
+  mandatory parameters specified in the builder's constructor. Methods like `setEmail`, `setTwitterHandle`, 
   and `setInstagramHandle` are available to set optional parameters. 
   Each of these methods returns the builder itself, enabling method chaining.
 * Finally, the execution of the `build` method employs all specified parameters (whether default or set) to construct a `User` object.
 
-This pattern keeps object creation understandable and clean, mainly when dealing with objects that can have multiple optional parameters.
+This pattern keeps the process of object creation clear and straightforward, particularly when dealing with objects possessing multiple optional parameters.
 
 
 

@@ -3,11 +3,11 @@
 `def map[B](f: A => B): Iterable[B]`
 
 The `map` method works on any Scala collection that implements `Iterable`. 
-It takes a function `f` and applies it to each element in the collection, similar to `foreach`. However, in the case of `map`, we are more interested in the results of `f` and not its side effects. 
+It takes a function `f` and applies it to each element in the collection, similar to `foreach`. However, in the case of `map`, we are more interested in the results of `f` than its side effects. 
 As you can see from the declaration of `f`, it takes an element of the original collection of type `A` and returns a new element of type `B`. 
 Finally, the map method returns a new collection of elements of type `B`. 
-In a special case, `B` can be the same as `A`, so for example, we use the `map` method to take a collection of cats of certain colors and create a new collection of cats of different colors. 
-But, we can also, for example, take a collection of cats and create a collection of cars with colors that match the colors of our cats.
+In a special case, `B` can be the same as `A`. So, for example, we could use the `map` method to take a collection of cats of certain colors and create a new collection of cats of different colors. 
+But, we could also take a collection of cats and create a collection of cars with colors that match the colors of our cats.
 
 ```scala
 // We define the Color enum
@@ -46,6 +46,6 @@ Therefore, instead of a `Set`, we need a collection that allows multiple identic
 
 ## Exercise 
 
-In functional programming, we usually separate performing side effects from computations. 
+In functional programming, we usually separate side effects from computations. 
 For example, if we want to print all fur characteristics of a cat, we first transform each characteristic into a `String`, and then output each one in a separate step. 
 Implement the `furCharacteristicsDescription` function, which completes this transformation using `map`. 
