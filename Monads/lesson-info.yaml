@@ -3,4 +3,5 @@ content:
   - Either as an Alternative to Exceptions
   - Use Try Instead of try-catch
   - Syntactic Sugar and For-Comprehensions
+  - Non-Determinism with Lists
   - Monadic Laws

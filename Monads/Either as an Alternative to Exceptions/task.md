@@ -47,6 +47,19 @@ def safeDiv(x: Double, y: Double): Either[Throwable, Double] =
     else Right(x / y)
 ```
 
+### Exercise
+
+Let's get back to our `UserService` from the previous lesson. 
+There are three possible reasons why `getGrandchild` may fail: 
+
+* The user with the given name can't be found.  
+* The user doesn't have a child. 
+* The user's child doesn't have a child. 
+
+To explain the failure to the caller, we created the `SearchError` enum and changed the types of the `findUser`, `getGrandchild`, `getGrandchildAge` functions to be `Either[SearchError, _]`. 
+
+Your task is to implement the functions providing the appropriate error message. 
+There is a helper function `getChild` to implement so that `getGrandchild` could use `flatMap`s naturally. 
 
 
 

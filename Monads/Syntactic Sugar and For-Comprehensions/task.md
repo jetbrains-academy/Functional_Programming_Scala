@@ -45,4 +45,10 @@ We also don't care about the value returned by `log` and because of that use the
 After all this is done, the `yield` block computes the final values to be returned.
 If any line fails, the computation is aborted and the whole comprehension results in a failure. 
 
+### Exercise 
+
+Use for-comprehensions to implement `getGrandchild` and `getGrandchildAge` from the previous exercise. 
+
+
+
 
