@@ -1,5 +1,3 @@
-# Passing functions as arguments
-
 We can pass a named function as an argument to another function just as we would pass any other value. 
 This is useful, for example, when we want to manipulate data in a collection. 
 There are many methods in Scala collections classes that operate by accepting a function as an argument and applying it in some way to each element of the collection. 

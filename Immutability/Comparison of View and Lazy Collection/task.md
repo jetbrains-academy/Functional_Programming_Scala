@@ -1,5 +1,3 @@
-## Comparison of View and Lazy List
-
 Now you may be wondering why Scala has both lazy lists and views, and when to use which one.
 Here's a short list highlighting the key differences between these two approaches to lazy computation:
 

@@ -43,7 +43,7 @@ This avoids unnecessary calculations and hence is more efficient in this scenari
 
 To learn more about the methods of Scala View, read its [documentation](https://www.scala-lang.org/api/current/scala/collection/View.html).
 
-### Exercise 
+## Exercise 
 
 Consider a simplified log message: it is a comma-separated string where the first substring before the comma specifies its severity, 
 the second substring is the numerical error code, and the last one is the message itself.  

@@ -1,5 +1,3 @@
-## Recursion 
-
 *To understand recursion, one must first understand recursion* 
 
 This topic should be familiar to anyone who delved into functional programming, but we would like to review it once again. 
@@ -119,7 +117,7 @@ The recursion in the data type points us to a *smaller* instance of the problem 
 We then sum the values returned from the recursive calls, producing the final result. 
 There are no `Tree`s in a `Leaf`, therefore, we know it is the base case and the problem can be solved right away.
  
-### Exercise 
+## Exercise 
 
 Implement a tiny calculator `eval` and a printer `prefixPrinter` for arithmetic expressions. 
 An expression is presented as its abstract syntax tree, where leaves contain numbers, while nodes correspond to the 

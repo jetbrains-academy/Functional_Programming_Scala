@@ -1,5 +1,3 @@
-# Sealed Traits Hierarchies
-
 Sealed  traits in Scala are used to represent restricted class hierarchies, providing exhaustive type checking. 
 When a trait is declared as sealed, it can only be extended within the same file. 
 This restriction enables the compiler to identify all subtypes, allowing for more precise compile-time checking.

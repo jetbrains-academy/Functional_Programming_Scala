@@ -1,5 +1,3 @@
-## Scala Collections instead of Imperative Loops
-
 In the imperative programming style, you will often find the following pattern: a variable is initially set to some 
 default value, such as an empty collection, an empty string, zero, or null. 
 Then, step-by-step, initialization code runs in a loop to create the proper value. 

@@ -1,5 +1,3 @@
-## Unapply
-
 Unapply methods form the basis of pattern matching.
 Their goal is to extract data encapsulated in objects.
 We can create a custom extractor object for user data validation with a suitable unapply method, for example:
@@ -135,7 +133,7 @@ the `Deconstruct` trait during pattern matching:
     }
 ```
 
-### Exercise
+## Exercise
 
 You have noticed that the first cat found with a valid fur pattern has already been adopted. 
 Now you need to include a check in the validation to ensure that the cat is still in the shelter. 

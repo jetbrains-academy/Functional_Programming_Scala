@@ -1,5 +1,3 @@
-# Functions Returning Functions
-
 In Scala, it is possible to construct functions dynamically, inside functions and methods, and return them.
 This technique allows us to create new functions based on the arguments given to the original function and return them as the result of that function.
 

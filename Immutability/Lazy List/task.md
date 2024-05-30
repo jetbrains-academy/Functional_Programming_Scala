@@ -1,5 +1,3 @@
-## Lazy List
-
 A lazy list in Scala is a collection that evaluates its elements lazily, with each element computed just once, 
 the first time it is needed, and then stored for subsequent access. 
 Lazy lists can be infinite, with their elements computed on-demand. Hence, if your program keeps accessing the next element 
@@ -46,7 +44,7 @@ In the above code:
 
 To learn more about the methods of Scala's `LazyList`, read the [documentation](https://www.scala-lang.org/api/current/scala/collection/immutable/LazyList.html).
 
-### Exercise 
+## Exercise 
 
 Implement a function that generates an infinite lazy list of prime numbers in ascending order. 
 Use the Sieve of Eratosthenes algorithm.

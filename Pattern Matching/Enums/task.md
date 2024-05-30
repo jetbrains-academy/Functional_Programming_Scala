@@ -1,5 +1,3 @@
-# Enum 
-
 An enumeration (or enum) is a type that represents a finite set of distinct values. 
 Enumerations are commonly used to limit the set of possible values for a field, 
 thus improving code clarity and reliability. 

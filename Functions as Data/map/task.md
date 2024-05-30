@@ -1,5 +1,3 @@
-# `map`
-
 `def map[B](f: A => B): Iterable[B]`
 
 The `map` method works on any Scala collection that implements `Iterable`. 

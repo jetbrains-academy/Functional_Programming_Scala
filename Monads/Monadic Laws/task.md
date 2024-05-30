@@ -1,9 +1,9 @@
-There are multiple other monads not covered in this course. 
+There are multiple monads not covered in this course. 
 Monad is an abstract concept, and any code that fulfills certain criteria can be viewed as one. 
 What are the criteria we are talking about, you may ask. 
 They are called monadic laws, namely left and right identity, and associativity. 
 
-### Identity laws
+## Identity Laws
 
 The first two properties are concerned with `unit`, the constructor to create monads. 
 Identity laws mean that there is a special value that does nothing when a binary operator is applied to it. 
@@ -21,7 +21,7 @@ def f(value: V): Monad[V]
 Monad(v).flatMap(f) == f(v)
 ```
 The right identity law states that by passing the unit method into a `flatMap` is equivalent to not doing that at all. 
-This reflects the idea that unit only wraps whatever value it receives and produces no additional action. 
+This reflects the idea that unit only wraps whatever value it receives and produces no effect. 
 
 ```scala 3
 val monad: Monad[_] = ...
@@ -29,7 +29,7 @@ val monad: Monad[_] = ...
 monad.flatMap(Monad(_)) == monad
 ```
 
-### Associativity 
+## Associativity 
 
 Associativity is a property that says that you can put parentheses in a whatever way in an expression and get the same result. 
 For example, `(1 + 2) + (3 + 4)` is the same as `1 + (2 + 3) + 4` and `1 + 2 + 3 + 4`, since addition is associative. 
@@ -68,7 +68,7 @@ for {
 } yield res 
 ```
 
-### Do Option and Either follow the laws? 
+## Do Option and Either Follow the Laws? 
 
 Now that we know what the rules are, we can check whether the monads we are familiar with play by them.
 The unit of `Option` is `{ x => Some(x) }`, while `flatMap` can be implemented in the following way. 
@@ -116,13 +116,12 @@ Finally, we get `doSomething(x, y)` which is exactly what we wanted.
 
 If you want to make sure you grasp the concepts of monadic laws, go ahead and prove that `Either` is also a monad.  
 
-### Beyond failure
+## Beyond Failure
 
-We only covered monads `Option`, `Either`, and `Try` that are very similar in a way: all of them describe failing computations. 
+We only covered monads capable of describing failures and non-determinism. 
 There are many other *computational effects* that are expressed via monads. 
-They include logging, reading from a global memory, state manipulation, non-determinism and many more. 
-We encourage you to explore these monads on your own. 
-Start with lists and see where it gets you. 
+They include logging, reading from a global memory, state manipulation, different flavours of non-determinism and many more. 
+We encourage you to explore these monads on your own.
 Once you feel comfortable with the basics, take a look at the [scalaz](https://scalaz.github.io/7/) and [cats](https://typelevel.org/cats/) libraries. 
 
 

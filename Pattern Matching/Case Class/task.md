@@ -1,4 +1,3 @@
-# Case Class
 In Scala, a case class is a special kind of class that comes equipped with some useful default behaviors and methods, 
 beneficial for modeling immutable data.
 While Scala's compiler does place some limitations on it, it concurrently enriches it with features that 

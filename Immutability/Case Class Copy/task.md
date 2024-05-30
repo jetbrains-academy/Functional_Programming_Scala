@@ -1,5 +1,3 @@
-## Case Class Copy
-
 In Scala, case classes automatically come equipped with a few handy methods upon declaration, one of which is the `copy` method. 
 The `copy` method is used to create a new instance of the case class, which is a copy of the original one; however, you can also 
 modify some (or none) of the fields during the copying process. 
@@ -48,7 +46,7 @@ println(s"Updated user: $updatedUser")
 // prints out User("Jane", "Doe", Some("new.jane.doe@example.com"), Some("@newJaneDoe"), None)
 ```
 
-### Exercise 
+## Exercise 
 
 Let's unravel the `copy` function. 
 Implement your own function, `myCopy`, which operates identically to `copy`. 

@@ -1,5 +1,3 @@
-## Breaking Boundaries
-
 Similarly to Java and other popular languages, Scala provides a way to break out of a loop. 
 Since Scala 3.3, it's achieved with a composition of boundaries and breaks, which provides a cleaner alternative to 
 non-local returns. 
@@ -28,7 +26,7 @@ Sometimes, there are multiple boundaries, and in such cases, one can add labels 
 This is especially important when there are embedded loops.
 An example of using labels can be found [here](https://gist.github.com/bishabosha/95880882ee9ba6c53681d21c93d24a97).
 
-### Exercise 
+## Exercise 
 
 Finally, let's use boundaries to achieve the same result. 
 

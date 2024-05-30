@@ -1,5 +1,3 @@
-# A Custom unapply Method 
-
 You can also implement a custom `unapply` method for both a regular class that lacks an automatically generated `unapply`,
 and for providing an additional way to destructure a case class. 
 Here's an example of a custom `unapply` method for the `Cat` case class we defined in the previous chapter:

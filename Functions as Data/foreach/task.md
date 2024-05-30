@@ -1,5 +1,3 @@
-# `foreach`
-
 `def foreach[U](f: A => U): Unit`
 
 The `foreach` method works on any Scala collection that implements `Iterable`. 

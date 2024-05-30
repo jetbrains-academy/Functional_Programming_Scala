@@ -1,5 +1,3 @@
-# The Newtype Pattern
-
 The *newtype pattern* in Scala is a way of creating new types from existing ones that are distinct at compile time 
 but share the same runtime representation. 
 This approach can be useful for adding more meaning to simple types, enforcing type safety, and avoiding mistakes.

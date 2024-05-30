@@ -1,5 +1,3 @@
-# What is a function? 
-
 A function is a standalone block of code that takes arguments, performs some calculations, and returns a result. 
 It may or may not have side effects; that is, it may access the data in the program, and if the data is modifiable, the function might alter it. 
 If it doesn't — meaning, if the function operates solely on its arguments — we state that the function is pure. 

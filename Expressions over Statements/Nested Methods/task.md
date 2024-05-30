@@ -1,5 +1,3 @@
-## Nested Methods 
-
 In Scala, it's possible to define methods within other methods. 
 This is useful when you have a function that is only intended for one-time use. 
 For example, you may wish to implement the factorial function using an accumulator to enhance the program's efficiency.
@@ -88,6 +86,6 @@ val numberOfWhiteOrGingerKittens =
     .count(cat => cat.age <= 1)
 ```
 
-### Exercise 
+## Exercise 
 
 Explore the scopes of the nested methods. Make the code in the file `NestedTask.scala` compile.

@@ -1,5 +1,3 @@
-## What is an Expression? 
-
 When programming in an imperative style, we tend to build functions out of statements. 
 We instruct the compiler on the exact steps and the order in which they should be performed to achieve the 
 desired result.
@@ -75,7 +73,7 @@ def main(): Unit = {
 This way, you separate the logic of computing values from outputting them. 
 It also makes your code more readable. 
 
-### Exercise 
+## Exercise 
 
 Rewrite the `abs` and `concatStrings` functions as expressions to perform the same tasks as their original implementations. 
 Implement the `sumOfAbsoluteDifferences` and `longestCommonPrefix` functions using the expression style.

@@ -1,5 +1,3 @@
-# Pattern Matching
-
 Pattern matching is one of the most important features in Scala.
 It’s so vital that we might risk saying it’s not just *a* feature of Scala, but *the* defining feature.
 It affects every other part of the programming language to the extent that it’s difficult to discuss any aspect of Scala

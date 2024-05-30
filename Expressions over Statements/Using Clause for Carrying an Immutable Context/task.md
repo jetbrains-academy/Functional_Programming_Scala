@@ -86,7 +86,7 @@ def main() =
   println(s"${max("b", "aa")(using StringLengthComparator)}") // prints aa  
 ```
 
-### Exercise 
+## Exercise 
 
 Implement a `sort` function to sort an array of values based on the `Comparator` provided. Make it use a contextual 
 parameter to avoid carrying around the immutable context. You can use any kind of sorting algorithm. 

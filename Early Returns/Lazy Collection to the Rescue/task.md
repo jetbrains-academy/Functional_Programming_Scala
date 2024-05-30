@@ -1,5 +1,3 @@
-## Lazy Collection to the Resque
-
 One more way to achieve the same effect of an early return is to use the concept of a lazy collection. 
 A lazy collection doesn't store all its elements computed and ready for access. 
 Instead, it stores a way to compute an element once it's needed somewhere. 
@@ -20,7 +18,7 @@ Try comparing the two approaches on your own.
       .flatten
 ```
 
-### Exercise
+## Exercise
 
 Let's try using a lazy collection to achieve the same goal as in the previous tasks. 
 

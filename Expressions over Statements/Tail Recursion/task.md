@@ -1,5 +1,3 @@
-## Tail Recursion 
-
 A common criticism of using recursion is that it is intrinsically slow. 
 Why is that?
 The clue is in what is known as the call stack. 
@@ -93,7 +91,7 @@ It checks if your implementation is tail-recursive and triggers a compiler error
 We recommend using this annotation to ensure that the compiler is capable of optimizing your code, even through
 future changes.
 
-### Exercise 
+## Exercise 
 
 Implement tail-recursive functions for reversing a list and finding the sum of digits in a non-negative number. 
 We've annotated the helper functions with `@tailrec` so that the compiler can verify this property for us.  

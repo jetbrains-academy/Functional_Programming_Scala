@@ -1,5 +1,3 @@
-# Scala collections overview
-
 Scala collections comprise a vast set of data structures that offer powerful and flexible ways to manipulate and organize data. 
 The Scala collections framework is designed to be both user-friendly and expressive, enabling you to perform complex operations with concise and readable code. 
 To achieve this, numerous methods take functions as arguments.

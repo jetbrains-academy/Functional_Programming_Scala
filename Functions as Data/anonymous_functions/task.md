@@ -1,5 +1,3 @@
-# Anonymous functions
-
 An anonymous function is a function that, quite literally, does not have a name. It
 is defined only by its argument list and computations. 
 Anonymous functions are also known as lambda functions, or simply lambdas.

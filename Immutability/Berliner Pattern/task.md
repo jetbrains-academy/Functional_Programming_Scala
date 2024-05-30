@@ -1,5 +1,3 @@
-## Berliner Pattern 
-
 In functional programming, data rarely needs to be mutable. 
 Theoretically, it is possible to completely avoid mutability, especially in such programming languages as Haskell. 
 However, this might feel cumbersome and unnecessarily complicated to many coders. 
@@ -36,7 +34,7 @@ the billion-dollar mistake caused by using `null`.
 
 We encourage you to familiarize yourself with this pattern by watching the [original video](https://www.youtube.com/watch?v=DhNw60hxCeY).
 
-### Exercise
+## Exercise
 
 We provide you with a sample implementation of an application that handles creating, modifying, and deleting users in a database. 
 We mock the database and HTTP layers, and your task is to implement methods for processing requests following the Berliner pattern.

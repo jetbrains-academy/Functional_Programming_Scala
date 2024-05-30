@@ -1,5 +1,5 @@
 Monads can express different computational effects, and failure is just one of them. 
-Another is non-determinism, the ability of a program to have multiple possible results.  
+Another is non-determinism, the ability of a program to have multiple possible results. 
 One way to encapsulate different outcomes is by using a `List`. 
 
 Consider a program that computes a factor of a number. 
@@ -25,7 +25,7 @@ If we run `factors(4).flatMap(factors)`, we get `List(1,2,4).flatMap(factors)` w
 `List` is not the only collection that can describe non-determinism; another is `Set`. 
 The difference between the two is that the latter doesn't care about repeats, while the former retains all of them. 
 You can choose the suitable collection based on the problem at hand. 
-For `factors` it may be sensible to use `Set`, because we only care about unique factors. 
+For `factors`, it may make sense to use `Set`, because we only care about unique factors. 
 
 ```scala
 // The non-deterministic function to compute all factors of a number 
@@ -37,7 +37,7 @@ def factors(n: Int): Set[Int] = {
 // factors(6).flatMap(factors) == Set(1, 2, 4) 
 ```
 
-### Exercise
+## Exercise
 
 To make our model of users a little more realistic, we should take into an account that a user may have many children. 
 This makes our `getGrandchild` function non-deterministic. 

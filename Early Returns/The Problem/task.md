@@ -1,5 +1,3 @@
-## The Problem
-
 It is often the case that we do not need to go through all the elements in a collection to solve a specific problem.
 For example, in the Recursion chapter of the previous module, we saw a function to search for a key in a box.
 It was enough to find a single key, and there was no point in continuing the search in the box after one had been found.

@@ -1,5 +1,3 @@
-# `filter`
-
 ```def filter(pred: A => Boolean): Iterable[A]```
 
 The `filter` method works on any Scala collection that implements `Iterable`. 

@@ -1,6 +1,3 @@
-
-# Case Objects
-
 You might have noticed in the example of a binary tree implemented with sealed trait hierarchies that 
 we used a *case object* to introduce the `Stump` type. 
 In Scala, a case object is a special type of object that combines characteristics and benefits of both a case class and an object.

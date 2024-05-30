@@ -1,5 +1,3 @@
-## The Builder Pattern
-
 The builder pattern is a design pattern often used in object-oriented programming to provide 
 a flexible solution for constructing complex objects. 
 It's especially handy when an object needs to be created with numerous possible configuration options. 
@@ -65,6 +63,6 @@ class UserBuilder(private val firstName: String, private val lastName: String):
   // prints out User("John", "Doe", Some("john.doe@example.com"), Some("@johndoe"), Some("@johnDoe_insta"))
 ```
 
-### Exercise
+## Exercise
 
 Implement the builder pattern for constructing a message that has optional sender, receiver, and content fields. 

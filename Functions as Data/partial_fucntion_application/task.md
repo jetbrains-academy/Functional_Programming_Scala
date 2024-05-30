@@ -1,4 +1,3 @@
-# Partial function application
 Returning functions from functions is related to, but not the same as, [partial application](https://en.wikipedia.org/wiki/Partial_application).
 The former allows you to create functions that behave as though they have a "hidden" list of arguments provided at the moment of creation, rather than at the moment of use.
 Each function returns a new function that accepts the next argument until all arguments have been processed. The final function then returns the result.

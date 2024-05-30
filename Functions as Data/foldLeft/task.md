@@ -1,5 +1,3 @@
-# `foldLeft`
-
 `def foldLeft[B](acc: B)(f: (B, A) => B): B`
 
 The `foldLeft` method is another method in Scala collections that can be perceived as a generalized version of `map`, but generalized differently than `flatMap`. 

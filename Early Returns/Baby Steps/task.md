@@ -1,5 +1,3 @@
-## Baby Steps
-
 First, let's consider a concrete example of a program in need of early returns.
 Let's assume we have a database of user entries.
 Accessing this database is resource-intensive, and the user data is extensive.
@@ -106,12 +104,12 @@ In the next lesson, we'll use a custom `unapply` method to eliminate the need fo
     
 ```
 
-### Exercise
+## Exercise
 
 Let's revisit one of our examples from an earlier module. 
 You are managing a cat shelter and keeping track of cats, their breeds, and coat types in a database.
 
-You notice numerous mistakes in the database made by a previous employee: there are short-haired Maine Coons, long-haired Sphynxes, and other inconsistensies. 
+You notice numerous mistakes in the database made by a previous employee: there are short-haired Maine Coons, long-haired Sphynxes, and other inconsistencies. 
 You don't have the time to fix the database right now because you see a potential adopter coming into the shelter. 
 Your task is to find the first valid entry in the database and present the potential adopter with a cat. 
 

@@ -1,5 +1,3 @@
-# Destructuring
-
 Destructuring in Scala refers to the practice of breaking down an instance of a given type into its constituent parts. 
 You can think of it as the inversion of construction. 
 In a constructor or an `apply` method, we use a collection of parameters to create a new instance of a given type. 

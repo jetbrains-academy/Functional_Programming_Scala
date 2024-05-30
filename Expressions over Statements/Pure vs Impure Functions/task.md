@@ -1,5 +1,3 @@
-## Pure vs Impure Functions
-
 Not all functions are created equal; some of them are better than others. 
 A large group of such superior functions are designated as *pure*. 
 A pure function always yields the same value if given the same inputs. 
@@ -47,7 +45,7 @@ def g(x: Int): Int =
   gPure(x, y)
 ```
 
-### Exercise
+## Exercise
 
 Implement the pure function `calculateAndLogPure`, which does the same thing as `calculateAndLogImpure`, but without 
 using a global variable.

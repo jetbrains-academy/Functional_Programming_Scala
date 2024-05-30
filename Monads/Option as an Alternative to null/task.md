@@ -49,15 +49,15 @@ Option(result).foreach { res =>
 
 In short, `None` indicates that something went wrong, and `flatMap` allows to chain function calls which do not fail. 
 
-### Exercise
+## Exercise
 
-Let's consider users who are represented with a `User` class. 
-Each user has a name, an age, and possibly a child.
+Let's consider users who are represented with the `User` class. 
+Each user has a name, an age, and, sometimes, a child.
 `UserService` represents a database of users along with some functions to search for them. 
 
 Your task is to implement `getGrandchild` which retrieve a grandchild of the user with the name given if the grandchild exists. 
-Here we've already put two calls to `flatMap` to chain some functions together, your task is only fill in what functions these are. 
+Here we've already put two calls to `flatMap` to chain some functions together, your task is to fill in what functions they are. 
 
 Then implement `getGrandchildAge` which returns the age of the grandchild if they exist. 
-Use `flatMap` here, avoid pattern matching. 
+Use `flatMap` here and avoid pattern matching. 
 

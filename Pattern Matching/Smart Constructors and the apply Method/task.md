@@ -1,5 +1,3 @@
-# Smart Constructors and the `apply` Method
-
 In Scala, `apply` is a special method that can be invoked without specifying its name.
 
 ```scala 3
