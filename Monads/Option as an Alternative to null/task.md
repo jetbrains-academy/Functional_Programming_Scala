@@ -1,10 +1,19 @@
-Monad is a powerful concept popular in functional programming. 
+Monad is a powerful concept widely used in functional programming. 
 It's a design pattern capable of describing failing computations, managing state, and handling arbitrary side effects. 
-Unlike in Haskell, there is no specific Monad trait in the standard library of Scala. 
-Instead, a monad is a wrapper class that has a static method `unit` and implements `flatMap`. 
-The method `unit` accepts a value and creates a monad with it inside, while `flatMap` chains operations on the monad.
-For a class to be a monad, it should satisfy a set of rules, called monadic laws. 
-We'll cover them at a later stage. 
+Unlike Haskell, Scala's standard library doesn't include a specific Monad trait. 
+Instead, a monad is a wrapper class `M[A]` that implements `flatMap`, the method for chaining several operations together.
+Simplified, this method has the following type: 
+
+`def flatMap[B](f: A => M[B]): M[B]` 
+
+It executes a monadic computation that yields some value of type `A`, and then applies the function `f` to this value, resulting in a new monadic computation.
+This process enables sequential computations in a concise manner. 
+
+In addition to this, there should be a way to create the simplest instance of a monad.
+Many monad tutorials written for Scala call it `unit`, but it may be misleading due to existence of `Unit`, the class with only one instance.
+A better name for this method is `identity`, `pure` or `return`. 
+We will be calling it `identity` for reasons that will become clear when we talk about monadic laws, a set of rules each monad should satisfy.
+Its type is `def identity[A](x: A): M[A]`, meaning that it just wraps its argument into a monad, and in most cases it is just the `apply` methods of the corresponding class. 
 In this lesson, we'll consider our first monad that should already be familiar to you. 
 
 As you've probably already noticed, many real world functions are partial. 
@@ -35,6 +44,18 @@ If any of the divisions fail, then the whole chain stops.
 
 ```scala 3
 div(totalVisits, numberOfUsers).flatMap { div(_, numberOfDays) }
+```
+
+Now let's see how `identity` and `flatMap` can be implemented. 
+This is not exactly their implementation from the standard library, but it reflects the main idea. 
+
+```scala 3
+def identity[A](x: A): Option[A] = Some(x)
+
+def flatMap[B](f: A => Option[B]): Option[B] = this match {
+  case Some(x) => f(x)  
+  case _       => None 
+}
 ```
 
 There is one more special case in Scala: if you pass `null` as an argument to the `Option` constructor, then you receive `None`. 

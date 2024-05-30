@@ -9,8 +9,9 @@ Like `Option`, `Either` is a monad that means it allows chaining of succeeding c
 The convention is that the failure is represented with `Left`, while `Right` wraps the value computed in the case of success. 
 Which subclass to use for which scenario is an arbitrary decision and everything would work the same way if we were to choose differently and reflect the choice in the implementation of `flatMap`. 
 However, a useful mnemonic is that `Right` is for cases when everything went *right*. 
-Thus, `unit` wraps the value in the `Right` constructor, and `flatMap` runs the second function only if the first function resulted in `Right`. 
-If an error happens and `Left` appears at any point, then the execution stops and that error is reported.  
+Thus, `identity` wraps the value in the `Right` constructor, and `flatMap` runs the second function only if the first function resulted in `Right`. 
+If an error happens and `Left` appears at any point, then the execution stops and that error is reported.
+Take a minute to write the implementations of the two methods on your own.  
 
 Consider a case where you read two numbers from the input stream and divide one by the other. 
 This function can fail in two ways: if the user provides a non-numeric input, or if a division-by-zero error occurs. 

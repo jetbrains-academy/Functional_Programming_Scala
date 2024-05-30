@@ -3,17 +3,17 @@ files:
   - name: src/Task.scala
     visible: true
     placeholders:
-      - offset: 676
-        length: 963
+      - offset: 1043
+        length: 92
         placeholder_text: /* TODO */
-      - offset: 676
-        length: 963
+      - offset: 1175
+        length: 36
         placeholder_text: /* TODO */
-      - offset: 676
-        length: 963
+      - offset: 1230
+        length: 52
         placeholder_text: /* TODO */
-      - offset: 676
-        length: 963
+      - offset: 1590
+        length: 48
         placeholder_text: /* TODO */
   - name: test/TestSpec.scala
     visible: false

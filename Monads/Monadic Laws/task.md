@@ -5,23 +5,23 @@ They are called monadic laws, namely left and right identity, and associativity.
 
 ## Identity Laws
 
-The first two properties are concerned with `unit`, the constructor to create monads. 
+The first two properties are concerned with `identity`, the constructor to create monads. 
 Identity laws mean that there is a special value that does nothing when a binary operator is applied to it. 
 For example, `0 + x == x + 0 == x` for any possible number `x`. 
 Such an element may not exist for some operations, or it may only work on one side of the operator. 
 Consider subtraction, for which `x - 0 == x`, but `0 - x != x`. 
-As it happens, the unit is supposed to be the identity of the `flatMap` method. 
+As it happens, the `identity` is supposed to be the identity of the `flatMap` method. 
 Let's take a look at what it means exactly. 
 
-The left identity law says that if we create a monad from a value `v` with a unit method `Monad` and then `flatMap` a function `f` over it, it is equivalent to passing the value `v` straight to the function `f`: 
+The left identity law says that if we create a monad from a value `v` with a `identity` method `Monad` and then `flatMap` a function `f` over it, it is equivalent to passing the value `v` straight to the function `f`: 
 
 ```scala 3
 def f(value: V): Monad[V]
 
 Monad(v).flatMap(f) == f(v)
 ```
-The right identity law states that by passing the unit method into a `flatMap` is equivalent to not doing that at all. 
-This reflects the idea that unit only wraps whatever value it receives and produces no effect. 
+The right identity law states that by passing the `identity` method into a `flatMap` is equivalent to not doing that at all. 
+This reflects the idea that `identity` only wraps whatever value it receives and produces no effect. 
 
 ```scala 3
 val monad: Monad[_] = ...
@@ -47,7 +47,7 @@ mA.flatMap( a =>
 )
 ```
 
-This can be refactored in the following form, using the unit of the corresponding monad. 
+This can be refactored in the following form, using the `identity` of the corresponding monad. 
 Here we parenthesise the chaining of the two first monadic actions, and only then flatMap `doSomething` over the result.  
 
 ```scala 3
@@ -71,11 +71,11 @@ for {
 ## Do Option and Either Follow the Laws? 
 
 Now that we know what the rules are, we can check whether the monads we are familiar with play by them.
-The unit of `Option` is `{ x => Some(x) }`, while `flatMap` can be implemented in the following way. 
+The `identity` of `Option` is `{ x => Some(x) }`, while `flatMap` can be implemented in the following way. 
 
 ```scala 3
 def flatMap[B](f: A => Option[B]): Option[B] = this match {
-  case Some(b) => f(b)
+  case Some(x) => f(x)
   case _       => None
 }
 ```

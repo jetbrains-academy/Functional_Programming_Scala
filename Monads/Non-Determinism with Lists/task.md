@@ -18,7 +18,7 @@ def factors(n: Int): List[Int] = {
 ```
 
 Let's now discuss the List monad. 
-The unit method simply creates a singleton list with its argument inside, indicating that the computation has finished with only one value.
+The `identity` method simply creates a singleton list with its argument inside, indicating that the computation has finished with only one value.
 `flatMap` applies the monadic action to each element in a list, and then concatenates the results. 
 If we run `factors(4).flatMap(factors)`, we get `List(1,2,4).flatMap(factors)` which concatenates `List(1)`, `List(1,2)`, and `List(1,2,4)` for the final result `List(1,1,2,1,2,4)`.
 
