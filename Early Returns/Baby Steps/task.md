@@ -63,7 +63,7 @@ If no valid user data has been found, we return `None` after traversing the enti
 
 ```scala 3
  /**
-  * Imperative approach that uses un-idiomatic `return`.
+  * Imperative approach that uses unidiomatic `return`.
   */
   def findFirstValidUser1(userIds: Seq[UserId]): Option[UserData] =
     for userId <- userIds do
@@ -121,7 +121,7 @@ Consult the `breedCharacteristics` map for the appropriate fur characteristics f
 
 Finally, implement the search using the conversion and validation methods:  
 * `imperativeFindFirstValidCat`, which works in an imperative fashion.
-* `functionalFindFirstValidCat`, utilizing an functional style. 
+* `functionalFindFirstValidCat`, utilizing a functional style. 
 * `collectFirstFindFirstValidCat`, using the `collectFirst` method. 
 
 Ensure that your search does not traverse the entire database. 
