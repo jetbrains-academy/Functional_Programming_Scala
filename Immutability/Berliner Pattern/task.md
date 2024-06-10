@@ -14,7 +14,7 @@ The application can be thought of as being divided into three layers:
   but the good news is that there is no need to do so. 
 * The internal layer, where we connect to databases or write to files. 
   This part of the application is usually performance-critical, so it's only natural to use mutable data structures here. 
-* The middle layer, which connect the previous two. 
+* The middle layer, which connects the previous two. 
   This is where our business logic resides and where functional programming shines. 
   
 Pushing mutability to the thin inner and outer layers offers several benefits. 
