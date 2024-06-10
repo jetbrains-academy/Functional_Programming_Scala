@@ -1,5 +1,3 @@
-## Lazy `val`
-
 **Laziness** refers to the deferral of computation until it is necessary.
 This strategy can enhance performance and allow programmers to work with infinite data structures, among other benefits.
 With a lazy evaluation strategy, expressions are not evaluated when bound to a variable, but rather when used for the first time.
