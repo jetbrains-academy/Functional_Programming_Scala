@@ -1,5 +1,3 @@
-## A View 
-
 A view in Scala collections is a lazy rendition of a standard collection. 
 While a lazy list needs intentional construction, you can create a view from any "eager" Scala collection simply by calling `.view` on it. 
 A view computes its transformations (like map, filter, etc.) in a lazy manner,  
