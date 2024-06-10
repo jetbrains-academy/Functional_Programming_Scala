@@ -27,7 +27,7 @@ Then, we create a class `Cat`, which includes a value for the color of the cat. 
 Finally, we use the `filter` method and provide it with an anonymous function as an argument. This function takes an argument of the `Cat` class and returns `true` if the cat's color is black. 
 The `filter` method will apply this function to each cat in the original set and create a new set containing only those cats for which the function returns `true`.
 
-However, our function that checks if the cat is black doesn't have to be anonymous. The `filter method will work just as well with a named function.
+However, our function that checks if the cat is black doesn't have to be anonymous. The `filter` method will work just as well with a named function.
 
 ```scala
 def isCatBlack(cat: Cat): Boolean = cat.color == Color.Black
