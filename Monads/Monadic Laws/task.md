@@ -1,7 +1,7 @@
 There are multiple monads not covered in this course. 
-Monad is an abstract concept, and any code that fulfills certain criteria can be viewed as one. 
-What are the criteria we are talking about, you may ask. 
-They are called monadic laws, namely left and right identity, and associativity. 
+A monad is an abstract concept, and any code that fulfills certain criteria can be viewed as one. 
+What are the criteria we are talking about, you may ask? 
+They are called monadic laws: left identity, right identity, and associativity. 
 
 ## Identity Laws
 
@@ -13,7 +13,7 @@ Consider subtraction, for which `x - 0 == x`, but `0 - x != x`.
 As it happens, the `identity` is supposed to be the identity of the `flatMap` method. 
 Let's take a look at what it means exactly. 
 
-The left identity law says that if we create a monad from a value `v` with a `identity` method `Monad` and then `flatMap` a function `f` over it, it is equivalent to passing the value `v` straight to the function `f`: 
+The left identity law says that if we create a monad from a value `v` with an `identity` method `Monad` and then `flatMap` a function `f` over it, it is equivalent to passing the value `v` straight to the function `f`: 
 
 ```scala 3
 def f(value: V): Monad[V]
@@ -31,12 +31,12 @@ monad.flatMap(Monad(_)) == monad
 
 ## Associativity 
 
-Associativity is a property that says that you can put parentheses in a whatever way in an expression and get the same result. 
+Associativity is a property that says you can put parentheses in any way in an expression and get the same result. 
 For example, `(1 + 2) + (3 + 4)` is the same as `1 + (2 + 3) + 4` and `1 + 2 + 3 + 4`, since addition is associative. 
-At the same time, subtraction is not associative, and `(1 - 2) - (3 - 4)` is different from `1 - (2 - 3) - 4` and `1 - 2 - 3 - 4`.
+However, subtraction is not associative, and `(1 - 2) - (3 - 4)` is different from `1 - (2 - 3) - 4` and `1 - 2 - 3 - 4`.
 
-Associativity is desirable for `flatMap` because it means that we can unnest them and use for-comprehensions safely. 
-In particular, let's consider two monadic actions `mA` and `mB` followed by some running `doSomething` function over the resulting values.
+Associativity is desirable for `flatMap` because it allows us to unnest them and use for-comprehensions safely. 
+In particular, let's consider two monadic actions `mA` and `mB`, followed by some function `doSomething` operating on the resulting values.
 This code fragment is equivalent to putting parentheses around the pipelined `mB` and `doSomething`. 
 
 ```scala 3
@@ -48,7 +48,7 @@ mA.flatMap( a =>
 ```
 
 This can be refactored in the following form, using the `identity` of the corresponding monad. 
-Here we parenthesise the chaining of the two first monadic actions, and only then flatMap `doSomething` over the result.  
+Here we parenthesize the chaining of the first two monadic actions and only then `flatMap` `doSomething` over the result.  
 
 ```scala 3
 mA.flatMap { a => 
@@ -70,7 +70,7 @@ for {
 
 ## Do Option and Either Follow the Laws? 
 
-Now that we know what the rules are, we can check whether the monads we are familiar with play by them.
+Now that we know what the rules are, we can check whether the monads we are familiar with adhere to them.
 The `identity` of `Option` is `{ x => Some(x) }`, while `flatMap` can be implemented in the following way. 
 
 ```scala 3
@@ -85,7 +85,7 @@ The left identity law is straightforward: `Some(x).flatMap(f)` just runs `f(x)`.
 To prove the right identity, let's consider the two possibilities for `monad` in `monad.flatMap(Monad(_))`. 
 The first is `None`, and `monad.flatMap(Option(_)) == None.flatMap(Option(_)) == None`. 
 The second is `Some(x)` for some `x`. Then, `monad.flatMap(Option(_)) == Some(x).flatMap(Option(_)) == Some(x)`. 
-In both cases, we arrived to the value that is the save as the one we started with. 
+In both cases, we arrived to the value that is the same as the one we started with. 
 
 Carefully considering the cases is how we prove associativity. 
 
@@ -112,15 +112,15 @@ Which is evaluated to:
 Some(x, y).flatMap { case (a, b) => doSomething(a, b) }
 ```
 
-Finally, we get `doSomething(x, y)` which is exactly what we wanted. 
+Finally, we get `doSomething(x, y)`, which is exactly what we wanted. 
 
 If you want to make sure you grasp the concepts of monadic laws, go ahead and prove that `Either` is also a monad.  
 
 ## Beyond Failure
 
 We only covered monads capable of describing failures and non-determinism. 
-There are many other *computational effects* that are expressed via monads. 
-They include logging, reading from a global memory, state manipulation, different flavours of non-determinism and many more. 
+There are many other *computational effects* that can be expressed via monads. 
+These include logging, reading from global memory, state manipulation, different flavors of non-determinism, and many more. 
 We encourage you to explore these monads on your own.
 Once you feel comfortable with the basics, take a look at the [scalaz](https://scalaz.github.io/7/) and [cats](https://typelevel.org/cats/) libraries. 
 
