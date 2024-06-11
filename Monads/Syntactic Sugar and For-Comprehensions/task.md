@@ -1,4 +1,4 @@
-In case of any monad, be it `Option`, `Either`, `Try`, or any other, it's possible to chain multiple functions together with `flatMap`.
+In the case of any monad, be it `Option`, `Either`, `Try`, or any other, it's possible to chain multiple functions together with `flatMap`.
 We've seen many examples where a successfully computed result is passed straight to the next function: `foo(a).flatMap(bar).flatMap(baz)`.
 In many real-world situations, there is some additional logic that is executed in between calls.
 Consider the following realistic example:
@@ -19,7 +19,7 @@ val res = client.getTeamMembers(teamId).flatMap { members =>
 
 It doesn't look pretty, does it? 
 There is a new nesting level for every call, and it's rather complicated to untangle the mess to understand what is happening.
-Thankfully, Scala provides syntactic sugar called *for-comprehensions* reminiscent of the do-notation in Haskell.
+Thankfully, Scala provides syntactic sugar called *for-comprehensions*, reminiscent of the do-notation in Haskell.
 The same code can be written more succinctly using `for/yield`:
 
 ```scala 3
@@ -40,11 +40,11 @@ We start by binding the successful results of retrieving team members with `memb
 Note that the first line in a for-comprehension must contain the left arrow. 
 This is how Scala compiler understands what type the monadic action has.
 
-After that, a message is logged and priority levels are fetched.
-Note that we don't use the arrow to the left of the `log` function, because it's a regular function and not a monadic operation which is not chained with `flatMap` in the original piece of code.
-We also don't care about the value returned by `log` and because of that use the underscore to the left of the equal sign. 
+After that, a message is logged, and priority levels are fetched.
+Note that we don't use the arrow to the left of the `log` function because it's a regular function and not a monadic operation that is chained with `flatMap` in the original piece of code.
+We also don't care about the value returned by `log`, and because of that, we use the underscore to the left of the equal sign. 
 After all this is done, the `yield` block computes the final values to be returned.
-If any line fails, the computation is aborted and the whole comprehension results in a failure. 
+If any line fails, the computation is aborted, and the whole comprehension results in a failure. 
 
 ## Exercise 
 
