@@ -37,7 +37,7 @@ val blackCats = cats.filter { cat => cat.color == Black }
 
 In the exercises, we will be working with a more detailed representation of cats than in the lessons. 
 Check out the `Cat` class in `src/Cat.scala`.
-A cat has multiple characteristics: its name, breed, color, pattern, and a set of additional fur characteristics, such as
+A cat has multiple characteristics: its name, breed, color pattern, and a set of additional fur characteristics, such as
 `Fluffy` or `SleekHaired`.
 Familiarize yourself with the corresponding definitions in other files in `src/`.
 
@@ -48,4 +48,4 @@ There are multiple cats available, and you wish to adopt a cat with one of the f
 * The cat is fluffy.
 * The cat is of the Abyssinian breed.
 
-To simplify decision making, you first identify all the cats which possess at least one of the characteristics above. Your task is to implement the necessary functions and then apply the filter. 
+To simplify decision making, you first identify all the cats that possess at least one of the characteristics above. Your task is to implement the necessary functions and then apply the filter. 

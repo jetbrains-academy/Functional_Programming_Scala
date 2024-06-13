@@ -55,7 +55,7 @@ the `for` loop.
 
 Unlike the imperative approach, the functional implementation separates the logic of conversion and validation
 from the sequence traversal, which results in more readable code.
-Taking care of possible missing records in the database amounts to modifying the unapply method, while the
+Taking care of possible missing records in the database amounts to modifying the `unapply` method, while the
 search function stays the same.
 
 ```scala 3
@@ -77,7 +77,7 @@ Imagine that there is a user who doesn't have an email.
 In this case, `complexValidation` returns `false`, but the user might still be valid.
 For example, it may be an account that belongs to a child of another user.
 We don't need to message the child; instead, it's enough to reach out to their parent.
-Even though this case is less common than the one we started with, we still need to keep it mind.
+Even though this case is less common than the one we started with, we still need to keep it in mind.
 To account for it, we can create a different extractor object with its own `unapply` and pattern match against it
 if the first validation fails.
 We do run the conversion twice in this case, but its impact is less significant due to the rarity of this scenario.

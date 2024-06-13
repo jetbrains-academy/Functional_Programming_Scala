@@ -17,7 +17,7 @@ case class ProductId(value: Int) extends AnyVal
 These are called value classes in Scala. `AnyVal` is a special trait in Scala — when extended by a case class 
 that has only a single field, you're telling the compiler that you want to use the newtype pattern. 
 The compiler uses this information to catch any bugs, such as confusing integers used 
-for user IDs with yjose used for product IDs. However, at a later phase, it strips the type information from the data, 
+for user IDs with those used for product IDs. However, at a later phase, it strips the type information from the data, 
 leaving only a bare `Int`, so that your code incurs no runtime overhead.
 Now, if you have a function that accepts a `UserId`, you can no longer mistakenly pass a `ProductId` to it:
 

@@ -45,7 +45,7 @@ class Applicant(name: String, age: Int, vehicleType: VehicleType)
 Now, somewhere in our code, we have a sequence of all applicants, and we want to get the names of those 
 who are eligible for a driver's license based on their age and the vehicle type they're applying to drive. 
 Just as we did in the previous chapter when searching for cats older than one year, we could define a Universal Apply Method 
-and use guards within pattern matching. However instead of `foreach`, this time we will use `collect`:
+and use guards within pattern matching. However, instead of `foreach`, this time we will use `collect`:
 
 ```scala 3
 object Applicant:
@@ -87,7 +87,7 @@ could prove valuable, depending on the situation.
 Given that each component in the RGB range can only be between `0` and `255`, it only uses 8 bits. 
 The 4 components of the RGB representation fit neatly into a 32-bit integer, which allows for better memory usage.
 Many color operations can be performed directly using bitwise operations on this integer representation. 
-However, sometimes it's more convenient to access each components as a number, 
+However, sometimes it's more convenient to access each component as a number, 
 and this is where the custom `unapply` method may come in handy. 
 
 Implement the `unapply` method for the int-based RGB representation. 

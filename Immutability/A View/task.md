@@ -1,10 +1,8 @@
-## A View 
-
 A view in Scala collections is a lazy rendition of a standard collection. 
 While a lazy list needs intentional construction, you can create a view from any "eager" Scala collection simply by calling `.view` on it. 
 A view computes its transformations (like map, filter, etc.) in a lazy manner,  
 meaning these operations are not immediately executed; instead, they are computed on the fly each time a new element is requested. 
-This can enhabce both performance and memory usage. 
+This can enhance both performance and memory usage. 
 On top of that, with a view, you can chain multiple operations without the need for intermediary collections — 
 the operations are applied to the elements of the original "eager" collection only when requested. 
 This can be particularly beneficial in scenarios where operations like map and filter are chained, so a significant number of 

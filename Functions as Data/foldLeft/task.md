@@ -45,7 +45,7 @@ We call the `foldLeft` method on the numbers range, stating that the accumulator
 The second argument to `foldLeft` is a function that takes the current accumulator value (`acc`) and an element from the numbers range (`n`). 
 This function calls our `fizzBuzz` method with the number and appends the result to the accumulator list using the `:+` operator.
 
-Once all the elements have been processed, `foldLeft returns the final accumulator value, which is the complete list of numbers and strings "Fizz", "Buzz", and "FizzBuzz", replacing the numbers that were divisible by 3, 5, and 15, respectively.
+Once all the elements have been processed, `foldLeft` returns the final accumulator value, which is the complete list of numbers and strings "Fizz", "Buzz", and "FizzBuzz", replacing the numbers that were divisible by 3, 5, and 15, respectively.
 
 Finally, we print out the results.
 

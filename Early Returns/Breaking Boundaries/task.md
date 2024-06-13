@@ -9,7 +9,7 @@ One important thing is that it ensures that the users never call `break` without
 the code much safer. 
 
 The following snippet showcases the use of boundary/break in its simplest form. 
-If our conversion and validation work out then `break(Some(userData))` jumps out of the loop labeled with `boundary:`. 
+If our conversion and validation work out, then `break(Some(userData))` jumps out of the loop labeled with `boundary:`. 
 Since it's the end of the method, it immediately returns `Some(userData)`. 
 
 ```scala 3

@@ -1,4 +1,3 @@
-# `flatMap`
 `def flatMap[B](f: A => IterableOnce[B]): Iterable[B]`
 
 You can consider `flatMap` as a generalized version of the `map` method. The function `f`, used by `flatMap`, takes every element of the original collection and, instead of returning just one new element of a different (or the same) type, produces a whole new collection of new elements. These collections are then "flattened" by the `flatMap` method, resulting in just one large collection being returned.
@@ -7,7 +6,7 @@ Essentially, the same effect can be achieved with `map` followed by `flatten`. `
 
 However, the applications of `flatMap` extend far beyond this simplistic use case. It's probably the most crucial method in functional programming in Scala. We will talk more about this in later chapters about monads and chains of execution. For now, let's focus on a straightforward example to demonstrate how exactly `flatMap` works.
 
-Just as in the `map` example, we will use a list of four cats. But this time, for every cat, we will create a list of cars of different brands but the same color as the cat. Finally, we will use `flatMap to combine all four lists of cars of different brands and colors into one list.
+Just as in the `map` example, we will use a list of four cats. But this time, for every cat, we will create a list of cars of different brands but the same color as the cat. Finally, we will use `flatMap` to combine all four lists of cars of different brands and colors into one list.
 
 ```scala
 // We define the Color enum
