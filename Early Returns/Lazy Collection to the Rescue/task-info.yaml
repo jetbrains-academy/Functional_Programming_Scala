@@ -1,8 +1,32 @@
 type: edu
 files:
-  - name: src/Task.scala
-    visible: true
   - name: test/TestSpec.scala
     visible: false
   - name: build.sbt
     visible: false
+  - name: src/EarlyReturns.scala
+    visible: true
+  - name: src/FurCharacteristic.scala
+    visible: true
+  - name: src/Color.scala
+    visible: true
+  - name: src/Cat.scala
+    visible: true
+  - name: src/Database.scala
+    visible: true
+  - name: src/Breed.scala
+    visible: true
+  - name: src/Pattern.scala
+    visible: true
+  - name: src/Task.scala
+    visible: true
+    placeholders:
+      - offset: 1285
+        length: 123
+        placeholder_text: /* TODO */
+      - offset: 1676
+        length: 150
+        placeholder_text: /* TODO */
+      - offset: 2109
+        length: 124
+        placeholder_text: /* TODO */

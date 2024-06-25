@@ -1,5 +1,3 @@
-# Smart Constructors and the `apply` Method
-
 In Scala, `apply` is a special method that can be invoked without specifying its name.
 
 ```scala 3
@@ -10,12 +8,12 @@ class Cat:
   cat() // returns "meow"
 ```
 
-Technically this sums it up — you can implement `apply` any way you want, for any reason you want. 
-However, by convention, the most popular way to use `apply` is as a smart constructor. 
-This convention is very important, and we would advise you to follow it. 
+Technically, this sums it up — you can implement `apply` any way you want, for any purpose. 
+However, by convention, `apply` is most popularly used as a smart constructor. 
+This convention is very important, and we strongly advise adhering to it. 
 
 There are a few other ways you can use `apply`.
-For example, the Scala collections library often uses it to retrieve data from a collection. This might look 
+For example, the Scala collections library often employs it to retrieve data from a collection. This usage might appear 
 as if Scala has traded the square brackets, common in more traditional languages, for parentheses:
 
 ```scala 3
@@ -37,8 +35,8 @@ This pattern can be especially useful in situations where:
 * You need to enforce a specific protocol for object creation, such as caching objects, creating singleton objects, or generating objects through a factory. 
 
 The idiomatic way to use `apply` as a smart constructor is to place it in the companion object of a class 
-and call it with the name of the class and a pair of parentheses. 
-For example, let's consider again the `Cat` class with a companion object that has an `apply` method:
+and call it by using the name of the class followed by a pair of parentheses. 
+For example, let's consider the `Cat` class again, which has a companion object that includes an `apply` method:
 
 ```scala 3
 class Cat private (val name: String, val age: Int)
@@ -51,11 +49,11 @@ object Cat:
   val fluffy = Cat("Fluffy", -5) // the age of Fluffy is set to 0, not -5
 ```
 
-The `Cat` class has a primary constructor that takes a `String` and an `Int` to set the name and age of the new cat, respectivelym. 
+The `Cat` class has a primary constructor that takes a `String` and an `Int` to set the name and age of the new cat, respectively. 
 Besides, we create a companion object and define the `apply` method in it. 
-This way, when we later call `Cat("fluffy", -5)`, the `apply` method, not the primary constructor, is invoked. 
+This way, when we later call `Cat("Fluffy", -5)`, the `apply` method, not the primary constructor, is invoked. 
 In the `apply` method, we check the provided age of the cat, and if it's less than zero, we create a cat instance 
-with the age set to zero, instead of the input age.
+with the age set to zero, instead of using the input age.
 
 Please also notice how we distinguish between calling the primary constructor and the `apply` method. 
 When we call `Cat("Fluffy", -5)`, the Scala 3 compiler checks if a matching `apply` method exists. 
@@ -63,22 +61,22 @@ If it does, the `apply` method is called.
 Otherwise, Scala 3 calls the primary constructor (again, if the signature matches). 
 This makes the `apply` method transparent to the user. 
 If you need to call the primary constructor explicitly, bypassing the `apply` method, you can use the `new` keyword,
-for example, `new Cat(name age)`. 
+for example, `new Cat(name, age)`. 
 We use this trick in the given example to avoid endless recursion — if we didn't, calling `Cat(name, age)` or `Cat(name, 0)` 
-would again call the `apply` method.
+would again trigger the `apply` method.
 
-You might wonder how to prevent the user from bypassing our `apply` method by calling the primary constructor `new Cat("Fluffy", -5)`. 
+You might wonder how to prevent users from bypassing our `apply` method by calling the primary constructor `new Cat("Fluffy", -5)`. 
 Notice that in the first line of the example, where we define the `Cat` class, 
 there is a `private` keyword between the name of the class and the parentheses. 
-The `private` keyword in this position means that the primary constructor of the class `Cat` can be called only by 
-the methods of the class or its companion object. 
+The `private` keyword in this position means that the primary constructor of the `Cat` class can only be called by 
+methods within the class or its companion object. 
 This way, we can still use `new Cat(name, age)` in the `apply` method, since it is in the companion object, 
-but it's unavailable to the user.
+but it remains unavailable to the user.
 
 ## Exercise 
 
 Consider the `Dog` class, which contains fields for `name`, `breed`, and `owner`. 
-Sometimes a dog get lost, and the person who finds it knows as little about the dog as its name on the collar.
+Sometimes a dog gets lost, and the person who finds it may know as little about the dog as its name on the collar.
 Until the microchip is read, there is no way to know who the dog's owner is or what breed the dog is. 
 To allow for the creation of `Dog` class instances in these situations, it's wise to use a smart constructor. 
 We represent the potentially unknown `breed` and `owner` fields with `Option[String]`. 

@@ -1,5 +1,3 @@
-## `Using` Clause for Carrying Immutable Context
-
 When writing pure functions, we often end up carrying some immutable context, such as configurations, as extra arguments.
 A common example is when a function expects a specific comparator of objects, such as in computing the maximum value or sorting: 
 
@@ -86,7 +84,7 @@ def main() =
   println(s"${max("b", "aa")(using StringLengthComparator)}") // prints aa  
 ```
 
-### Exercise 
+## Exercise 
 
 Implement a `sort` function to sort an array of values based on the `Comparator` provided. Make it use a contextual 
 parameter to avoid carrying around the immutable context. You can use any kind of sorting algorithm. 

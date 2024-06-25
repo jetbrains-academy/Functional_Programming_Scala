@@ -1,13 +1,11 @@
-# Sealed Traits Hierarchies
-
-Sealed  traits in Scala are used to represent restricted class hierarchies that provide exhaustive type checking. 
+Sealed  traits in Scala are used to represent restricted class hierarchies, providing exhaustive type checking. 
 When a trait is declared as sealed, it can only be extended within the same file. 
-This allows the compiler to know all the subtypes, which allows for more precise compile-time checking.
+This restriction enables the compiler to identify all subtypes, allowing for more precise compile-time checking.
 
-With the introduction of enums in Scala 3, many use cases of sealed traits are now covered by them, and their syntax is more concise. 
-However, sealed traits are more flexible than enums — they  allow for the addition of new behavior in each subtype. 
+With the introduction of enums in Scala 3, many use cases of sealed traits are now covered by enums, and their syntax is more concise. 
+However, sealed traits are more flexible than enums — they  allow for the addition of new behaviors in each subtype. 
 For instance, we can override the default implementation of a given method differently in each case class that extends the parent trait. 
-In enums, all enum cases share the same methods and fields.
+In contrast, in enums, all cases share the same methods and fields.
 
 ```scala 3 
 sealed trait Tree[+A]:
@@ -39,7 +37,7 @@ val tree: Tree[Int] =
 ## Exercise 
 
 Our trees are immutable, so we can compute their heights and check if they are balanced at the time of creation. 
-To do this, we added the `height` and `isBalanced` members into the `Tree` trait declaration. 
+To do this, we added the `height` and `isBalanced` members to the `Tree` trait declaration. 
 The only thing that is left is to override these members in all classes that extend the trait in this exercise.  
 This way, no extra passes are needed to determine whether a tree is balanced.
 

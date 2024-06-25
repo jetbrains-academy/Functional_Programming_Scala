@@ -1,5 +1,3 @@
-## What is an Expression? 
-
 When programming in an imperative style, we tend to build functions out of statements. 
 We instruct the compiler on the exact steps and the order in which they should be performed to achieve the 
 desired result.
@@ -57,7 +55,7 @@ Depending on the condition, we execute one of the two `println` statements.
 Notice that no value is returned. Instead, everything the function does is a side effect of printing to the console. 
 
 This style is not considered idiomatic in Scala. 
-Instead, it's preferably for a function to return a string value, which is then printed, like so: 
+Instead, it's preferable for a function to return a string value, which is then printed, like so: 
 
 ```scala 3
 def even(number: Int): String = { 
@@ -72,10 +70,10 @@ def main(): Unit = {
 }
 ```
 
-This way, you separate the logic of computing the values from outputting them. 
+This way, you separate the logic of computing values from outputting them. 
 It also makes your code more readable. 
 
-### Exercise 
+## Exercise 
 
 Rewrite the `abs` and `concatStrings` functions as expressions to perform the same tasks as their original implementations. 
 Implement the `sumOfAbsoluteDifferences` and `longestCommonPrefix` functions using the expression style.

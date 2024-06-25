@@ -1,12 +1,10 @@
-# What is a function? 
-
 A function is a standalone block of code that takes arguments, performs some calculations, and returns a result. 
-It may or may not have side effects; that is, it may have access to the data in the program, and should the data be modifiable, the function might alter it. 
+It may or may not have side effects; that is, it may access the data in the program, and if the data is modifiable, the function might alter it. 
 If it doesn't — meaning, if the function operates solely on its arguments — we state that the function is pure. 
-In functional programming, we use pure functions whenever possible, although this rule does have important exceptions,  
-which we will discuss them later.
+In functional programming, we use pure functions whenever possible, although this rule does have important exceptions,
+which we will discuss later.
 The main difference between a function and a method is that a method is associated with a class or an object. 
-On the other hand, a function is treated just like any other value in the program: it can be created in any place in the code, passed as an argument, returned from another function or method, etc.
+On the other hand, a function is treated just like any other value in the program: it can be created anywhere in the code, passed as an argument, returned from another function or method, etc.
 
 Consider the following code:
 ```Scala
@@ -26,18 +24,18 @@ class Calculator:
 Both `add` functions take two input parameters, `x` and `y`, perform a pure computation of adding them together, and return the result. 
 They do not alter any external state.
 In the first case, we define a function with the `def` keyword. 
-After def comes the function's name, then the list of arguments with their types, then the result type of the function, and then the function's calculations, that is, `x + y`.
+After `def` comes the function's name, then the list of arguments with their types, then the result type of the function, and then the function's calculations, that is, `x + y`.
 
-Compare this with the second approach to define a function, with the `val` keyword, which we also use for all other kinds of data. 
-Here, after `val` comes the function's name, then the type of the function, `(Int, Int) => Int`, 
-which consists of both the argument types and the result type, then come the arguments (this time without the types), and finally the implementation. 
+Compare this with the second approach to define a function using the `val` keyword, which we also use for all other kinds of data. 
+Here, after `val`, comes the function's name, followed by the type of the function, `(Int, Int) => Int`.
+This consists of both the argument types and the result type. Next come the arguments (this time without the types), and finally the implementation. 
 You will probably find the first way to define functions more readable, and you will use it more often. 
-However, it is important to remember that in Scala, a function is data, just like integers, strings, and instances of case classes — and it can be defined as data if needed.
+However, it is important to remember that in Scala, a function is treated as data, just like integers, strings, and instances of case classes — and it can be defined as data if needed.
 
-The third example illustrates a method. 
-We simply call it `add`. 
-Its definition appears the same as the definition of the function `addAsFunction`, but we refer to add as a method because it is associated with the class `Calculator`.
-In this way, if we create an instance of `Calculator`, we can call `add` on it, and it will have access to the internal state of the instance. 
+The third example illustrates a method, 
+which we simply call `add`. 
+Its definition mirrors that of the `addAsFunction`, however, we refer to `add` as a method because it is associated with the `Calculator` class.
+In this way, if we create an instance of `Calculator`, we can call `add` on it, granting us access to the internal state of the instance. 
 It is also possible, for example, to override it in a subclass of `Calculator`.
 
 ```scala
@@ -68,6 +66,6 @@ A video:
 
 ## Exercise 
 
-Implement multiplication as both a function and as a value; additionally, implement multiplication as a method of a class.  
+Implement multiplication both as a function and a value; additionally, implement multiplication as a method within a class.  
 
 

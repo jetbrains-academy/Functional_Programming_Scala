@@ -1,5 +1,3 @@
-# Functions Returning Functions
-
 In Scala, it is possible to construct functions dynamically, inside functions and methods, and return them.
 This technique allows us to create new functions based on the arguments given to the original function and return them as the result of that function.
 
@@ -17,7 +15,7 @@ val calc = new CalculatorPlusN(3)
 calc.add(1 , 2)
 ```
 
-Now, instead of having a class that stores this additional number `n`, we can create and return the adder function to achieve the same result:
+Now, instead of having a class that stores this additional number `n`, we can create and return the `adder` function to achieve the same result:
 
 ```scala
 // Define a function that takes a fixed number and returns a new function that adds it to its input
@@ -30,12 +28,12 @@ val add = addFixedNumber(3)
 add(1, 2)
 ```
 
-In the above example, we define a function `addFixedNumber` that takes an integer `n` and returns a new function that takes two integers, `x` and `y`, and returns the sum of `n` and `x` and `y`.
+In the above example, we define a function `addFixedNumber` that takes an integer `n` and returns a new function, which takes two integers, `x` and `y`, and returns the sum of `n`, `x`, and `y`.
 Note the return type of `addFixedNumber` — it's a function type `(Int, Int) => Int`.
-Then, we define the new function adder inside `addFixedNumber`, which captures the value of `n` and adds it to its own two arguments, `x` and `y`.
+Then, we define the new function, `adder`, inside `addFixedNumber`, which captures the value of `n` and adds it to its own two arguments, `x` and `y`.
 The `adder` function is then returned as the result of `addFixedNumber`.
 
-We then construct a specialized function add by calling `addFixedNumber(n: Int)` with `n` equal to `3`.
+We then construct a specialized function `add` by calling `addFixedNumber(n: Int)` with `n` equal to `3`.
 Now, we can call `add` on any two integers; as a result, we will get the sum of these integers plus `3`.
 
 Scala provides special syntax for functions returning functions, as shown below:  
@@ -49,7 +47,7 @@ val add = addFixedNumber(3)
 
 The first argument of the function `addFixedNumber` is enclosed within its own set of parentheses, while the second and third arguments are enclosed within another pair of parentheses.
 The function `addFixedNumber` can then be supplied with only the first argument, which creates a function expecting the next two arguments: `x` and `y`.  
-You can also call the function with all three arguments, but they should be enclosed in separate parentheses: `addFixedNumber1(3)(4, 5)` instead of `addFixedNumber(3,4,5)`. 
+You can also call the function with all three arguments, but they should be enclosed in separate parentheses: `addFixedNumber1(3)(4, 5)` rather than `addFixedNumber(3,4,5)`. 
 Notice that you cannot pass only two arguments into the function written in this syntax: `addFixedNumber1(3)(4)` is not allowed. 
 
 

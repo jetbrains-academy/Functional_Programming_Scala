@@ -1,5 +1,3 @@
-# `find`
-
 `def find(pred: A => Boolean): Option[A]`
 
 Imagine that instead of filtering for all black cats, we are happy with obtaining just one, no matter which. 
