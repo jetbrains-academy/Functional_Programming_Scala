@@ -27,5 +27,5 @@ Now, imagine that we are willing to adopt any cat from the animal shelter that i
 Implement the corresponding functions. 
 
 <div class="hint">
-  Use the `contains` method to check if a cat is fluffy.
+  Use the <code>contains</code> method to check if a cat is fluffy.
 </div>
