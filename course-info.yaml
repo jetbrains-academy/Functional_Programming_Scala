@@ -19,7 +19,7 @@ content:
   - Expressions over Statements
   - Early Returns
   - Monads
-  - Conclusion
   - Referential Transparency
+  - Conclusion
 environment_settings:
-  jvm_language_level: JDK_19
+  jvm_language_level: JDK_17

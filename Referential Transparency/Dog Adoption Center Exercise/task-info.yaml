@@ -2,6 +2,28 @@ type: edu
 files:
   - name: src/Task.scala
     visible: true
+    placeholders:
+      - offset: 459
+        length: 105
+        placeholder_text: /* TODO */
+      - offset: 778
+        length: 46
+        placeholder_text: /* TODO */
+      - offset: 1582
+        length: 474
+        placeholder_text: /* TODO */
+      - offset: 2410
+        length: 223
+        placeholder_text: /* TODO */
+      - offset: 2894
+        length: 177
+        placeholder_text: /* TODO */
+      - offset: 3521
+        length: 509
+        placeholder_text: /* TODO */
+      - offset: 4550
+        length: 463
+        placeholder_text: /* TODO */
   - name: test/TestSpec.scala
     visible: false
     propagatable: false
