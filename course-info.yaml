@@ -23,3 +23,4 @@ content:
   - Conclusion
 environment_settings:
   jvm_language_level: JDK_17
+yaml_version: 1

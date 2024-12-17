@@ -1,10 +1,7 @@
 import java.nio.file.{Files, Path}
 import scala.jdk.CollectionConverters.*
 import cats.effect.{IO, IOApp}
-import cats.effect.std.Console
-import cats.effect.kernel.Ref
 import cats.syntax.all.*
-import java.io.{File, PrintWriter}
 
 object Task extends IOApp.Simple:
   /**
@@ -17,7 +14,7 @@ object Task extends IOApp.Simple:
       shelter =  lines.map(Dog.fromLine)
       _       <- mainMenu(shelter)
     } yield ()
-
+  
   /**
    * This function just reads the input file.
    * @param path -- the path to the input file
