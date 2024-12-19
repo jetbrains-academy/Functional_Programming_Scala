@@ -1,5 +1,3 @@
-import cats.effect.IO
-import cats.effect.unsafe.implicits.global
 import scala.jdk.CollectionConverters.*
 
 import java.io.{ByteArrayInputStream, ByteArrayOutputStream, PrintStream}
@@ -29,10 +27,24 @@ def cleanupDatabase(initialDB: String): Unit =
   Files.createFile(Dog.FilePath)
   Files.writeString(Dog.FilePath, contents)
 
+case class DogNoId(name: String, breed: String, favoriteToy: String):
+  override def toString: String = s"Name: $name, Breed: $breed, Favorite toy: $favoriteToy"
+
+object DogNoId:
+  implicit val defaultOrdering: Ordering[DogNoId] = Ordering.by(d => (d.name, d.breed, d.favoriteToy))
+  def dropId(dog : Dog): DogNoId = DogNoId(dog.name, dog.breed, dog.favoriteToy)
+
+def parseDatabase(path: Path): (List[Int], List[DogNoId]) =
+  val lines = Files.readAllLines(path).asScala.toList
+  val dogs = lines.map(Dog.fromLine)
+  (dogs.map(_.id), dogs.map(DogNoId.dropId))
+
 def checkDatabase(expectedDBPath: String): Unit =
-  val actualDB = Files.readString(Dog.FilePath)
-  val expectedDB = Files.readString(Path.of(expectedDBPath))
-  assert(actualDB.trim == expectedDB.trim)
+  val (actualIds, actualDogs) = parseDatabase(Dog.FilePath)
+  val (expectedIds, expectedDogs) = parseDatabase(Path.of(expectedDBPath))
+  assert(actualIds.size == expectedIds.size, "The database should contain the same number of dogs as in the expected database")
+  assert(actualIds.distinct.size == actualIds.size, "The database should contain unique IDs")
+  assert(actualDogs.sorted == expectedDogs.sorted, "The database should contain the same dogs as in the expected database")
 
 class TaskSpec extends CatsEffectSuite {
 
@@ -106,5 +118,30 @@ class TaskSpec extends CatsEffectSuite {
     adoptionCenterTest(
       List(Action.Surrender(Dog(4, "Luna", "Labrador", "frisbee")), Action.Adopt(3), Action.Surrender(Dog(5, "Bella", "Beagle", "tennis ball")), Action.Adopt(4), Action.Surrender(Dog(6, "Max", "Golden Retriever", "rope toy")), Action.Exit),
       "Referential Transparency/Dog Adoption Center Exercise/test/resources/out5.csv")
+  }
+
+  test("Exiting the program should not change the database") {
+    adoptionCenterTest(
+      List(Action.Exit),
+      "Referential Transparency/Dog Adoption Center Exercise/test/resources/initial.csv")
+  }
+
+  test("Exiting the program twice should not change the database") {
+    adoptionCenterTest(
+      List(Action.Exit, Action.Exit),
+      "Referential Transparency/Dog Adoption Center Exercise/test/resources/initial.csv")
+  }
+
+  test("Adoption the same dog twice should only result in one adopted dog") {
+    adoptionCenterTest(
+      List(Action.Adopt(2), Action.Adopt(2), Action.Exit),
+      "Referential Transparency/Dog Adoption Center Exercise/test/resources/out6.csv")
+  }
+
+  test("Surrendering the same dog twice should result in two new dogs with different ids, but the same name, breed, and favorite toy") {
+    val dog = Dog(5, "Bella", "Beagle", "tennis ball")
+    adoptionCenterTest(
+      List(Action.Surrender(dog), Action.Surrender(dog), Action.Exit),
+      "Referential Transparency/Dog Adoption Center Exercise/test/resources/out7.csv")
   }
 }

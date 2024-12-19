@@ -52,3 +52,9 @@ files:
   - name: test/resources/out5.csv
     visible: false
     propagatable: false
+  - name: test/resources/out6.csv
+    visible: false
+    propagatable: false
+  - name: test/resources/out7.csv
+    visible: false
+    propagatable: false
