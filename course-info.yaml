@@ -21,4 +21,5 @@ content:
   - Monads
   - Conclusion
 environment_settings:
-  jvm_language_level: JDK_19
+  jvm_language_level: JDK_21
+yaml_version: 1
