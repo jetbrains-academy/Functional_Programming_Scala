@@ -20,5 +20,7 @@ content:
   - Early Returns
   - Monads
   - Conclusion
+  - Referential Transparency
 environment_settings:
   jvm_language_level: JDK_19
+yaml_version: 5
