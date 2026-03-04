@@ -1,0 +1,60 @@
+type: edu
+files:
+  - name: src/Task.scala
+    visible: true
+    placeholders:
+      - offset: 363
+        length: 105
+        placeholder_text: /* TODO */
+      - offset: 684
+        length: 46
+        placeholder_text: /* TODO */
+      - offset: 1488
+        length: 474
+        placeholder_text: /* TODO */
+      - offset: 2316
+        length: 223
+        placeholder_text: /* TODO */
+      - offset: 2800
+        length: 177
+        placeholder_text: /* TODO */
+      - offset: 3427
+        length: 509
+        placeholder_text: /* TODO */
+      - offset: 4456
+        length: 463
+        placeholder_text: /* TODO */
+  - name: test/TestSpec.scala
+    visible: false
+    propagatable: false
+  - name: build.sbt
+    visible: false
+    propagatable: false
+  - name: src/Dog.scala
+    visible: true
+  - name: src/main/resources/adoptionCenter.csv
+    visible: true
+  - name: test/resources/initial.csv
+    visible: false
+    propagatable: false
+  - name: test/resources/out1.csv
+    visible: false
+    propagatable: false
+  - name: test/resources/out2.csv
+    visible: false
+    propagatable: false
+  - name: test/resources/out3.csv
+    visible: false
+    propagatable: false
+  - name: test/resources/out4.csv
+    visible: false
+    propagatable: false
+  - name: test/resources/out5.csv
+    visible: false
+    propagatable: false
+  - name: test/resources/out6.csv
+    visible: false
+    propagatable: false
+  - name: test/resources/out7.csv
+    visible: false
+    propagatable: false

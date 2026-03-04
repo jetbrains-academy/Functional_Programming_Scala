@@ -1,1 +1,1 @@
-object Task:
+object Task {}
