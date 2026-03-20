@@ -30,7 +30,4 @@ An example of using labels can be found [here](https://gist.github.com/bishabosh
 
 Finally, let's use boundaries to achieve the same result. 
 
-Let's try using a lazy collection to achieve the same goal as in the previous tasks.
-
-* Use a boundary to implement `findFirstValidCat`.
-* Copy the implementations of `furCharacteristicValidation` and `nonAdoptedCatConversion` from the previous task. 
+Use a boundary to implement `findFirstValidCat`.

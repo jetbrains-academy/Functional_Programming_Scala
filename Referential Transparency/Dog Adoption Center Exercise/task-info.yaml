@@ -3,25 +3,25 @@ files:
   - name: src/Task.scala
     visible: true
     placeholders:
-      - offset: 363
+      - offset: 366
         length: 105
         placeholder_text: /* TODO */
-      - offset: 684
+      - offset: 689
         length: 46
         placeholder_text: /* TODO */
-      - offset: 1488
-        length: 474
+      - offset: 1498
+        length: 456
         placeholder_text: /* TODO */
-      - offset: 2316
+      - offset: 2310
         length: 223
         placeholder_text: /* TODO */
-      - offset: 2800
+      - offset: 2798
         length: 177
         placeholder_text: /* TODO */
-      - offset: 3427
+      - offset: 3431
         length: 509
         placeholder_text: /* TODO */
-      - offset: 4456
+      - offset: 4468
         length: 463
         placeholder_text: /* TODO */
   - name: test/TestSpec.scala
