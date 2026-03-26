@@ -5,7 +5,7 @@ summary: "<p>Master functional programming in Scala with pure functions, immutab
   \ pattern matching, and higher-order thinking. This hands-on course is for developers\
   \ who know Scala basics and want to write safer, testable, and scalable code.</p>"
 vendor:
-  name: JetBrains
+  name: JetBrains s.r.o.
   email: support@jetbrains.com
   url: https://www.jetbrains.com/
 programming_language: Scala
