@@ -16,5 +16,5 @@ def getTasks(dir: File, level: Int = 0): Seq[File] = {
 def isTaskDir(dir: File): Boolean = new File(dir, "src").exists()
 def isNotIgnored(dir: File): Boolean = !Seq(".idea", ".coursecreator", "project", "target").contains(dir.getName)
 
-libraryDependencies += "org.scalatest" %% "scalatest" % "3.2.15"
-scalaVersion := "3.3.3"
+libraryDependencies += "org.scalatest" %% "scalatest" % "3.2.19"
+scalaVersion := "3.3.7"

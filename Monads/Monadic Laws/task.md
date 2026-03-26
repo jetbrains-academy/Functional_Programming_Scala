@@ -122,7 +122,7 @@ We only covered monads capable of describing failures and non-determinism.
 There are many other *computational effects* that can be expressed via monads. 
 These include logging, reading from global memory, state manipulation, different flavors of non-determinism, and many more. 
 We encourage you to explore these monads on your own.
-Once you feel comfortable with the basics, take a look at the [scalaz](https://scalaz.github.io/7/) and [cats](https://typelevel.org/cats/) libraries. 
+Once you feel comfortable with the basics, take a look at the [scalaz](https://github.com/scalaz/scalaz) and [cats](https://typelevel.org/cats/) libraries. 
 
 
 

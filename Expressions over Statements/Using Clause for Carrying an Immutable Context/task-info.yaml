@@ -13,5 +13,3 @@ files:
     visible: false
   - name: build.sbt
     visible: false
-  - name: project/build.properties
-    visible: true

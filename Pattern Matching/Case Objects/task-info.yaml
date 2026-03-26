@@ -4,8 +4,8 @@ files:
   - name: src/CaseObjectTask.scala
     visible: true
     placeholders:
-      - offset: 341
-        length: 281
+      - offset: 338
+        length: 283
         placeholder_text: /* Compute the new coordinates */
   - name: test/CaseObjectTaskSpec.scala
     visible: false

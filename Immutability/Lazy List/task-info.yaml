@@ -3,7 +3,7 @@ files:
   - name: src/LazyListTask.scala
     visible: true
     placeholders:
-      - offset: 73
+      - offset: 79
         length: 122
         placeholder_text: /* TODO */
   - name: test/LazyListTaskSpec.scala

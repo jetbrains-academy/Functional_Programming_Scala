@@ -13,7 +13,7 @@ files:
       - offset: 662
         length: 63
         placeholder_text: /* TODO */
-      - offset: 988
+      - offset: 1001
         length: 138
         placeholder_text: /* TODO */
   - name: test/FunctionsAndMethodsSpec.scala

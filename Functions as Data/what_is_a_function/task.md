@@ -59,9 +59,9 @@ calc3.add(1 , 2)
 
 A blog post <a href="https://makingthematrix.wordpress.com/2020/12/15/programming-with-functions-2-functions-as-data">here</a>.
 
-A video: 
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/RX1_EJp9Vxk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<a href="https://www.youtube.com/watch?v=RX1_EJp9Vxk" target="_blank">
+Watch the video
+</a>
 </div>
 
 ## Exercise 

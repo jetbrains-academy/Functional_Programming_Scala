@@ -1,12 +1,16 @@
 type: edu
 files:
+  - name: src/Task.scala
+    visible: true
+    placeholders:
+      - offset: 2262
+        length: 180
+        placeholder_text: "None /* TODO */"
   - name: test/TestSpec.scala
     visible: false
   - name: build.sbt
     visible: false
   - name: src/EarlyReturns.scala
-    visible: true
-  - name: src/Task.scala
     visible: true
   - name: src/Breed.scala
     visible: true
